@@ -1,0 +1,1 @@
+This repository contains the reproducibility package for the submitted manuscript. Earlier exploratory code from the deterministic Phase 0 formulation is not required to reproduce the final paper results and is excluded from the main workflow. The current reproducibility path begins with the Phase 1 latent-microphysics generator.
