@@ -199,7 +199,11 @@ python -m pytest tests/test_generator.py -q     # 12 tests: latent perturbation 
 
 ## License
 
-License: TBD.
+The source code in this repository is released under the MIT License; see `LICENSE`.
+
+Generated synthetic data, post-processed numerical results, figure data, configuration files, literature-extraction notes, and documentation are released under the Creative Commons Attribution 4.0 International License (CC BY 4.0); see `DATA_LICENSE.md`.
+
+This repository does not redistribute copyrighted third-party figures or articles. Literature-derived anchoring values are provided as extracted numerical notes for reproducibility and should be cited through the original publications listed in the manuscript.
 
 ## Citation
 
@@ -210,7 +214,7 @@ License: TBD.
                   Representation Learning from Inelastic Neutron Scattering},
   year         = {2026},
   note         = {Manuscript in preparation},
-  howpublished = {\url{https://github.com/syed-moid/spectra-beyond-conditions}}
+  howpublished = {https://github.com/syed-moid/spectra-beyond-conditions}
 }
 ```
 
