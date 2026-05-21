@@ -205,15 +205,15 @@ License: TBD.
 
 ```bibtex
 @misc{moid_spectra_beyond_conditions,
-  author       = {Moid, Syed and collaborators},
+  author       = {Moid, Syed},
   title        = {Spectra Beyond Conditions: A Diagnostic Framework for Spectral
                   Representation Learning from Inelastic Neutron Scattering},
   year         = {2026},
   note         = {Manuscript in preparation},
-  howpublished = {\url{<repository or preprint URL TBD>}}
+  howpublished = {\url{https://github.com/syed-moid/spectra-beyond-conditions}}
 }
 ```
 
 ## Contact
 
-`<syedmoid@gmail.com>`
+`syedmoid@gmail.com`
