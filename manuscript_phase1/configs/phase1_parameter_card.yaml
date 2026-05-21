@@ -1,0 +1,137 @@
+# Phase 1 Parameter Card — INS Spectral Learning, BaTiO₃ family
+# Calibrated against:
+#   Tomeno+ JPSJ 89, 054601 (2020) — q-resolved Γ, cubic 453 K
+#   Hlinka+ PRL 101, 167402 (2008) — tetragonal RT Γ ≈ 100 ± 10 cm⁻¹ on ω₀ ≈ 35 ± 5 cm⁻¹
+#   Shirane-Axe-Harada PRB 2, 3651 (1970) — tetragonal ω₀ cross-check (4% agreement)
+#   Harada-Axe-Shirane PRB 4, 155 (1971) — cubic TO/TA overlap qualitative anchor
+# Version: 1.0  (Phase 1 baseline)
+
+version: "phase1-v1.0"
+target_journal: "Digital Discovery (RSC)"
+acceptance_gate:
+  metric: "MAE_logM"
+  rule: "Spectrum-only Spectral Transformer MAE_logM ≥30% below recomputed NL-cond MLP floor on Phase 1 data"
+  static_reference_for_context_only:
+    nl_cond_mlp_floor_on_phase0_data: 0.0048
+    static_target_if_floor_unchanged: 0.00336
+  live_computation_required: true
+  rationale: |
+    Once xi1/xi2 make M non-deterministic in (T,c,E), the NL-cond MLP floor on
+    Phase 1 data will rise above 0.0048. The static 0.00336 is stale; the live
+    gate must use the recomputed floor.
+
+# ---------- ξ₁: primary latent — per-mode Γ perturbation ----------
+xi1_linewidth_perturbation:
+  description: "Multiplicative per-mode scalar Γ perturbation (three independent draws per spectrum)"
+  formula: "Gamma_realized[mode] = Gamma_0[mode] * floor(0.05, 1 + alpha * xi1[mode])"
+  modes: [soft, acoustic, optical]
+
+  alpha:
+    distribution: lognormal
+    mu_log: -1.204
+    sigma_log: 0.40
+    derived:
+      median: 0.30
+      mean: 0.325
+      ci68: [0.20, 0.45]
+      ci95: [0.135, 0.665]
+    tuning_rule:
+      if_central_median_above_0.40: 0.25
+      if_central_median_below_0.10: 0.35
+      else: 0.30
+      keep_sigma_log_fixed: true
+
+  xi1_sampling:
+    distribution: standard_normal
+    independence: "one draw per mode per spectrum"
+    rationale: |
+      The 1D Γ-point generator has no q-axis, so the q-correlated field design from
+      Phase 0 reduces to per-mode scalar perturbation. Mechanism is honest: three
+      correlated linewidths varying per spectrum, not a spatial field.
+
+  clipping:
+    method: hard_floor
+    floor: 0.05
+    rationale: "DHO numerator ∝ Γ; negative Γ → negative spectra."
+
+  calibration_acceptance:
+    central_regime_mask:
+      mode: soft       # primary diagnostic mode; soft mode has largest Γ/ω₀
+      condition: "all spectra (no q-range restriction; no q-axis exists)"
+    targets:
+      median_abs_delta: [0.10, 0.40]
+      p90_abs_delta_min: 0.40
+      floor_hit_rate_max: 0.02
+    monte_carlo_expected:
+      median_abs_delta: 0.19
+      p90_abs_delta: 0.56
+      floor_hit_rate: 0.009
+
+# ---------- ξ₂: secondary latent — ω₀ shift ----------
+xi2_frequency_shift:
+  description: "Scalar TO frequency-shift perturbation (one draw per spectrum)"
+  formula: "omega0_realized = omega0_baseline(T,c,E) * (1 + beta * xi2)"
+  consolidation_note: |
+    The deterministic field-shift term (previously +0.01*E^2 appearing in both
+    omega_Q and Delta_omega) is now consolidated into omega0_baseline only.
+    Delta_omega is removed from the DHO denominator.
+
+  product_beta_xi2:
+    distribution: skew_normal
+    range: [-0.05, 0.07]
+    skew_direction: positive_hardening
+    rationale: |
+      Oxygen-vacancy and eight-site disorder modes more often harden than soften
+      the TO frequency. Range kept conservative (narrower than empirical
+      Hlinka σ ≈ 0.14) to isolate ξ₁ as the dominant variability driver.
+
+  phase_1_5_widening_option:
+    range: [-0.08, 0.10]
+    use_when: "Phase 1 acceptance gate misses by 10-20% and per-severity breakdown implicates omega0"
+
+  empirical_anchor:
+    hlinka_single_paper_sigma: 0.14    # 5/35 from PRL 2008
+    cross_paper_hlinka_shirane: 0.04   # tetragonal ω₀ agreement
+    tomeno_q_resolved_sigma_typical: 0.10_to_0.15
+
+# ---------- M recomputation ----------
+merit_function:
+  implementation: "src/data/merit.py::merit()  (validated composite, Session 2-5)"
+  recompute_from_realized_spectrum: true
+  do_not_perturb_M_directly: true
+  do_not_use_simple_ratio: "M = omega^2 / (Gamma^2 + Gamma_min^2) was rejected (old Eq. 22)"
+
+# ---------- DHO generator consistency ----------
+dho_generator:
+  implementation: "src/data/spectrum_generator.py::dho()  (validated, Session 3 Bose weighting)"
+  do_not_rewrite_lineshape: true
+  consolidation_required:
+    bug: "E^2 field shift appears in both omega_Q() and Delta_omega(), double-counted in DHO denominator"
+    fix: "Remove Delta_omega from generate_spectrum() call site; field shift lives only in omega_Q (and thus in omega0_baseline)"
+    verification: "Spectra at E=0 must be byte-identical pre- and post-fix; spectra at E≠0 will differ"
+
+# ---------- Empirical scatter synthesis (audit trail) ----------
+empirical_scatter:
+  single_paper_sigma_Gamma_over_Gamma: [0.10, 0.20]
+  cross_paper_sigma_Gamma_over_Gamma: [0.25, 0.40]
+  intrinsic_q_variation_factor: [3, 5]
+  source_notes:
+    hlinka_2008_prl:
+      access: "not open-access; library PDF available if needed"
+      contribution: "tetragonal RT Γ ≈ 100 ± 10 cm⁻¹, ω₀ ≈ 35 ± 5 cm⁻¹"
+      defer_unless: "Phase 1 gate fails by 10-20% with miscalibrated σ_logα signature"
+    tomeno_2020_jpsj:
+      access: "open via OSTI (osti.gov/servlets/purl/1684666)"
+      contribution: "q-resolved Γ at cubic 453 K, finite-q TO ≈ 25-40 cm⁻¹"
+      extraction_quality: "FWHM read from dispersion plot bars; ~±20% per-point eyeball error"
+    shirane_axe_harada_1970:
+      contribution: "tetragonal ω₀ extrapolation to 4.5 meV (36.3 cm⁻¹) — anchors Hlinka to 4%"
+
+# ---------- Implementation flags ----------
+implementation:
+  # No get_rng() helper exists in the repo; convention is np.random.default_rng(seed).
+  rng_seed_convention: "np.random.default_rng(seed); log the seed in each artifact"
+  artifacts_dir: "results/"
+  diagnostic_files:
+    calibration_histogram: "results/phase1_calibration.npz"   # ell_q dropped (no q-axis)
+    report: "results/phase1_diagnostic_report.md"

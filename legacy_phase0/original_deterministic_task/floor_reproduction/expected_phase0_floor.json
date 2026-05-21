@@ -1,0 +1,39 @@
+{
+  "spectrum_only_st_5b": {
+    "per_severity": {
+      "stress_severity_0.25": 0.23377730156128657,
+      "stress_severity_0.5": 0.28413354393764356,
+      "stress_severity_1.0": 0.39010820081138103,
+      "stress_severity_2.0": 0.577350118795144,
+      "stress_severity_4.0": 0.9073446334903051,
+      "in_dist_val_severity_1": 0.3729325383691873
+    },
+    "run_meta": {
+      "arch": "5b",
+      "seed": 42,
+      "epochs_trained": 25,
+      "best_val_mae_logM": 0.3729325532913208,
+      "best_epoch": 25,
+      "final_train_loss": 0.047272254073619846,
+      "final_val_loss": 0.26730623841285706,
+      "train_val_ratio": 0.1768468044528291,
+      "val_MAE_omega_Q_meV": 0.3587720990180969,
+      "aborted": false,
+      "abort_reason": "",
+      "wall_time_sec": 58.06932187080383,
+      "mps_peak_gib": 1.371185302734375,
+      "mps_driver_end_gib": 1.371185302734375,
+      "train_curve_len": 25
+    }
+  },
+  "nonlinear_conditions_mlp": {
+    "per_severity": {
+      "stress_severity_0.25": 0.0047704058091519175,
+      "stress_severity_0.5": 0.0047704058091519175,
+      "stress_severity_1.0": 0.0047704058091519175,
+      "stress_severity_2.0": 0.0047704058091519175,
+      "stress_severity_4.0": 0.0047704058091519175,
+      "in_dist_val_severity_1": 0.004910794728784074
+    }
+  }
+}

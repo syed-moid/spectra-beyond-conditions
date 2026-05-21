@@ -1,0 +1,24 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.Python
+*.egg-info/
+
+# Test / tooling caches
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Weights & Biases (regenerable run dirs)
+wandb/
+
+# Diagnostic/training runs produced by re-running scripts (the curated
+# baseline artifacts live in manuscript_phase1/results/ and ARE tracked)
+manuscript_phase1/results/diagnostic_runs/
+manuscript_phase1/results/training_runs/
+
+# macOS / IDE
+.DS_Store
+.vscode/
+.idea/

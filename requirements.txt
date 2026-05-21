@@ -1,0 +1,24 @@
+# Reproducibility package — Python dependencies
+#
+# Derived from the actual imports in the copied paper-relevant code (not the
+# source repo's full superset). scikit-learn, torchvision, h5py, tqdm and
+# jupyter are intentionally omitted: they were only used by the excluded
+# direct-prediction / DHO-ridge effort and the exploratory notebooks.
+#
+# Tested with Python 3.14.5 and the exact versions noted in comments below.
+# Python 3.11+ is recommended for broad compatibility.
+
+numpy>=1.26,<3        # tested 2.4.5
+scipy>=1.13,<2        # tested 1.17.1
+matplotlib>=3.9,<4    # tested 3.10.9
+pandas>=2.2,<3        # tested 2.3.3
+torch>=2.3            # tested 2.12.0 (CPU is fine for the MLP/figures; GPU recommended for ST training)
+pyyaml>=6.0,<7        # tested 6.0.3
+
+# Required by scripts/train_spectral_transformer.py. Offline mode works without
+# a W&B account (no API key -> logs locally); the package is still imported
+# unconditionally, so it must be installed to run ST training.
+wandb>=0.17           # tested 0.27.0
+
+# Test suite only.
+pytest>=8.0,<9        # tested 8.4.2

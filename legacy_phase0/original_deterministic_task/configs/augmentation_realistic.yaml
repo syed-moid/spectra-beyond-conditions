@@ -1,0 +1,68 @@
+# Realistic augmentation configuration for Paper 1 training.
+#
+# Each augmentation block has:
+#   severity            : local severity multiplier (default 1.0).
+#                         Combined with global_severity in apply_pipeline
+#                         (the latter sweeps 0.5x/1x/2x/4x for Task 3 stress).
+#   realistic_*         : upper-bound values that severity=1 reaches.
+#
+# Pipeline order (fixed in code):
+#   Cat II: anharmonic_skew -> central_peak_width_perturbation
+#   Cat I : instrument_zero_offset -> instrument_resolution
+#           -> poisson_noise -> sloping_background
+
+master_seed: 20260516
+
+# ----- Category II : physics-model misspecification -----
+
+anharmonic_skew:
+  severity: 1.0
+  # Soft-mode lineshape distortion from cubic three-phonon coupling
+  # not captured by the harmonic DHO in the hybrid model. s > 0 broadens
+  # the high-omega tail.
+  realistic_skew_bound: 0.3
+
+central_peak_width_perturbation:
+  severity: 1.0
+  # Multiplicative perturbation of the intrinsic 1.5 meV central-peak HWHM.
+  # Literature reports CP widths in roughly 0.75-3.75 meV at 295-400 K.
+  realistic_multiplier_min: 0.5
+  realistic_multiplier_max: 2.5
+
+# ----- Category I : instrumental degradation -----
+
+instrument_zero_offset:
+  severity: 1.0
+  # Symmetric draw in [-bound, +bound] * severity.
+  realistic_delta_meV: 0.5
+
+instrument_resolution:
+  severity: 1.0
+  # Energy-dependent pseudo-Voigt: sigma(omega) = a + b * |omega|.
+  realistic_sigma_const_max: 0.8     # meV
+  realistic_sigma_lin_max: 0.06      # dimensionless
+  # eta widened from [0.2, 0.5] to [0.1, 0.5] so the distribution
+  # can match Shirane's near-Gaussian TAS resolution without forcing
+  # (see Session 3 design note).
+  eta_range: [0.1, 0.5]
+
+poisson_noise:
+  severity: 1.0
+  # noise_amplitude = 1 / sqrt(N_peak). realistic_max ~ 0.02 corresponds
+  # to N_peak ~ 2.5e3 (Shirane-era short measurement).
+  # Range widened from 0.01 to 0.02 after Shirane comparison showed
+  # Shirane-era SNR (~20% off-peak scatter) was at the edge of the
+  # original range; see SESSION_LOG Session 3 for details.
+  realistic_noise_amplitude_max: 0.02
+
+sloping_background:
+  severity: 1.0
+  # NOTE: bg magnitude is the first knob to widen if Shirane comparison
+  # shows background mismatch. 1970-era spectra can hit 20-40% in places.
+  realistic_magnitude_max: 0.30
+  bg_types: [linear, poly2, exp]
+  linear_slope_max_per_meV: 0.05
+  exp_tau_range_meV: [3.0, 15.0]
+
+# ----- Phase 2 stubs (raise NotImplementedError) -----
+# peak_overlap, missing_bins, multi_mode_interference

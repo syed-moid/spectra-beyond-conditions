@@ -1,0 +1,33 @@
+{
+  "a": {
+    "gate": "a_latent_propagation",
+    "peak_pos_std_meV": 0.038023512433823375,
+    "fwhm_std_meV": 0.5642467662801431,
+    "peak_range_meV": [
+      9.190317195325544,
+      9.290484140233723
+    ],
+    "plot": "/Users/syed.a.moid/Documents/WORKSPACES/PHD/INS_ML/spectra-beyond-conditions/manuscript_phase1/results/phase1_latent_propagation_check.png",
+    "passed": true
+  },
+  "b": {
+    "gate": "b_target_spread",
+    "phase0_cv": 0.0,
+    "phase1_median_cv": 3.166357914082688,
+    "phase1_cv_range": [
+      0.9483483085448663,
+      5.744407530534202
+    ],
+    "frac_conditions_below_0.05": 0.0,
+    "threshold": 0.05,
+    "passed": true
+  },
+  "c": {
+    "gate": "c_latent_roundtrip",
+    "max_relerr_M": 4.0820022790901876e-07,
+    "max_relerr_omega_Q": 1.7192244815554776e-07,
+    "max_relerr_Gamma_Q": 9.825851938425564e-08,
+    "tol": 0.001,
+    "passed": true
+  }
+}

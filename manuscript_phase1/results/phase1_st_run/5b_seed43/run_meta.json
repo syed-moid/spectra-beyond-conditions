@@ -1,0 +1,17 @@
+{
+  "arch": "5b",
+  "seed": 43,
+  "epochs_trained": 76,
+  "best_val_mae_logM": 0.37399107217788696,
+  "best_epoch": 66,
+  "final_train_loss": 0.015500140419602394,
+  "final_val_loss": 0.3061520457267761,
+  "train_val_ratio": 0.050628897098520184,
+  "val_MAE_omega_Q_meV": 0.26100102066993713,
+  "aborted": false,
+  "abort_reason": "",
+  "wall_time_sec": 164.95728182792664,
+  "mps_peak_gib": 1.371185302734375,
+  "mps_driver_end_gib": 1.371185302734375,
+  "train_curve_len": 76
+}
