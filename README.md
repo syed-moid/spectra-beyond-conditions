@@ -1,5 +1,7 @@
 # Spectra Beyond Conditions — Paper 1 Reproducibility Package
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20332582.svg)](https://doi.org/10.5281/zenodo.20332582)
+
 Reproducibility package for the manuscript:
 
 > **Spectra Beyond Conditions: A Diagnostic Framework for Spectral Representation
@@ -207,14 +209,19 @@ This repository does not redistribute copyrighted third-party figures or article
 
 ## Citation
 
+If you use this package, please cite the archived release via its Zenodo DOI:
+<https://doi.org/10.5281/zenodo.20332582>
+
 ```bibtex
 @misc{moid_spectra_beyond_conditions,
-  author       = {Moid, Syed},
+  author       = {Moid, Syed A.},
   title        = {Spectra Beyond Conditions: A Diagnostic Framework for Spectral
                   Representation Learning from Inelastic Neutron Scattering},
   year         = {2026},
-  note         = {Manuscript in preparation},
-  howpublished = {https://github.com/syed-moid/spectra-beyond-conditions}
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.20332582},
+  url          = {https://doi.org/10.5281/zenodo.20332582},
+  note         = {Manuscript in preparation}
 }
 ```
 
