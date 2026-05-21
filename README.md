@@ -199,9 +199,9 @@ python -m pytest tests/test_generator.py -q     # 12 tests: latent perturbation 
 
 ## License
 
-The source code in this repository is released under the MIT License; see `LICENSE`.
+The source code in this repository is released under the MIT License; see [`LICENSE`](LICENSE).
 
-Generated synthetic data, post-processed numerical results, figure data, configuration files, literature-extraction notes, and documentation are released under the Creative Commons Attribution 4.0 International License (CC BY 4.0); see `DATA_LICENSE.md`.
+Generated synthetic data, post-processed numerical results, figure data, configuration files, literature-extraction notes, and documentation are released under the Creative Commons Attribution 4.0 International License (CC BY 4.0); see [`DATA_LICENSE.md`](DATA_LICENSE.md).
 
 This repository does not redistribute copyrighted third-party figures or articles. Literature-derived anchoring values are provided as extracted numerical notes for reproducibility and should be cited through the original publications listed in the manuscript.
 
