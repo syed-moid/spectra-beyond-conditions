@@ -1,0 +1,16 @@
+{
+  "task": "A19",
+  "dataset_version": "v9",
+  "stopping_protocol": "extended",
+  "train_severity_protocol": "v7",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "wall_time_sec": 14493.608333826065,
+  "date_utc": "2026-09-09T03:27:03.776329+00:00",
+  "script": "a17_arch_sweep.py (width variants)",
+  "dataset": "manuscript_phase1/data/full_dataset_phase1_v9/dataset.npz",
+  "provenance_note": "dataset_version/task backfilled 2026-09-09: the training scripts wrote a hardcoded 'v8' literal; the runs read v9, as the per-run dataset path records. Numbers unaffected."
+}

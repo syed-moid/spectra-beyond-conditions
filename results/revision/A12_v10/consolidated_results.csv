@@ -1,0 +1,551 @@
+model_id,display_name,metric,eval_set,severity,statistic,value,sd,n_seeds,protocol,dataset_version,run_id,source_file
+tf_learned_patch,learned-patch transformer,MAE_logM,val,1.0,per_seed_mean,0.2125584040587882,0.0045638755280692,5.0,extended/v7,v10,derived:026fbc0fc614,results/revision/A4_v10_extended/gate_and_improvement.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,val,1.0,ensemble,0.1965212522879126,,5.0,extended/v7,v10,derived:026fbc0fc614,results/revision/A4_v10_extended/gate_and_improvement.csv
+tf_learned_patch,learned-patch transformer,improvement_vs_metadata_reference,val,1.0,ensemble,0.6799132468406155,,5.0,extended/v7,v10,derived:026fbc0fc614,results/revision/A4_v10_extended/gate_and_improvement.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,val,1.0,per_seed_mean,0.3354416973200825,0.0132926518193753,5.0,extended/v7,v10,derived:026fbc0fc614,results/revision/A4_v10_extended/gate_and_improvement.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,val,1.0,ensemble,0.3075134911034693,,5.0,extended/v7,v10,derived:026fbc0fc614,results/revision/A4_v10_extended/gate_and_improvement.csv
+tf_fourier,Fourier-feature transformer,improvement_vs_metadata_reference,val,1.0,ensemble,0.4991330770892357,,5.0,extended/v7,v10,derived:026fbc0fc614,results/revision/A4_v10_extended/gate_and_improvement.csv
+tf_fused,fused transformer,MAE_logM,val,1.0,per_seed_mean,0.1794072815789291,0.0035199377280564,5.0,extended/v7,v10,derived:026fbc0fc614,results/revision/A4_v10_extended/gate_and_improvement.csv
+tf_fused,fused transformer,MAE_logM,val,1.0,ensemble,0.167620816445106,,5.0,extended/v7,v10,derived:026fbc0fc614,results/revision/A4_v10_extended/gate_and_improvement.csv
+tf_fused,fused transformer,improvement_vs_metadata_reference,val,1.0,ensemble,0.726985238119515,,5.0,extended/v7,v10,derived:026fbc0fc614,results/revision/A4_v10_extended/gate_and_improvement.csv
+cnn_base,1D CNN,MAE_logM,val,1.0,per_seed_mean,0.2223177686780078,0.007395331205082,5.0,extended/v7,v10,derived:026fbc0fc614,results/revision/A4_v10_extended/gate_and_improvement.csv
+cnn_base,1D CNN,MAE_logM,val,1.0,ensemble,0.2040057326587224,,5.0,extended/v7,v10,derived:026fbc0fc614,results/revision/A4_v10_extended/gate_and_improvement.csv
+cnn_base,1D CNN,improvement_vs_metadata_reference,val,1.0,ensemble,0.6677227941893782,,5.0,extended/v7,v10,derived:026fbc0fc614,results/revision/A4_v10_extended/gate_and_improvement.csv
+tf_learned_patch_fixed1,learned-patch transformer (fixed s=1),MAE_logM,val,1.0,per_seed_mean,0.1854584240136338,0.0008733039999256,3.0,extended/fixed1,v10,derived:026fbc0fc614,results/revision/A4_v10_extended/gate_and_improvement.csv
+tf_learned_patch_fixed1,learned-patch transformer (fixed s=1),MAE_logM,val,1.0,ensemble,0.1763718761898988,,3.0,extended/fixed1,v10,derived:026fbc0fc614,results/revision/A4_v10_extended/gate_and_improvement.csv
+tf_learned_patch_fixed1,learned-patch transformer (fixed s=1),improvement_vs_metadata_reference,val,1.0,ensemble,0.7127318265021763,,3.0,extended/fixed1,v10,derived:026fbc0fc614,results/revision/A4_v10_extended/gate_and_improvement.csv
+tf_learned_patch_low,learned-patch transformer (s<=1),MAE_logM,val,1.0,per_seed_mean,0.2199239446467507,0.001721966592627,3.0,extended/low,v10,derived:026fbc0fc614,results/revision/A4_v10_extended/gate_and_improvement.csv
+tf_learned_patch_low,learned-patch transformer (s<=1),MAE_logM,val,1.0,ensemble,0.2097952830957368,,3.0,extended/low,v10,derived:026fbc0fc614,results/revision/A4_v10_extended/gate_and_improvement.csv
+tf_learned_patch_low,learned-patch transformer (s<=1),improvement_vs_metadata_reference,val,1.0,ensemble,0.658292982502032,,3.0,extended/low,v10,derived:026fbc0fc614,results/revision/A4_v10_extended/gate_and_improvement.csv
+tf_fused_fixed1,fused transformer (fixed s=1),MAE_logM,val,1.0,per_seed_mean,0.1559098285632061,0.001222183502402,3.0,extended/fixed1,v10,derived:026fbc0fc614,results/revision/A4_v10_extended/gate_and_improvement.csv
+tf_fused_fixed1,fused transformer (fixed s=1),MAE_logM,val,1.0,ensemble,0.1489528088859387,,3.0,extended/fixed1,v10,derived:026fbc0fc614,results/revision/A4_v10_extended/gate_and_improvement.csv
+tf_fused_fixed1,fused transformer (fixed s=1),improvement_vs_metadata_reference,val,1.0,ensemble,0.7573910179423228,,3.0,extended/fixed1,v10,derived:026fbc0fc614,results/revision/A4_v10_extended/gate_and_improvement.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,val,1.0,ensemble,0.1283230325182832,,3.0,extended/v7,v10,derived:a00ee693b342,results/revision/A17_v10/variant_paired_vs_base.csv
+cnn_k31,1D CNN (kernel 31),MAE_logM,val,1.0,ensemble,0.1331072255173465,,3.0,extended/v7,v10,derived:a00ee693b342,results/revision/A17_v10/variant_paired_vs_base.csv
+cnn_k21,1D CNN (kernel 21),MAE_logM,val,1.0,ensemble,0.1382177976735301,,3.0,extended/v7,v10,derived:a00ee693b342,results/revision/A17_v10/variant_paired_vs_base.csv
+cnn_k15,1D CNN (kernel 15),MAE_logM,val,1.0,ensemble,0.1523599846795038,,3.0,extended/v7,v10,derived:a00ee693b342,results/revision/A17_v10/variant_paired_vs_base.csv
+cnn_wide,1D CNN (wide),MAE_logM,val,1.0,ensemble,0.2087478512767658,,3.0,extended/v7,v10,derived:a00ee693b342,results/revision/A17_v10/variant_paired_vs_base.csv
+cnn_pm,1D CNN (parameter-matched),MAE_logM,val,1.0,ensemble,0.2088829166353281,,3.0,extended/v7,v10,derived:a00ee693b342,results/revision/A17_v10/variant_paired_vs_base.csv
+cnn_hd,1D CNN (half depth),MAE_logM,val,1.0,ensemble,0.2570723027703303,,3.0,extended/v7,v10,derived:a00ee693b342,results/revision/A17_v10/variant_paired_vs_base.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,val,1.0,ensemble,0.1710902948541264,,3.0,extended/v7,v10,derived:a00ee693b342,results/revision/A17_v10/variant_paired_vs_base.csv
+tf_p30,transformer (patch 30),MAE_logM,val,1.0,ensemble,0.1710936330497766,,3.0,extended/v7,v10,derived:a00ee693b342,results/revision/A17_v10/variant_paired_vs_base.csv
+tf_p40,transformer (patch 40),MAE_logM,val,1.0,ensemble,0.1769525591222897,,3.0,extended/v7,v10,derived:a00ee693b342,results/revision/A17_v10/variant_paired_vs_base.csv
+tf_p20,transformer (patch 20),MAE_logM,val,1.0,ensemble,0.1773562529764617,,3.0,extended/v7,v10,derived:a00ee693b342,results/revision/A17_v10/variant_paired_vs_base.csv
+tf_d8,transformer (8 layers),MAE_logM,val,1.0,ensemble,0.196210563673087,,3.0,extended/v7,v10,derived:a00ee693b342,results/revision/A17_v10/variant_paired_vs_base.csv
+tf_p5,transformer (patch 5),MAE_logM,val,1.0,ensemble,0.1975711256518076,,3.0,extended/v7,v10,derived:a00ee693b342,results/revision/A17_v10/variant_paired_vs_base.csv
+metadata_mlp_mse,metadata MLP (MSE),MAE_logM,val,1.0,per_seed_mean,0.6225487914737547,0.0010771230549426,5.0,,v7,derived:ba4e7073bce1,results/revision/A2/metadata_family_metrics.csv
+metadata_mlp_mse,metadata MLP (MSE),MAE_logM,stress_base,1.0,per_seed_mean,0.6526530195656232,0.0026416846714481,5.0,,v7,derived:ba4e7073bce1,results/revision/A2/metadata_family_metrics.csv
+metadata_mlp_mse,metadata MLP (MSE),MAE_logM,holdout_T,1.0,per_seed_mean,3.6427074101443098,0.5667317358490375,5.0,,v7,derived:ba4e7073bce1,results/revision/A2/metadata_family_metrics.csv
+metadata_mlp_mse,metadata MLP (MSE),MAE_logM,holdout_c,1.0,per_seed_mean,0.6274701909702272,0.0012590301503809,5.0,,v7,derived:ba4e7073bce1,results/revision/A2/metadata_family_metrics.csv
+metadata_mlp_mse,metadata MLP (MSE),MAE_logM,holdout_E,1.0,per_seed_mean,1.0306854424265524,0.1966961058245614,5.0,,v7,derived:ba4e7073bce1,results/revision/A2/metadata_family_metrics.csv
+metadata_mlp_l1,metadata MLP (L1),MAE_logM,val,1.0,per_seed_mean,0.6142034424230689,0.0003443089071583,5.0,,v7,derived:ba4e7073bce1,results/revision/A2/metadata_family_metrics.csv
+metadata_mlp_l1,metadata MLP (L1),MAE_logM,stress_base,1.0,per_seed_mean,0.6426308641291223,0.0010339222914457,5.0,,v7,derived:ba4e7073bce1,results/revision/A2/metadata_family_metrics.csv
+metadata_mlp_l1,metadata MLP (L1),MAE_logM,holdout_T,1.0,per_seed_mean,3.73480603597189,0.3783376116716154,5.0,,v7,derived:ba4e7073bce1,results/revision/A2/metadata_family_metrics.csv
+metadata_mlp_l1,metadata MLP (L1),MAE_logM,holdout_c,1.0,per_seed_mean,0.6232357062131632,0.000463967108009,5.0,,v7,derived:ba4e7073bce1,results/revision/A2/metadata_family_metrics.csv
+metadata_mlp_l1,metadata MLP (L1),MAE_logM,holdout_E,1.0,per_seed_mean,0.8437835361858209,0.1126159623976769,5.0,,v7,derived:ba4e7073bce1,results/revision/A2/metadata_family_metrics.csv
+metadata_mlp_mse_inner,"metadata MLP (MSE, inner-split)",MAE_logM,val,1.0,per_seed_mean,0.6262543489665027,0.0007748747924302,5.0,,v7,derived:ba4e7073bce1,results/revision/A2/metadata_family_metrics.csv
+metadata_mlp_mse_inner,"metadata MLP (MSE, inner-split)",MAE_logM,stress_base,1.0,per_seed_mean,0.6526525883461349,0.0012484128475818,5.0,,v7,derived:ba4e7073bce1,results/revision/A2/metadata_family_metrics.csv
+metadata_mlp_mse_inner,"metadata MLP (MSE, inner-split)",MAE_logM,holdout_T,1.0,per_seed_mean,3.6438026938978583,0.2651203225101411,5.0,,v7,derived:ba4e7073bce1,results/revision/A2/metadata_family_metrics.csv
+metadata_mlp_mse_inner,"metadata MLP (MSE, inner-split)",MAE_logM,holdout_c,1.0,per_seed_mean,0.6314172786716371,0.0011897169741207,5.0,,v7,derived:ba4e7073bce1,results/revision/A2/metadata_family_metrics.csv
+metadata_mlp_mse_inner,"metadata MLP (MSE, inner-split)",MAE_logM,holdout_E,1.0,per_seed_mean,1.0433024960340311,0.0708088955431738,5.0,,v7,derived:ba4e7073bce1,results/revision/A2/metadata_family_metrics.csv
+metadata_hgb,metadata GBT,MAE_logM,val,1.0,per_seed_mean,0.6313736711878377,0.0014581371061773,5.0,,v7,derived:ba4e7073bce1,results/revision/A2/metadata_family_metrics.csv
+metadata_hgb,metadata GBT,MAE_logM,stress_base,1.0,per_seed_mean,0.6542642194618016,0.0031514586998399,5.0,,v7,derived:ba4e7073bce1,results/revision/A2/metadata_family_metrics.csv
+metadata_hgb,metadata GBT,MAE_logM,holdout_T,1.0,per_seed_mean,0.9273007633465143,0.0281448531148037,5.0,,v7,derived:ba4e7073bce1,results/revision/A2/metadata_family_metrics.csv
+metadata_hgb,metadata GBT,MAE_logM,holdout_c,1.0,per_seed_mean,0.6358068830938279,0.001659558968757,5.0,,v7,derived:ba4e7073bce1,results/revision/A2/metadata_family_metrics.csv
+metadata_hgb,metadata GBT,MAE_logM,holdout_E,1.0,per_seed_mean,0.6890574999365737,0.0069876989252113,5.0,,v7,derived:ba4e7073bce1,results/revision/A2/metadata_family_metrics.csv
+metadata_knn,metadata k-NN,MAE_logM,val,1.0,per_seed_mean,0.6358193725037854,0.0,5.0,,v7,derived:ba4e7073bce1,results/revision/A2/metadata_family_metrics.csv
+metadata_knn,metadata k-NN,MAE_logM,stress_base,1.0,per_seed_mean,0.6774562110451515,0.0,5.0,,v7,derived:ba4e7073bce1,results/revision/A2/metadata_family_metrics.csv
+metadata_knn,metadata k-NN,MAE_logM,holdout_T,1.0,per_seed_mean,0.9555126500626404,0.0,5.0,,v7,derived:ba4e7073bce1,results/revision/A2/metadata_family_metrics.csv
+metadata_knn,metadata k-NN,MAE_logM,holdout_c,1.0,per_seed_mean,0.6563120714544008,0.0,5.0,,v7,derived:ba4e7073bce1,results/revision/A2/metadata_family_metrics.csv
+metadata_knn,metadata k-NN,MAE_logM,holdout_E,1.0,per_seed_mean,0.7783884816531402,0.0,5.0,,v7,derived:ba4e7073bce1,results/revision/A2/metadata_family_metrics.csv
+metadata_mlp_l1,metadata MLP (L1),MAE_logM,holdout_c_extrap,1.0,per_seed_mean,0.735318904347252,0.0046123333054486,5.0,,v8,derived:750d60b6be83,results/revision/A2_v8/metadata_family_metrics_v8_newsets.csv
+metadata_mlp_l1,metadata MLP (L1),MAE_logM,replicate_eval,1.0,per_seed_mean,0.6057139980559627,0.0004781539187428,5.0,,v8,derived:750d60b6be83,results/revision/A2_v8/metadata_family_metrics_v8_newsets.csv
+metadata_hgb,metadata GBT,MAE_logM,holdout_c_extrap,1.0,per_seed_mean,0.8368425311353134,0.0088351463319914,5.0,,v8,derived:750d60b6be83,results/revision/A2_v8/metadata_family_metrics_v8_newsets.csv
+metadata_hgb,metadata GBT,MAE_logM,replicate_eval,1.0,per_seed_mean,0.6193410044231007,0.0008876417071364,5.0,,v8,derived:750d60b6be83,results/revision/A2_v8/metadata_family_metrics_v8_newsets.csv
+metadata_knn,metadata k-NN,MAE_logM,holdout_c_extrap,1.0,per_seed_mean,0.8786554941490369,1.2412670766236366e-16,5.0,,v8,derived:750d60b6be83,results/revision/A2_v8/metadata_family_metrics_v8_newsets.csv
+metadata_knn,metadata k-NN,MAE_logM,replicate_eval,1.0,per_seed_mean,0.6299770691795479,0.0,5.0,,v8,derived:750d60b6be83,results/revision/A2_v8/metadata_family_metrics_v8_newsets.csv
+metadata_oracle,metadata oracle (bound),MAE_logM,val,1.0,bound,0.6129788844801018,,,,v10,derived:9424f5fe8fcd,results/revision/A1_v10/oracle_floor.json
+metadata_oracle,metadata oracle (bound),MAE_logM,stress_base,1.0,bound,0.6392036481299074,,,,v10,derived:9424f5fe8fcd,results/revision/A1_v10/oracle_floor.json
+metadata_oracle,metadata oracle (bound),MAE_logM,holdout_T,1.0,bound,0.6633976489425747,,,,v10,derived:9424f5fe8fcd,results/revision/A1_v10/oracle_floor.json
+metadata_oracle,metadata oracle (bound),MAE_logM,holdout_c,1.0,bound,0.624388145010036,,,,v10,derived:9424f5fe8fcd,results/revision/A1_v10/oracle_floor.json
+metadata_oracle,metadata oracle (bound),MAE_logM,holdout_E,1.0,bound,0.6396450932498997,,,,v10,derived:9424f5fe8fcd,results/revision/A1_v10/oracle_floor.json
+cnn_base,1D CNN,MAE_logM,stress_base,0.25,per_seed_mean,0.1129919924455182,0.009300673954244,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_base,1D CNN,MAE_logM,stress_base,0.25,ensemble,0.1059462435621597,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused,fused transformer,MAE_logM,stress_base,0.25,per_seed_mean,0.087466963267433,0.0031283147938328,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused,fused transformer,MAE_logM,stress_base,0.25,ensemble,0.0798406715199218,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,stress_base,0.25,per_seed_mean,0.1168706919421282,0.0070218409465695,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,stress_base,0.25,ensemble,0.1083484077943232,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,stress_base,0.25,per_seed_mean,0.2105555796985798,0.0099544062928517,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,stress_base,0.25,ensemble,0.1872910402127264,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_fixed1,learned-patch transformer (fixed s=1),MAE_logM,stress_base,0.25,per_seed_mean,0.1237134529687229,0.0043151876132641,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_fixed1,learned-patch transformer (fixed s=1),MAE_logM,stress_base,0.25,ensemble,0.114641608465529,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_low,learned-patch transformer (s<=1),MAE_logM,stress_base,0.25,per_seed_mean,0.0946094517851478,0.003515663401646,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_low,learned-patch transformer (s<=1),MAE_logM,stress_base,0.25,ensemble,0.0885692723990914,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused_fixed1,fused transformer (fixed s=1),MAE_logM,stress_base,0.25,per_seed_mean,0.1005879835584018,0.0065212477583926,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused_fixed1,fused transformer (fixed s=1),MAE_logM,stress_base,0.25,ensemble,0.0931485644817774,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,stress_base,0.25,per_seed_mean,0.0757016364998365,0.0166210509891727,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,stress_base,0.25,ensemble,0.0675477049777769,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,stress_base,0.25,per_seed_mean,0.1001058695182526,0.0031224382351603,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,stress_base,0.25,ensemble,0.0958899165067866,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_base,1D CNN,MAE_logM,stress_base,0.5,per_seed_mean,0.1357903688769831,0.0045448257624261,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_base,1D CNN,MAE_logM,stress_base,0.5,ensemble,0.1231141376764364,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused,fused transformer,MAE_logM,stress_base,0.5,per_seed_mean,0.1108134534831347,0.0024091860052325,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused,fused transformer,MAE_logM,stress_base,0.5,ensemble,0.1036439678012867,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,stress_base,0.5,per_seed_mean,0.1345576734831546,0.0027159074022975,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,stress_base,0.5,ensemble,0.1254295956103651,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,stress_base,0.5,per_seed_mean,0.2538776511501824,0.016237649378135,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,stress_base,0.5,ensemble,0.2312648439735185,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_fixed1,learned-patch transformer (fixed s=1),MAE_logM,stress_base,0.5,per_seed_mean,0.1359761290191875,0.0043975269102677,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_fixed1,learned-patch transformer (fixed s=1),MAE_logM,stress_base,0.5,ensemble,0.1264584653864182,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_low,learned-patch transformer (s<=1),MAE_logM,stress_base,0.5,per_seed_mean,0.1183356234062047,0.0010971202283068,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_low,learned-patch transformer (s<=1),MAE_logM,stress_base,0.5,ensemble,0.1107734734908706,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused_fixed1,fused transformer (fixed s=1),MAE_logM,stress_base,0.5,per_seed_mean,0.1113697023199253,0.0027596131463055,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused_fixed1,fused transformer (fixed s=1),MAE_logM,stress_base,0.5,ensemble,0.103417173222022,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,stress_base,0.5,per_seed_mean,0.091213356994759,0.0163523866046067,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,stress_base,0.5,ensemble,0.0825137268105677,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,stress_base,0.5,per_seed_mean,0.1147846311568479,0.0027843106736545,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,stress_base,0.5,ensemble,0.1097878693214969,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_base,1D CNN,MAE_logM,stress_base,0.75,per_seed_mean,0.1647413811953734,0.0042914184927941,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_base,1D CNN,MAE_logM,stress_base,0.75,ensemble,0.1516676021922082,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused,fused transformer,MAE_logM,stress_base,0.75,per_seed_mean,0.13889065566582,0.0046461011750412,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused,fused transformer,MAE_logM,stress_base,0.75,ensemble,0.1308227968350424,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,stress_base,0.75,per_seed_mean,0.1629163539966613,0.0056700901200295,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,stress_base,0.75,ensemble,0.151105546538234,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,stress_base,0.75,per_seed_mean,0.2843013825692618,0.018208772582635,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,stress_base,0.75,ensemble,0.2634957874240235,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_fixed1,learned-patch transformer (fixed s=1),MAE_logM,stress_base,0.75,per_seed_mean,0.1458844342772129,0.0018645309266624,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_fixed1,learned-patch transformer (fixed s=1),MAE_logM,stress_base,0.75,ensemble,0.1370046170357284,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_low,learned-patch transformer (s<=1),MAE_logM,stress_base,0.75,per_seed_mean,0.1472752844311552,0.0037390408923943,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_low,learned-patch transformer (s<=1),MAE_logM,stress_base,0.75,ensemble,0.1378117463612674,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused_fixed1,fused transformer (fixed s=1),MAE_logM,stress_base,0.75,per_seed_mean,0.123746127014913,0.0034105086298594,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused_fixed1,fused transformer (fixed s=1),MAE_logM,stress_base,0.75,ensemble,0.1164154959760414,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,stress_base,0.75,per_seed_mean,0.1074540342500693,0.016440958888767,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,stress_base,0.75,ensemble,0.0990445536163084,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,stress_base,0.75,per_seed_mean,0.1346358954701419,0.0023369881186321,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,stress_base,0.75,ensemble,0.1284781914407434,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_base,1D CNN,MAE_logM,stress_base,1.0,per_seed_mean,0.1919455781127114,0.0045756259638734,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_base,1D CNN,MAE_logM,stress_base,1.0,ensemble,0.1771984307027893,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused,fused transformer,MAE_logM,stress_base,1.0,per_seed_mean,0.1612345825544952,0.0022481675967303,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused,fused transformer,MAE_logM,stress_base,1.0,ensemble,0.1528257021539767,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,stress_base,1.0,per_seed_mean,0.1888251115384912,0.0041363959977942,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,stress_base,1.0,ensemble,0.1754304270707071,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,stress_base,1.0,per_seed_mean,0.3313449874889629,0.0265664156988627,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,stress_base,1.0,ensemble,0.3100460275880933,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_fixed1,learned-patch transformer (fixed s=1),MAE_logM,stress_base,1.0,per_seed_mean,0.1681267980606159,0.0061220282334955,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_fixed1,learned-patch transformer (fixed s=1),MAE_logM,stress_base,1.0,ensemble,0.1571187544627415,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_low,learned-patch transformer (s<=1),MAE_logM,stress_base,1.0,per_seed_mean,0.1954873871525802,0.0057853497266724,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_low,learned-patch transformer (s<=1),MAE_logM,stress_base,1.0,ensemble,0.1864776268972938,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused_fixed1,fused transformer (fixed s=1),MAE_logM,stress_base,1.0,per_seed_mean,0.1456845476163812,0.0043654037667556,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused_fixed1,fused transformer (fixed s=1),MAE_logM,stress_base,1.0,ensemble,0.1392350123646791,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,stress_base,1.0,per_seed_mean,0.1234240159066974,0.0160358571428225,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,stress_base,1.0,ensemble,0.1143099650109231,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,stress_base,1.0,per_seed_mean,0.1552040554682546,0.0001547073183806,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,stress_base,1.0,ensemble,0.1470338234267542,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_base,1D CNN,MAE_logM,stress_base,1.5,per_seed_mean,0.2428433634732093,0.0093927964400733,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_base,1D CNN,MAE_logM,stress_base,1.5,ensemble,0.2253340212741188,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused,fused transformer,MAE_logM,stress_base,1.5,per_seed_mean,0.2081744665068562,0.0084439390259314,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused,fused transformer,MAE_logM,stress_base,1.5,ensemble,0.1977503565451901,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,stress_base,1.5,per_seed_mean,0.2442032366229252,0.0055477778067104,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,stress_base,1.5,ensemble,0.2251685859072034,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,stress_base,1.5,per_seed_mean,0.4026553898370301,0.017702521574197,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,stress_base,1.5,ensemble,0.3809199434339161,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_fixed1,learned-patch transformer (fixed s=1),MAE_logM,stress_base,1.5,per_seed_mean,0.2381058456657688,0.0063267045896534,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_fixed1,learned-patch transformer (fixed s=1),MAE_logM,stress_base,1.5,ensemble,0.2234874238173346,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_low,learned-patch transformer (s<=1),MAE_logM,stress_base,1.5,per_seed_mean,0.3201357724214834,0.0032101564963545,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_low,learned-patch transformer (s<=1),MAE_logM,stress_base,1.5,ensemble,0.3014019779408078,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused_fixed1,fused transformer (fixed s=1),MAE_logM,stress_base,1.5,per_seed_mean,0.206497641976419,0.0042324439922681,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused_fixed1,fused transformer (fixed s=1),MAE_logM,stress_base,1.5,ensemble,0.1965387273926127,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,stress_base,1.5,per_seed_mean,0.1613674700915127,0.0135564106702412,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,stress_base,1.5,ensemble,0.1493184386443038,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,stress_base,1.5,per_seed_mean,0.1952469464351909,0.0025017817904775,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,stress_base,1.5,ensemble,0.1851053689805683,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_base,1D CNN,MAE_logM,stress_base,2.0,per_seed_mean,0.295887297525818,0.0082681599340573,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_base,1D CNN,MAE_logM,stress_base,2.0,ensemble,0.2772246308521712,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused,fused transformer,MAE_logM,stress_base,2.0,per_seed_mean,0.2545079008646514,0.005654561860112,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused,fused transformer,MAE_logM,stress_base,2.0,ensemble,0.2416241027910083,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,stress_base,2.0,per_seed_mean,0.3041604426429886,0.0095573988795208,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,stress_base,2.0,ensemble,0.2791993201274865,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,stress_base,2.0,per_seed_mean,0.4773608354675264,0.0153441278261252,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,stress_base,2.0,ensemble,0.446296033324105,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_fixed1,learned-patch transformer (fixed s=1),MAE_logM,stress_base,2.0,per_seed_mean,0.3436726599852894,0.0222082100955488,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_fixed1,learned-patch transformer (fixed s=1),MAE_logM,stress_base,2.0,ensemble,0.3241427081974922,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_low,learned-patch transformer (s<=1),MAE_logM,stress_base,2.0,per_seed_mean,0.4622817557852723,0.0239301918417821,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_low,learned-patch transformer (s<=1),MAE_logM,stress_base,2.0,ensemble,0.4354596883970452,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused_fixed1,fused transformer (fixed s=1),MAE_logM,stress_base,2.0,per_seed_mean,0.306129360679866,0.0192008778156694,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused_fixed1,fused transformer (fixed s=1),MAE_logM,stress_base,2.0,ensemble,0.2914543149142679,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,stress_base,2.0,per_seed_mean,0.2022281493113366,0.0101188608328555,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,stress_base,2.0,ensemble,0.1889370532569264,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,stress_base,2.0,per_seed_mean,0.2434005364234815,0.0096643687879975,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,stress_base,2.0,ensemble,0.2278421415236082,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_base,1D CNN,MAE_logM,stress_base,3.0,per_seed_mean,0.4400537965832226,0.0013489473336664,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_base,1D CNN,MAE_logM,stress_base,3.0,ensemble,0.4259309592625619,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused,fused transformer,MAE_logM,stress_base,3.0,per_seed_mean,0.3543483322041896,0.0077762655613836,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused,fused transformer,MAE_logM,stress_base,3.0,ensemble,0.3375202190409233,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,stress_base,3.0,per_seed_mean,0.4265472909246711,0.0081051544340349,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,stress_base,3.0,ensemble,0.3958146226575888,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,stress_base,3.0,per_seed_mean,0.6133877304341843,0.0189863039338868,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,stress_base,3.0,ensemble,0.576364327656715,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_fixed1,learned-patch transformer (fixed s=1),MAE_logM,stress_base,3.0,per_seed_mean,0.6532783212624628,0.0732098893653275,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_fixed1,learned-patch transformer (fixed s=1),MAE_logM,stress_base,3.0,ensemble,0.6173047487621596,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_low,learned-patch transformer (s<=1),MAE_logM,stress_base,3.0,per_seed_mean,0.7956205322055259,0.0510654125825516,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_low,learned-patch transformer (s<=1),MAE_logM,stress_base,3.0,ensemble,0.7570736209961644,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused_fixed1,fused transformer (fixed s=1),MAE_logM,stress_base,3.0,per_seed_mean,0.6062862535335954,0.0422389059085932,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused_fixed1,fused transformer (fixed s=1),MAE_logM,stress_base,3.0,ensemble,0.5754160072574489,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,stress_base,3.0,per_seed_mean,0.3059641383278781,0.0137397350086548,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,stress_base,3.0,ensemble,0.2945093779263338,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,stress_base,3.0,per_seed_mean,0.3603798745932774,0.0057201207685223,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,stress_base,3.0,ensemble,0.3443009933697403,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_base,1D CNN,MAE_logM,stress_base,4.0,per_seed_mean,0.5868875762880721,0.0016886462635198,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_base,1D CNN,MAE_logM,stress_base,4.0,ensemble,0.5729046265141242,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused,fused transformer,MAE_logM,stress_base,4.0,per_seed_mean,0.4808528615305502,0.0185427787250291,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused,fused transformer,MAE_logM,stress_base,4.0,ensemble,0.4605848821354254,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,stress_base,4.0,per_seed_mean,0.5661144970235795,0.012744305363909,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,stress_base,4.0,ensemble,0.5240012598076205,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,stress_base,4.0,per_seed_mean,0.7582886878812106,0.0280196886015147,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,stress_base,4.0,ensemble,0.7180037728188715,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_fixed1,learned-patch transformer (fixed s=1),MAE_logM,stress_base,4.0,per_seed_mean,0.9658629535400708,0.1071440953425949,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_fixed1,learned-patch transformer (fixed s=1),MAE_logM,stress_base,4.0,ensemble,0.903536295348074,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_low,learned-patch transformer (s<=1),MAE_logM,stress_base,4.0,per_seed_mean,1.0944718995164588,0.0600758254645766,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_learned_patch_low,learned-patch transformer (s<=1),MAE_logM,stress_base,4.0,ensemble,1.047525122647125,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused_fixed1,fused transformer (fixed s=1),MAE_logM,stress_base,4.0,per_seed_mean,0.9464896738187392,0.0701207935185575,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_fused_fixed1,fused transformer (fixed s=1),MAE_logM,stress_base,4.0,ensemble,0.89790340298787,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,stress_base,4.0,per_seed_mean,0.4278954064723376,0.0158047840757462,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,stress_base,4.0,ensemble,0.4168517807864541,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,stress_base,4.0,per_seed_mean,0.4870858892458606,0.0039197711041109,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,stress_base,4.0,ensemble,0.4690942949535554,,3.0,extended/v7,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+metadata_mlp_l1,metadata MLP (L1),MAE_logM,stress_base,0.25,per_seed_mean,0.6423995689308856,0.0,3.0,,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+metadata_mlp_l1,metadata MLP (L1),MAE_logM,stress_base,0.25,ensemble,0.6423995689308856,,3.0,,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+metadata_mlp_l1,metadata MLP (L1),MAE_logM,stress_base,0.5,per_seed_mean,0.6423995689308856,0.0,3.0,,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+metadata_mlp_l1,metadata MLP (L1),MAE_logM,stress_base,0.5,ensemble,0.6423995689308856,,3.0,,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+metadata_mlp_l1,metadata MLP (L1),MAE_logM,stress_base,0.75,per_seed_mean,0.6423995689308856,0.0,3.0,,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+metadata_mlp_l1,metadata MLP (L1),MAE_logM,stress_base,0.75,ensemble,0.6423995689308856,,3.0,,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+metadata_mlp_l1,metadata MLP (L1),MAE_logM,stress_base,1.0,ensemble,0.6423995689308856,,3.0,,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+metadata_mlp_l1,metadata MLP (L1),MAE_logM,stress_base,1.5,per_seed_mean,0.6423995689308856,0.0,3.0,,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+metadata_mlp_l1,metadata MLP (L1),MAE_logM,stress_base,1.5,ensemble,0.6423995689308856,,3.0,,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+metadata_mlp_l1,metadata MLP (L1),MAE_logM,stress_base,2.0,per_seed_mean,0.6423995689308856,0.0,3.0,,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+metadata_mlp_l1,metadata MLP (L1),MAE_logM,stress_base,2.0,ensemble,0.6423995689308856,,3.0,,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+metadata_mlp_l1,metadata MLP (L1),MAE_logM,stress_base,3.0,per_seed_mean,0.6423995689308856,0.0,3.0,,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+metadata_mlp_l1,metadata MLP (L1),MAE_logM,stress_base,3.0,ensemble,0.6423995689308856,,3.0,,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+metadata_mlp_l1,metadata MLP (L1),MAE_logM,stress_base,4.0,per_seed_mean,0.6423995689308856,0.0,3.0,,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+metadata_mlp_l1,metadata MLP (L1),MAE_logM,stress_base,4.0,ensemble,0.6423995689308856,,3.0,,v10,derived:098eef95a3d2,results/revision/A8_v10/dense_sweep_stress.csv
+cnn_k45,tuned 1D CNN (kernel 45),within_condition_rho,replicate_eval,0.25,ensemble,0.9866827067669172,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,replicate_eval,0.25,ensemble,0.0723883294396433,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_p60,tuned transformer (patch 60),within_condition_rho,replicate_eval,0.25,ensemble,0.9781834586466164,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,replicate_eval,0.25,ensemble,0.0985041429240614,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_base,1D CNN,within_condition_rho,replicate_eval,0.25,ensemble,0.9710135338345864,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_base,1D CNN,MAE_logM,replicate_eval,0.25,ensemble,0.108897062267095,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fused,fused transformer,within_condition_rho,replicate_eval,0.25,ensemble,0.9771368421052632,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fused,fused transformer,MAE_logM,replicate_eval,0.25,ensemble,0.0777650870131383,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_learned_patch,learned-patch transformer,within_condition_rho,replicate_eval,0.25,ensemble,0.9740330827067668,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,replicate_eval,0.25,ensemble,0.1078912299864245,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fourier,Fourier-feature transformer,within_condition_rho,replicate_eval,0.25,ensemble,0.9220571428571428,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,replicate_eval,0.25,ensemble,0.1788974984262415,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_k45,tuned 1D CNN (kernel 45),within_condition_rho,replicate_eval,0.5,ensemble,0.9786947368421052,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,replicate_eval,0.5,ensemble,0.0877930037597094,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_p60,tuned transformer (patch 60),within_condition_rho,replicate_eval,0.5,ensemble,0.9674706766917291,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,replicate_eval,0.5,ensemble,0.1154138591694945,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_base,1D CNN,within_condition_rho,replicate_eval,0.5,ensemble,0.9582496240601502,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_base,1D CNN,MAE_logM,replicate_eval,0.5,ensemble,0.132303872991399,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fused,fused transformer,within_condition_rho,replicate_eval,0.5,ensemble,0.9630135338345864,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fused,fused transformer,MAE_logM,replicate_eval,0.5,ensemble,0.1047443285248091,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_learned_patch,learned-patch transformer,within_condition_rho,replicate_eval,0.5,ensemble,0.9557112781954886,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,replicate_eval,0.5,ensemble,0.132407003317298,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fourier,Fourier-feature transformer,within_condition_rho,replicate_eval,0.5,ensemble,0.8870616541353383,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,replicate_eval,0.5,ensemble,0.2177314976629648,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_k45,tuned 1D CNN (kernel 45),within_condition_rho,replicate_eval,0.75,ensemble,0.9660330827067668,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,replicate_eval,0.75,ensemble,0.1058406790913086,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_p60,tuned transformer (patch 60),within_condition_rho,replicate_eval,0.75,ensemble,0.951945864661654,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,replicate_eval,0.75,ensemble,0.1357855756824232,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_base,1D CNN,within_condition_rho,replicate_eval,0.75,ensemble,0.935163909774436,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_base,1D CNN,MAE_logM,replicate_eval,0.75,ensemble,0.1635311826173469,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fused,fused transformer,within_condition_rho,replicate_eval,0.75,ensemble,0.9446135338345862,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fused,fused transformer,MAE_logM,replicate_eval,0.75,ensemble,0.1311070287699919,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_learned_patch,learned-patch transformer,within_condition_rho,replicate_eval,0.75,ensemble,0.9309112781954888,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,replicate_eval,0.75,ensemble,0.1589540067012745,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fourier,Fourier-feature transformer,within_condition_rho,replicate_eval,0.75,ensemble,0.8497443609022555,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,replicate_eval,0.75,ensemble,0.2628414841071156,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_k45,tuned 1D CNN (kernel 45),within_condition_rho,replicate_eval,1.0,ensemble,0.9524030075187968,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,replicate_eval,1.0,ensemble,0.1244882304924042,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_p60,tuned transformer (patch 60),within_condition_rho,replicate_eval,1.0,ensemble,0.9344721804511276,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,replicate_eval,1.0,ensemble,0.1570648225765859,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_base,1D CNN,within_condition_rho,replicate_eval,1.0,ensemble,0.9062195488721804,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_base,1D CNN,MAE_logM,replicate_eval,1.0,ensemble,0.1963780258236174,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fused,fused transformer,within_condition_rho,replicate_eval,1.0,ensemble,0.9257142857142856,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fused,fused transformer,MAE_logM,replicate_eval,1.0,ensemble,0.1546256741425035,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_learned_patch,learned-patch transformer,within_condition_rho,replicate_eval,1.0,ensemble,0.9088,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,replicate_eval,1.0,ensemble,0.1850663833625961,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fourier,Fourier-feature transformer,within_condition_rho,replicate_eval,1.0,ensemble,0.8113503759398495,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,replicate_eval,1.0,ensemble,0.3091503045861218,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_k45,tuned 1D CNN (kernel 45),within_condition_rho,replicate_eval,1.5,ensemble,0.9204872180451128,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,replicate_eval,1.5,ensemble,0.1637603312003513,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_p60,tuned transformer (patch 60),within_condition_rho,replicate_eval,1.5,ensemble,0.892336842105263,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,replicate_eval,1.5,ensemble,0.2019049527806871,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_base,1D CNN,within_condition_rho,replicate_eval,1.5,ensemble,0.8473624060150375,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_base,1D CNN,MAE_logM,replicate_eval,1.5,ensemble,0.2608184291839564,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fused,fused transformer,within_condition_rho,replicate_eval,1.5,ensemble,0.8821353383458647,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fused,fused transformer,MAE_logM,replicate_eval,1.5,ensemble,0.203784349699772,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_learned_patch,learned-patch transformer,within_condition_rho,replicate_eval,1.5,ensemble,0.8618345864661653,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,replicate_eval,1.5,ensemble,0.2360869846691355,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fourier,Fourier-feature transformer,within_condition_rho,replicate_eval,1.5,ensemble,0.7470977443609021,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,replicate_eval,1.5,ensemble,0.3856010541823325,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_k45,tuned 1D CNN (kernel 45),within_condition_rho,replicate_eval,2.0,ensemble,0.8812270676691728,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,replicate_eval,2.0,ensemble,0.2077991192571658,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_p60,tuned transformer (patch 60),within_condition_rho,replicate_eval,2.0,ensemble,0.8470736842105263,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,replicate_eval,2.0,ensemble,0.2530645721428952,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_base,1D CNN,within_condition_rho,replicate_eval,2.0,ensemble,0.790790977443609,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_base,1D CNN,MAE_logM,replicate_eval,2.0,ensemble,0.3200693490540737,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fused,fused transformer,within_condition_rho,replicate_eval,2.0,ensemble,0.8292090225563908,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fused,fused transformer,MAE_logM,replicate_eval,2.0,ensemble,0.2536489531036079,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_learned_patch,learned-patch transformer,within_condition_rho,replicate_eval,2.0,ensemble,0.8114706766917293,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,replicate_eval,2.0,ensemble,0.2879789460647208,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fourier,Fourier-feature transformer,within_condition_rho,replicate_eval,2.0,ensemble,0.6658165413533834,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,replicate_eval,2.0,ensemble,0.4626442355310762,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_k45,tuned 1D CNN (kernel 45),within_condition_rho,replicate_eval,3.0,ensemble,0.7834285714285714,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,replicate_eval,3.0,ensemble,0.3147655055638866,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_p60,tuned transformer (patch 60),within_condition_rho,replicate_eval,3.0,ensemble,0.7444390977443609,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,replicate_eval,3.0,ensemble,0.366682181034845,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_base,1D CNN,within_condition_rho,replicate_eval,3.0,ensemble,0.6724150375939848,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_base,1D CNN,MAE_logM,replicate_eval,3.0,ensemble,0.4476031853046754,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fused,fused transformer,within_condition_rho,replicate_eval,3.0,ensemble,0.7034345864661653,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fused,fused transformer,MAE_logM,replicate_eval,3.0,ensemble,0.3615214613104536,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_learned_patch,learned-patch transformer,within_condition_rho,replicate_eval,3.0,ensemble,0.7032842105263157,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,replicate_eval,3.0,ensemble,0.4137990312451405,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fourier,Fourier-feature transformer,within_condition_rho,replicate_eval,3.0,ensemble,0.5245233082706766,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,replicate_eval,3.0,ensemble,0.6166126056815812,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_k45,tuned 1D CNN (kernel 45),within_condition_rho,replicate_eval,4.0,ensemble,0.6660390977443609,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,replicate_eval,4.0,ensemble,0.4413501092762411,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_p60,tuned transformer (patch 60),within_condition_rho,replicate_eval,4.0,ensemble,0.6265744360902255,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,replicate_eval,4.0,ensemble,0.4990929326745947,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_base,1D CNN,within_condition_rho,replicate_eval,4.0,ensemble,0.551590977443609,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_base,1D CNN,MAE_logM,replicate_eval,4.0,ensemble,0.5851562293671301,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fused,fused transformer,within_condition_rho,replicate_eval,4.0,ensemble,0.5718796992481202,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fused,fused transformer,MAE_logM,replicate_eval,4.0,ensemble,0.4780444145747458,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_learned_patch,learned-patch transformer,within_condition_rho,replicate_eval,4.0,ensemble,0.5705744360902256,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,replicate_eval,4.0,ensemble,0.5599163003942483,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fourier,Fourier-feature transformer,within_condition_rho,replicate_eval,4.0,ensemble,0.4070075187969925,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,replicate_eval,4.0,ensemble,0.750778260777459,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_k45,tuned 1D CNN (kernel 45),within_condition_rho,replicate_eval,6.0,ensemble,0.4643248120300752,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,replicate_eval,6.0,ensemble,0.6829444089679744,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_p60,tuned transformer (patch 60),within_condition_rho,replicate_eval,6.0,ensemble,0.3868090225563909,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,replicate_eval,6.0,ensemble,0.7971870376751788,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_base,1D CNN,within_condition_rho,replicate_eval,6.0,ensemble,0.3890105263157894,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_base,1D CNN,MAE_logM,replicate_eval,6.0,ensemble,0.7814713269523496,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fused,fused transformer,within_condition_rho,replicate_eval,6.0,ensemble,0.3442105263157894,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fused,fused transformer,MAE_logM,replicate_eval,6.0,ensemble,0.7068359625484025,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_learned_patch,learned-patch transformer,within_condition_rho,replicate_eval,6.0,ensemble,0.3585443609022556,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,replicate_eval,6.0,ensemble,0.8405797102944984,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fourier,Fourier-feature transformer,within_condition_rho,replicate_eval,6.0,ensemble,0.2534436090225563,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,replicate_eval,6.0,ensemble,0.985601000540571,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_k45,tuned 1D CNN (kernel 45),within_condition_rho,replicate_eval,8.0,ensemble,0.2946045112781954,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,replicate_eval,8.0,ensemble,0.9274477941841204,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_p60,tuned transformer (patch 60),within_condition_rho,replicate_eval,8.0,ensemble,0.1974255639097744,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,replicate_eval,8.0,ensemble,1.11796644684192,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_base,1D CNN,within_condition_rho,replicate_eval,8.0,ensemble,0.2834827067669173,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_base,1D CNN,MAE_logM,replicate_eval,8.0,ensemble,0.9271181354318444,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fused,fused transformer,within_condition_rho,replicate_eval,8.0,ensemble,0.1856240601503759,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fused,fused transformer,MAE_logM,replicate_eval,8.0,ensemble,0.9929691392158354,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_learned_patch,learned-patch transformer,within_condition_rho,replicate_eval,8.0,ensemble,0.1997774436090225,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,replicate_eval,8.0,ensemble,1.157594017350926,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fourier,Fourier-feature transformer,within_condition_rho,replicate_eval,8.0,ensemble,0.1414977443609022,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,replicate_eval,8.0,ensemble,1.185082800409926,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_k45,tuned 1D CNN (kernel 45),within_condition_rho,replicate_eval,12.0,ensemble,0.1057263157894736,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,replicate_eval,12.0,ensemble,1.2692409101510118,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_p60,tuned transformer (patch 60),within_condition_rho,replicate_eval,12.0,ensemble,0.0458766917293233,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,replicate_eval,12.0,ensemble,1.4666591382058107,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_base,1D CNN,within_condition_rho,replicate_eval,12.0,ensemble,0.1540270676691729,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+cnn_base,1D CNN,MAE_logM,replicate_eval,12.0,ensemble,1.125737352094534,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fused,fused transformer,within_condition_rho,replicate_eval,12.0,ensemble,0.0352721804511278,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fused,fused transformer,MAE_logM,replicate_eval,12.0,ensemble,1.3303629557493275,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_learned_patch,learned-patch transformer,within_condition_rho,replicate_eval,12.0,ensemble,0.036366917293233,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,replicate_eval,12.0,ensemble,1.4978829940764684,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fourier,Fourier-feature transformer,within_condition_rho,replicate_eval,12.0,ensemble,0.0334135338345864,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,replicate_eval,12.0,ensemble,1.406836921843864,,3.0,extended/v7,v10,derived:616695149215,results/revision/A14_v10/extended_rho_replicate.csv
+metadata_oracle,metadata oracle (bound),MAE_logM,val,1.0,ensemble,0.6129788844801018,,3.0,,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+metadata_mlp_l1,metadata MLP (L1),MAE_logM,val,1.0,ensemble,0.6139624659507745,,3.0,,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+metadata_hgb,metadata GBT,MAE_logM,val,1.0,ensemble,0.6285395265802399,,3.0,,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+metadata_oracle,metadata oracle (bound),MAE_logM,holdout_c,1.0,ensemble,0.6243881450100358,,3.0,,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+metadata_mlp_l1,metadata MLP (L1),MAE_logM,holdout_c,1.0,ensemble,0.6230908532570637,,3.0,,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+metadata_hgb,metadata GBT,MAE_logM,holdout_c,1.0,ensemble,0.632876818442435,,3.0,,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+cnn_base,1D CNN,MAE_logM,holdout_c,1.0,ensemble,0.1708695984649385,,3.0,extended/v7,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+tf_fused,fused transformer,MAE_logM,holdout_c,1.0,ensemble,0.1495127406195787,,3.0,extended/v7,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,holdout_c,1.0,ensemble,0.1824678311718925,,3.0,extended/v7,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,holdout_c,1.0,ensemble,0.2834934227506824,,3.0,extended/v7,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,holdout_c,1.0,ensemble,0.1069690881152268,,3.0,extended/v7,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,holdout_c,1.0,ensemble,0.1430266180180164,,3.0,extended/v7,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+metadata_oracle,metadata oracle (bound),MAE_logM,holdout_c_extrap,1.0,ensemble,0.7125826961671051,,3.0,,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+metadata_mlp_l1,metadata MLP (L1),MAE_logM,holdout_c_extrap,1.0,ensemble,0.7344535200862237,,3.0,,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+metadata_hgb,metadata GBT,MAE_logM,holdout_c_extrap,1.0,ensemble,0.8348203577274342,,3.0,,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+cnn_base,1D CNN,MAE_logM,holdout_c_extrap,1.0,ensemble,0.3257871271662637,,3.0,extended/v7,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+tf_fused,fused transformer,MAE_logM,holdout_c_extrap,1.0,ensemble,0.252470868694551,,3.0,extended/v7,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,holdout_c_extrap,1.0,ensemble,0.2699140945678369,,3.0,extended/v7,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,holdout_c_extrap,1.0,ensemble,0.4882813039093939,,3.0,extended/v7,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,holdout_c_extrap,1.0,ensemble,0.1964392122233161,,3.0,extended/v7,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,holdout_c_extrap,1.0,ensemble,0.2467426820070984,,3.0,extended/v7,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+metadata_oracle,metadata oracle (bound),MAE_logM,holdout_E,1.0,ensemble,0.6396450932498996,,3.0,,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+metadata_mlp_l1,metadata MLP (L1),MAE_logM,holdout_E,1.0,ensemble,0.8339218236699004,,3.0,,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+metadata_hgb,metadata GBT,MAE_logM,holdout_E,1.0,ensemble,0.6858497510199358,,3.0,,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+cnn_base,1D CNN,MAE_logM,holdout_E,1.0,ensemble,0.2205299339630554,,3.0,extended/v7,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+tf_fused,fused transformer,MAE_logM,holdout_E,1.0,ensemble,0.1816296627432231,,3.0,extended/v7,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,holdout_E,1.0,ensemble,0.212792144938923,,3.0,extended/v7,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,holdout_E,1.0,ensemble,0.3343727372176852,,3.0,extended/v7,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,holdout_E,1.0,ensemble,0.1344153968557133,,3.0,extended/v7,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,holdout_E,1.0,ensemble,0.1841649989353988,,3.0,extended/v7,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+metadata_oracle,metadata oracle (bound),MAE_logM,holdout_T,1.0,ensemble,0.6633976489425747,,3.0,,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+metadata_mlp_l1,metadata MLP (L1),MAE_logM,holdout_T,1.0,ensemble,3.7331396185206898,,3.0,,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+metadata_hgb,metadata GBT,MAE_logM,holdout_T,1.0,ensemble,0.9253112622774652,,3.0,,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+cnn_base,1D CNN,MAE_logM,holdout_T,1.0,ensemble,0.9146877006224694,,3.0,extended/v7,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+tf_fused,fused transformer,MAE_logM,holdout_T,1.0,ensemble,0.477302210345529,,3.0,extended/v7,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+tf_learned_patch,learned-patch transformer,MAE_logM,holdout_T,1.0,ensemble,0.5416770953243338,,3.0,extended/v7,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+tf_fourier,Fourier-feature transformer,MAE_logM,holdout_T,1.0,ensemble,0.9907059822543528,,3.0,extended/v7,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM,holdout_T,1.0,ensemble,0.5544146231700365,,3.0,extended/v7,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+tf_p60,tuned transformer (patch 60),MAE_logM,holdout_T,1.0,ensemble,0.5756479815494432,,3.0,extended/v7,v10,derived:9ad001bc8e15,results/revision/A10_v10/holdout_table.csv
+cnn_base,1D CNN,MAE_omega0_meV,stress_base,0.25,ensemble,0.0868005003929138,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+cnn_base,1D CNN,MAE_Gamma_meV,stress_base,0.25,ensemble,0.1693378082960844,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+cnn_base,1D CNN,MAE_Gamma_over_omega0,stress_base,0.25,ensemble,0.0299325384859266,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_fused,fused transformer,MAE_omega0_meV,stress_base,0.25,ensemble,0.0984709858894348,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_fused,fused transformer,MAE_Gamma_meV,stress_base,0.25,ensemble,0.1689094110578298,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_fused,fused transformer,MAE_Gamma_over_omega0,stress_base,0.25,ensemble,0.0274147606381215,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_learned_patch,learned-patch transformer,MAE_omega0_meV,stress_base,0.25,ensemble,0.107682303905487,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_learned_patch,learned-patch transformer,MAE_Gamma_meV,stress_base,0.25,ensemble,0.1956610375344753,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_learned_patch,learned-patch transformer,MAE_Gamma_over_omega0,stress_base,0.25,ensemble,0.0325681110441647,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_fourier,Fourier-feature transformer,MAE_omega0_meV,stress_base,0.25,ensemble,0.1569571189880371,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_fourier,Fourier-feature transformer,MAE_Gamma_meV,stress_base,0.25,ensemble,0.3530066178590059,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_fourier,Fourier-feature transformer,MAE_Gamma_over_omega0,stress_base,0.25,ensemble,0.0580223206112643,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_omega0_meV,stress_base,0.25,ensemble,0.0669950594902038,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_Gamma_meV,stress_base,0.25,ensemble,0.1209658942520618,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_Gamma_over_omega0,stress_base,0.25,ensemble,0.0195948891876684,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_p60,tuned transformer (patch 60),MAE_omega0_meV,stress_base,0.25,ensemble,0.1047953000068664,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_p60,tuned transformer (patch 60),MAE_Gamma_meV,stress_base,0.25,ensemble,0.1769077224582433,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_p60,tuned transformer (patch 60),MAE_Gamma_over_omega0,stress_base,0.25,ensemble,0.0262053122614529,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+cnn_base,1D CNN,MAE_omega0_meV,stress_base,0.5,ensemble,0.1005275220870971,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+cnn_base,1D CNN,MAE_Gamma_meV,stress_base,0.5,ensemble,0.2100913683623075,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+cnn_base,1D CNN,MAE_Gamma_over_omega0,stress_base,0.5,ensemble,0.0387394929477421,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_fused,fused transformer,MAE_omega0_meV,stress_base,0.5,ensemble,0.1139349226951599,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_fused,fused transformer,MAE_Gamma_meV,stress_base,0.5,ensemble,0.2129577569812536,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_fused,fused transformer,MAE_Gamma_over_omega0,stress_base,0.5,ensemble,0.0351194284757738,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_learned_patch,learned-patch transformer,MAE_omega0_meV,stress_base,0.5,ensemble,0.1204879350662231,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_learned_patch,learned-patch transformer,MAE_Gamma_meV,stress_base,0.5,ensemble,0.2373495585173368,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_learned_patch,learned-patch transformer,MAE_Gamma_over_omega0,stress_base,0.5,ensemble,0.038805477663194,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_fourier,Fourier-feature transformer,MAE_omega0_meV,stress_base,0.5,ensemble,0.1726363506317138,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_fourier,Fourier-feature transformer,MAE_Gamma_meV,stress_base,0.5,ensemble,0.4321397589594126,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_fourier,Fourier-feature transformer,MAE_Gamma_over_omega0,stress_base,0.5,ensemble,0.0726190888708804,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_omega0_meV,stress_base,0.5,ensemble,0.0701433424949646,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_Gamma_meV,stress_base,0.5,ensemble,0.1486585699319839,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_Gamma_over_omega0,stress_base,0.5,ensemble,0.0248262060351731,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_p60,tuned transformer (patch 60),MAE_omega0_meV,stress_base,0.5,ensemble,0.1131406769752502,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_p60,tuned transformer (patch 60),MAE_Gamma_meV,stress_base,0.5,ensemble,0.2057460014224052,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_p60,tuned transformer (patch 60),MAE_Gamma_over_omega0,stress_base,0.5,ensemble,0.0318382134409166,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+cnn_base,1D CNN,MAE_omega0_meV,stress_base,1.0,ensemble,0.1386439967155456,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+cnn_base,1D CNN,MAE_Gamma_meV,stress_base,1.0,ensemble,0.3278986233025789,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+cnn_base,1D CNN,MAE_Gamma_over_omega0,stress_base,1.0,ensemble,0.0596392022228105,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_fused,fused transformer,MAE_omega0_meV,stress_base,1.0,ensemble,0.1371163272857666,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_fused,fused transformer,MAE_Gamma_meV,stress_base,1.0,ensemble,0.3055364078730345,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_fused,fused transformer,MAE_Gamma_over_omega0,stress_base,1.0,ensemble,0.0519875897488325,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_learned_patch,learned-patch transformer,MAE_omega0_meV,stress_base,1.0,ensemble,0.1503165116310119,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_learned_patch,learned-patch transformer,MAE_Gamma_meV,stress_base,1.0,ensemble,0.3268989573866129,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_learned_patch,learned-patch transformer,MAE_Gamma_over_omega0,stress_base,1.0,ensemble,0.0550845604826014,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_fourier,Fourier-feature transformer,MAE_omega0_meV,stress_base,1.0,ensemble,0.2170701441764831,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_fourier,Fourier-feature transformer,MAE_Gamma_meV,stress_base,1.0,ensemble,0.5683545812517404,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_fourier,Fourier-feature transformer,MAE_Gamma_over_omega0,stress_base,1.0,ensemble,0.0986013002252354,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_omega0_meV,stress_base,1.0,ensemble,0.0910613241195678,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_Gamma_meV,stress_base,1.0,ensemble,0.2150307084918022,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_Gamma_over_omega0,stress_base,1.0,ensemble,0.0366506294898977,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_p60,tuned transformer (patch 60),MAE_omega0_meV,stress_base,1.0,ensemble,0.1318595747947692,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_p60,tuned transformer (patch 60),MAE_Gamma_meV,stress_base,1.0,ensemble,0.2842406094074249,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_p60,tuned transformer (patch 60),MAE_Gamma_over_omega0,stress_base,1.0,ensemble,0.0469934654899367,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+cnn_base,1D CNN,MAE_omega0_meV,stress_base,2.0,ensemble,0.2148455572128295,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+cnn_base,1D CNN,MAE_Gamma_meV,stress_base,2.0,ensemble,0.5035908261686564,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+cnn_base,1D CNN,MAE_Gamma_over_omega0,stress_base,2.0,ensemble,0.096028474198765,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_fused,fused transformer,MAE_omega0_meV,stress_base,2.0,ensemble,0.1945043339729309,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_fused,fused transformer,MAE_Gamma_meV,stress_base,2.0,ensemble,0.4519527242034674,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_fused,fused transformer,MAE_Gamma_over_omega0,stress_base,2.0,ensemble,0.0837270702577828,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_learned_patch,learned-patch transformer,MAE_omega0_meV,stress_base,2.0,ensemble,0.2057621955871582,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_learned_patch,learned-patch transformer,MAE_Gamma_meV,stress_base,2.0,ensemble,0.5029827272146941,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_learned_patch,learned-patch transformer,MAE_Gamma_over_omega0,stress_base,2.0,ensemble,0.0871134267951757,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_fourier,Fourier-feature transformer,MAE_omega0_meV,stress_base,2.0,ensemble,0.2986478586196899,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_fourier,Fourier-feature transformer,MAE_Gamma_meV,stress_base,2.0,ensemble,0.7947545135170221,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_fourier,Fourier-feature transformer,MAE_Gamma_over_omega0,stress_base,2.0,ensemble,0.1433706708994924,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_omega0_meV,stress_base,2.0,ensemble,0.1396440043449401,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_Gamma_meV,stress_base,2.0,ensemble,0.3515906249731779,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_Gamma_over_omega0,stress_base,2.0,ensemble,0.064016107865625,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_p60,tuned transformer (patch 60),MAE_omega0_meV,stress_base,2.0,ensemble,0.1853103060722351,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_p60,tuned transformer (patch 60),MAE_Gamma_meV,stress_base,2.0,ensemble,0.4172229529470205,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_p60,tuned transformer (patch 60),MAE_Gamma_over_omega0,stress_base,2.0,ensemble,0.0744526947673043,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+cnn_base,1D CNN,MAE_omega0_meV,stress_base,4.0,ensemble,0.4294925498962402,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+cnn_base,1D CNN,MAE_Gamma_meV,stress_base,4.0,ensemble,0.968114041045308,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+cnn_base,1D CNN,MAE_Gamma_over_omega0,stress_base,4.0,ensemble,0.2061204972370697,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_fused,fused transformer,MAE_omega0_meV,stress_base,4.0,ensemble,0.3303562817573547,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_fused,fused transformer,MAE_Gamma_meV,stress_base,4.0,ensemble,0.7731680260747671,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_fused,fused transformer,MAE_Gamma_over_omega0,stress_base,4.0,ensemble,0.162727513101114,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_learned_patch,learned-patch transformer,MAE_omega0_meV,stress_base,4.0,ensemble,0.3957342405319214,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_learned_patch,learned-patch transformer,MAE_Gamma_meV,stress_base,4.0,ensemble,0.905730033621192,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_learned_patch,learned-patch transformer,MAE_Gamma_over_omega0,stress_base,4.0,ensemble,0.1822574740092903,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_fourier,Fourier-feature transformer,MAE_omega0_meV,stress_base,4.0,ensemble,0.5555640110969543,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_fourier,Fourier-feature transformer,MAE_Gamma_meV,stress_base,4.0,ensemble,1.2291608683019877,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_fourier,Fourier-feature transformer,MAE_Gamma_over_omega0,stress_base,4.0,ensemble,0.2469796303406707,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_omega0_meV,stress_base,4.0,ensemble,0.2836395215988159,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_Gamma_meV,stress_base,4.0,ensemble,0.734517814770341,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_Gamma_over_omega0,stress_base,4.0,ensemble,0.1448401921730441,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_p60,tuned transformer (patch 60),MAE_omega0_meV,stress_base,4.0,ensemble,0.338268835067749,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_p60,tuned transformer (patch 60),MAE_Gamma_meV,stress_base,4.0,ensemble,0.8133883913308382,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+tf_p60,tuned transformer (patch 60),MAE_Gamma_over_omega0,stress_base,4.0,ensemble,0.1617706627439277,,3.0,extended/v7,v10,derived:d6fba1214100,results/revision/A6_v10/aux_head_metrics.csv
+cnn_base,1D CNN,MAE_logM_gamma_err_q0,stress_base,1.0,ensemble,0.0795134109887076,,3.0,extended/v7,v10,derived:d1ed2d7da9a3,results/revision/A6_v10/logM_error_by_gamma_error.csv
+cnn_base,1D CNN,MAE_logM_gamma_err_q1,stress_base,1.0,ensemble,0.1058154136749102,,3.0,extended/v7,v10,derived:d1ed2d7da9a3,results/revision/A6_v10/logM_error_by_gamma_error.csv
+cnn_base,1D CNN,MAE_logM_gamma_err_q2,stress_base,1.0,ensemble,0.1535896297709373,,3.0,extended/v7,v10,derived:d1ed2d7da9a3,results/revision/A6_v10/logM_error_by_gamma_error.csv
+cnn_base,1D CNN,MAE_logM_gamma_err_q3,stress_base,1.0,ensemble,0.1917721859663172,,3.0,extended/v7,v10,derived:d1ed2d7da9a3,results/revision/A6_v10/logM_error_by_gamma_error.csv
+cnn_base,1D CNN,MAE_logM_gamma_err_q4,stress_base,1.0,ensemble,0.3553015016919552,,3.0,extended/v7,v10,derived:d1ed2d7da9a3,results/revision/A6_v10/logM_error_by_gamma_error.csv
+tf_fused,fused transformer,MAE_logM_gamma_err_q0,stress_base,1.0,ensemble,0.0455709480559627,,3.0,extended/v7,v10,derived:d1ed2d7da9a3,results/revision/A6_v10/logM_error_by_gamma_error.csv
+tf_fused,fused transformer,MAE_logM_gamma_err_q1,stress_base,1.0,ensemble,0.0759712202524826,,3.0,extended/v7,v10,derived:d1ed2d7da9a3,results/revision/A6_v10/logM_error_by_gamma_error.csv
+tf_fused,fused transformer,MAE_logM_gamma_err_q2,stress_base,1.0,ensemble,0.1165820411032813,,3.0,extended/v7,v10,derived:d1ed2d7da9a3,results/revision/A6_v10/logM_error_by_gamma_error.csv
+tf_fused,fused transformer,MAE_logM_gamma_err_q3,stress_base,1.0,ensemble,0.1737957284644992,,3.0,extended/v7,v10,derived:d1ed2d7da9a3,results/revision/A6_v10/logM_error_by_gamma_error.csv
+tf_fused,fused transformer,MAE_logM_gamma_err_q4,stress_base,1.0,ensemble,0.3522085800656174,,3.0,extended/v7,v10,derived:d1ed2d7da9a3,results/revision/A6_v10/logM_error_by_gamma_error.csv
+tf_learned_patch,learned-patch transformer,MAE_logM_gamma_err_q0,stress_base,1.0,ensemble,0.0808299356743073,,3.0,extended/v7,v10,derived:d1ed2d7da9a3,results/revision/A6_v10/logM_error_by_gamma_error.csv
+tf_learned_patch,learned-patch transformer,MAE_logM_gamma_err_q1,stress_base,1.0,ensemble,0.1087908418858693,,3.0,extended/v7,v10,derived:d1ed2d7da9a3,results/revision/A6_v10/logM_error_by_gamma_error.csv
+tf_learned_patch,learned-patch transformer,MAE_logM_gamma_err_q2,stress_base,1.0,ensemble,0.1451562011433723,,3.0,extended/v7,v10,derived:d1ed2d7da9a3,results/revision/A6_v10/logM_error_by_gamma_error.csv
+tf_learned_patch,learned-patch transformer,MAE_logM_gamma_err_q3,stress_base,1.0,ensemble,0.1619444631374401,,3.0,extended/v7,v10,derived:d1ed2d7da9a3,results/revision/A6_v10/logM_error_by_gamma_error.csv
+tf_learned_patch,learned-patch transformer,MAE_logM_gamma_err_q4,stress_base,1.0,ensemble,0.3804306956639014,,3.0,extended/v7,v10,derived:d1ed2d7da9a3,results/revision/A6_v10/logM_error_by_gamma_error.csv
+tf_fourier,Fourier-feature transformer,MAE_logM_gamma_err_q0,stress_base,1.0,ensemble,0.1147338522065217,,3.0,extended/v7,v10,derived:d1ed2d7da9a3,results/revision/A6_v10/logM_error_by_gamma_error.csv
+tf_fourier,Fourier-feature transformer,MAE_logM_gamma_err_q1,stress_base,1.0,ensemble,0.1885472951385451,,3.0,extended/v7,v10,derived:d1ed2d7da9a3,results/revision/A6_v10/logM_error_by_gamma_error.csv
+tf_fourier,Fourier-feature transformer,MAE_logM_gamma_err_q2,stress_base,1.0,ensemble,0.2444890605996987,,3.0,extended/v7,v10,derived:d1ed2d7da9a3,results/revision/A6_v10/logM_error_by_gamma_error.csv
+tf_fourier,Fourier-feature transformer,MAE_logM_gamma_err_q3,stress_base,1.0,ensemble,0.3459508287116289,,3.0,extended/v7,v10,derived:d1ed2d7da9a3,results/revision/A6_v10/logM_error_by_gamma_error.csv
+tf_fourier,Fourier-feature transformer,MAE_logM_gamma_err_q4,stress_base,1.0,ensemble,0.6565091333147778,,3.0,extended/v7,v10,derived:d1ed2d7da9a3,results/revision/A6_v10/logM_error_by_gamma_error.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM_gamma_err_q0,stress_base,1.0,ensemble,0.064128739160472,,3.0,extended/v7,v10,derived:d1ed2d7da9a3,results/revision/A6_v10/logM_error_by_gamma_error.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM_gamma_err_q1,stress_base,1.0,ensemble,0.0640432200262352,,3.0,extended/v7,v10,derived:d1ed2d7da9a3,results/revision/A6_v10/logM_error_by_gamma_error.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM_gamma_err_q2,stress_base,1.0,ensemble,0.088548553338125,,3.0,extended/v7,v10,derived:d1ed2d7da9a3,results/revision/A6_v10/logM_error_by_gamma_error.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM_gamma_err_q3,stress_base,1.0,ensemble,0.1045648649434773,,3.0,extended/v7,v10,derived:d1ed2d7da9a3,results/revision/A6_v10/logM_error_by_gamma_error.csv
+cnn_k45,tuned 1D CNN (kernel 45),MAE_logM_gamma_err_q4,stress_base,1.0,ensemble,0.2502644475863061,,3.0,extended/v7,v10,derived:d1ed2d7da9a3,results/revision/A6_v10/logM_error_by_gamma_error.csv
+tf_p60,tuned transformer (patch 60),MAE_logM_gamma_err_q0,stress_base,1.0,ensemble,0.0738532180724183,,3.0,extended/v7,v10,derived:d1ed2d7da9a3,results/revision/A6_v10/logM_error_by_gamma_error.csv
+tf_p60,tuned transformer (patch 60),MAE_logM_gamma_err_q1,stress_base,1.0,ensemble,0.0810718837830314,,3.0,extended/v7,v10,derived:d1ed2d7da9a3,results/revision/A6_v10/logM_error_by_gamma_error.csv
+tf_p60,tuned transformer (patch 60),MAE_logM_gamma_err_q2,stress_base,1.0,ensemble,0.1252527225540322,,3.0,extended/v7,v10,derived:d1ed2d7da9a3,results/revision/A6_v10/logM_error_by_gamma_error.csv
+tf_p60,tuned transformer (patch 60),MAE_logM_gamma_err_q3,stress_base,1.0,ensemble,0.1554639965486633,,3.0,extended/v7,v10,derived:d1ed2d7da9a3,results/revision/A6_v10/logM_error_by_gamma_error.csv
+tf_p60,tuned transformer (patch 60),MAE_logM_gamma_err_q4,stress_base,1.0,ensemble,0.2995272961756259,,3.0,extended/v7,v10,derived:d1ed2d7da9a3,results/revision/A6_v10/logM_error_by_gamma_error.csv
+fit_matched,matched-model fit,MAE_logM_failures_replaced,stress_base,0.25,single,0.1396079478693844,,,,v10,derived:c72c10f93410,results/revision/A3_v10/summary_by_severity.csv
+fit_matched,matched-model fit,MAE_logM_failures_replaced,stress_base,0.5,single,0.2856656235753098,,,,v10,derived:c72c10f93410,results/revision/A3_v10/summary_by_severity.csv
+fit_matched,matched-model fit,MAE_logM_failures_replaced,stress_base,1.0,single,0.4486183731896598,,,,v10,derived:c72c10f93410,results/revision/A3_v10/summary_by_severity.csv
+fit_matched,matched-model fit,MAE_logM_failures_replaced,stress_base,2.0,single,0.691737030479781,,,,v10,derived:c72c10f93410,results/revision/A3_v10/summary_by_severity.csv
+fit_matched,matched-model fit,MAE_logM_failures_replaced,stress_base,4.0,single,1.017240080069109,,,,v10,derived:c72c10f93410,results/revision/A3_v10/summary_by_severity.csv
+fit_matched_prior,prior-regularized forward-model fit,MAE_logM_failures_replaced,stress_base,0.25,single,0.4202274758669932,,,,v10,derived:c72c10f93410,results/revision/A3_v10/summary_by_severity.csv
+fit_matched_prior,prior-regularized forward-model fit,MAE_logM_failures_replaced,stress_base,0.5,single,0.4394067665293486,,,,v10,derived:c72c10f93410,results/revision/A3_v10/summary_by_severity.csv
+fit_matched_prior,prior-regularized forward-model fit,MAE_logM_failures_replaced,stress_base,1.0,single,0.4669123783389067,,,,v10,derived:c72c10f93410,results/revision/A3_v10/summary_by_severity.csv
+fit_matched_prior,prior-regularized forward-model fit,MAE_logM_failures_replaced,stress_base,2.0,single,0.5422414391174173,,,,v10,derived:c72c10f93410,results/revision/A3_v10/summary_by_severity.csv
+fit_matched_prior,prior-regularized forward-model fit,MAE_logM_failures_replaced,stress_base,4.0,single,0.6617197589929458,,,,v10,derived:c72c10f93410,results/revision/A3_v10/summary_by_severity.csv
+fit_single_naive,naive single-mode fit,MAE_logM_failures_replaced,stress_base,0.25,single,2.9777325776618726,,,,v10,derived:c72c10f93410,results/revision/A3_v10/summary_by_severity.csv
+fit_single_naive,naive single-mode fit,MAE_logM_failures_replaced,stress_base,0.5,single,2.8220293208146727,,,,v10,derived:c72c10f93410,results/revision/A3_v10/summary_by_severity.csv
+fit_single_naive,naive single-mode fit,MAE_logM_failures_replaced,stress_base,1.0,single,2.391140343473645,,,,v10,derived:c72c10f93410,results/revision/A3_v10/summary_by_severity.csv
+fit_single_naive,naive single-mode fit,MAE_logM_failures_replaced,stress_base,2.0,single,1.800257277178302,,,,v10,derived:c72c10f93410,results/revision/A3_v10/summary_by_severity.csv
+fit_single_naive,naive single-mode fit,MAE_logM_failures_replaced,stress_base,4.0,single,1.4296606353474162,,,,v10,derived:c72c10f93410,results/revision/A3_v10/summary_by_severity.csv
+fit_single_win,windowed single-mode fit,MAE_logM_failures_replaced,stress_base,0.25,single,0.7421709461958939,,,,v10,derived:cd2b84f60f36,results/revision/A3_v10/summary_extra_variants.csv
+fit_single_win,windowed single-mode fit,MAE_logM_failures_replaced,stress_base,0.5,single,0.810624276048351,,,,v10,derived:cd2b84f60f36,results/revision/A3_v10/summary_extra_variants.csv
+fit_single_win,windowed single-mode fit,MAE_logM_failures_replaced,stress_base,1.0,single,0.7785686278916639,,,,v10,derived:cd2b84f60f36,results/revision/A3_v10/summary_extra_variants.csv
+fit_single_win,windowed single-mode fit,MAE_logM_failures_replaced,stress_base,2.0,single,0.8339386056932674,,,,v10,derived:cd2b84f60f36,results/revision/A3_v10/summary_extra_variants.csv
+fit_single_win,windowed single-mode fit,MAE_logM_failures_replaced,stress_base,4.0,single,1.0057354083579635,,,,v10,derived:cd2b84f60f36,results/revision/A3_v10/summary_extra_variants.csv
+fit_single_track,dispersion-tracking single-mode fit,MAE_logM_failures_replaced,stress_base,0.25,single,1.0162671310173694,,,,v10,derived:cd2b84f60f36,results/revision/A3_v10/summary_extra_variants.csv
+fit_single_track,dispersion-tracking single-mode fit,MAE_logM_failures_replaced,stress_base,0.5,single,1.0037822759986543,,,,v10,derived:cd2b84f60f36,results/revision/A3_v10/summary_extra_variants.csv
+fit_single_track,dispersion-tracking single-mode fit,MAE_logM_failures_replaced,stress_base,1.0,single,0.986040267066491,,,,v10,derived:cd2b84f60f36,results/revision/A3_v10/summary_extra_variants.csv
+fit_single_track,dispersion-tracking single-mode fit,MAE_logM_failures_replaced,stress_base,2.0,single,1.166393750129382,,,,v10,derived:cd2b84f60f36,results/revision/A3_v10/summary_extra_variants.csv
+fit_single_track,dispersion-tracking single-mode fit,MAE_logM_failures_replaced,stress_base,4.0,single,1.3962785022780553,,,,v10,derived:cd2b84f60f36,results/revision/A3_v10/summary_extra_variants.csv
+fit_two_mode,two-mode fit,MAE_logM_failures_replaced,stress_base,0.25,single,2.632311031715376,,,,v10,derived:cd2b84f60f36,results/revision/A3_v10/summary_extra_variants.csv
+fit_two_mode,two-mode fit,MAE_logM_failures_replaced,stress_base,0.5,single,2.5416802422795497,,,,v10,derived:cd2b84f60f36,results/revision/A3_v10/summary_extra_variants.csv
+fit_two_mode,two-mode fit,MAE_logM_failures_replaced,stress_base,1.0,single,2.367179971586005,,,,v10,derived:cd2b84f60f36,results/revision/A3_v10/summary_extra_variants.csv
+fit_two_mode,two-mode fit,MAE_logM_failures_replaced,stress_base,2.0,single,2.165743658931983,,,,v10,derived:cd2b84f60f36,results/revision/A3_v10/summary_extra_variants.csv
+fit_two_mode,two-mode fit,MAE_logM_failures_replaced,stress_base,4.0,single,2.0691028298248293,,,,v10,derived:cd2b84f60f36,results/revision/A3_v10/summary_extra_variants.csv

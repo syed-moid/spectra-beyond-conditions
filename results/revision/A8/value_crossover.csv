@@ -1,0 +1,10 @@
+dataset_version,model,value_crossover_severity
+v8,cnn,4.0
+v8,fusion,4.0
+v8,5a,4.0
+v8,5b,2.0
+v8,5a_fixed1,3.0
+v8,5a_low,3.0
+v8,fusion_fixed1,3.0
+v8,cnn_kernel45,
+v8,tf_patch60,4.0

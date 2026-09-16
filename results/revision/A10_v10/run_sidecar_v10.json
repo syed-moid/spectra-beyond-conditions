@@ -1,0 +1,25 @@
+{
+  "task": "A26_holdouts_v10",
+  "dataset_version": "v10",
+  "script": "review_and_modify/scripts/a26_holdouts_v10.py",
+  "checkpoints": "manuscript_phase1/results/revision/A21_v10/checkpoints",
+  "checkpoint_note": "A21 runs, trained on ablation_v10_both_seed{0,1,2}; these are independent draws from full_dataset_phase1_v10 and exact-row overlap with every split evaluated here is zero",
+  "splits": {
+    "val": "manuscript_phase1/data/full_dataset_phase1_v10/dataset.npz",
+    "holdout_c": "manuscript_phase1/data/full_dataset_phase1_v10/dataset.npz",
+    "holdout_E": "manuscript_phase1/data/full_dataset_phase1_v10/dataset.npz",
+    "holdout_T": "manuscript_phase1/data/full_dataset_phase1_v10/dataset.npz",
+    "holdout_c_extrap": "manuscript_phase1/data/holdout_c_extrap_v10/dataset.npz"
+  },
+  "baselines": [
+    "conditions-only conditional median (MC estimate of the conditions-only Bayes risk under absolute loss)",
+    "marginal (global median)"
+  ],
+  "pairwise_accuracy_scope": "pooled across conditions within each split; NOT the within-tuple accuracy of the replicate test set, and not comparable to it",
+  "n_draws": 2000,
+  "severity": 1.0,
+  "aggregation": "mean over 9 runs (3 dataset realizations x 3 training seeds)",
+  "training": "none; evaluation of existing A21 checkpoints only",
+  "seed": 20260913,
+  "date_utc": "2026-09-13T19:39:24.400849+00:00"
+}

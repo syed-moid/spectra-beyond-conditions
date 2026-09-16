@@ -1,0 +1,18 @@
+{
+  "task": "A18",
+  "dataset_version": "v10",
+  "conclusion": "per-sample standardization makes every architecture exactly invariant to global gain and additive offset; the specified augmentation is a no-op",
+  "gain_range": [
+    0.5,
+    2.0
+  ],
+  "offset_frac_of_median_background": 0.1,
+  "largest_abs_delta_MAE": 5.444698034096085e-08,
+  "largest_abs_pred_change": 1.9252300262451172e-05,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "date_utc": "2026-09-15T04:00:19.052308+00:00"
+}

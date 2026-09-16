@@ -1,0 +1,16 @@
+{
+  "directory": "manuscript_phase1/results/revision/A22_v10",
+  "dataset_version": "v10",
+  "generated_utc": "2026-09-16T01:09:18.445807+00:00",
+  "files": {
+    "pairwise_across_realizations.csv": {
+      "script": "ad hoc (v8), superseded by v9"
+    },
+    "pairwise_holm.csv": {
+      "script": "ad hoc (v8), superseded by v9"
+    },
+    "test_eval_runs.csv": {
+      "script": "ad hoc (v8), superseded by v9"
+    }
+  }
+}

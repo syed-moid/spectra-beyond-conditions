@@ -1,0 +1,26 @@
+{
+  "task": "A21_multirealization",
+  "script": "review_and_modify/scripts/a21_multirealization.py",
+  "dataset_version": "v10",
+  "dataset_realizations": [
+    "manuscript_phase1/data/ablation_v10_both_seed0/dataset.npz",
+    "manuscript_phase1/data/ablation_v10_both_seed1/dataset.npz",
+    "manuscript_phase1/data/ablation_v10_both_seed2/dataset.npz"
+  ],
+  "realization_note": "the `both` ablation setting is the unmodified Phase 1 latent model; these are three draws of the standard dataset",
+  "dataset_seeds": [
+    0,
+    1,
+    2
+  ],
+  "training_seeds": [
+    42,
+    43,
+    44
+  ],
+  "selection_split": "val (per realization)",
+  "headline_eval": "test_v10 / replicate_test_v10 (untouched, never seen here)",
+  "stopping_protocol": "extended",
+  "wall_time_sec": 56273.4,
+  "date_utc": "2026-09-13T06:47:06.960311+00:00"
+}

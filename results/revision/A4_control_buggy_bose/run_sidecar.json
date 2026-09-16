@@ -1,0 +1,19 @@
+{
+  "task": "A4_control_buggy_bose",
+  "script": "review_and_modify/scripts/a4_control_buggy_bose.py",
+  "note": "harness identical to A4; bose() monkeypatched to the pre-fix expression; F2 recalibrated; tracked source unmodified",
+  "F2_soft_corrected": 72274065.31802878,
+  "F2_soft_buggy": 50292470.33862216,
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "archs": [
+    "5a",
+    "5b"
+  ],
+  "date_utc": "2026-09-05T22:16:20.185359+00:00"
+}

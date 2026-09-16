@@ -1,0 +1,16 @@
+{
+  "task": "A31_figure2_data",
+  "dataset_version": "v10",
+  "script": "review_and_modify/scripts/a31_figure2_data.py",
+  "eval_set": "manuscript_phase1/data/test_v10/dataset.npz",
+  "subset": "np.linspace(0, N-1, 600) of the test split; identical to A23",
+  "target": "log M for every method",
+  "fitting_logM": "generator merit() applied to the fitted (omega0, Gamma)",
+  "failure_policies": [
+    "failures excluded (headline)",
+    "failures replaced by the conditions-only conditional median"
+  ],
+  "training": "none",
+  "seed": 20260914,
+  "date_utc": "2026-09-14T18:35:38.115157+00:00"
+}

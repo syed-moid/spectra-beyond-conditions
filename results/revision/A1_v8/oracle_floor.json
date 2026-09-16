@@ -1,0 +1,72 @@
+{
+  "task": "A1",
+  "dataset_version": "v8",
+  "summary": {
+    "val": {
+      "N": 1000,
+      "MAE_logM_conditional_median": 0.6129788844801018,
+      "MAE_logM_conditional_mean": 0.6153000317533394,
+      "MAE_logM_conditional_median_MC_expectation": 0.6023366266876828,
+      "MAE_logM_conditional_mean_MC_expectation": 0.6105614796098152,
+      "MAE_logM_marginal_median": 1.3502450098611707,
+      "mean_conditional_sd_logM": 0.8744637070580138,
+      "mean_conditional_IQR_logM": 0.8594653852033124,
+      "mean_conditional_5_95_width_logM": 2.633205664448462,
+      "std_logM_realized": 1.6136071001850538
+    },
+    "stress_base": {
+      "N": 500,
+      "MAE_logM_conditional_median": 0.6392036481299074,
+      "MAE_logM_conditional_mean": 0.6401261231164119,
+      "MAE_logM_conditional_median_MC_expectation": 0.600845523099171,
+      "MAE_logM_conditional_mean_MC_expectation": 0.6091929728384768,
+      "MAE_logM_marginal_median": 1.3936670128410094,
+      "mean_conditional_sd_logM": 0.8733335965139799,
+      "mean_conditional_IQR_logM": 0.8579539842883958,
+      "mean_conditional_5_95_width_logM": 2.6179459911451897,
+      "std_logM_realized": 1.6377638418979772
+    },
+    "holdout_T": {
+      "N": 300,
+      "MAE_logM_conditional_median": 0.6633976489425747,
+      "MAE_logM_conditional_mean": 0.6760248679625542,
+      "MAE_logM_conditional_median_MC_expectation": 0.7060686994467581,
+      "MAE_logM_conditional_mean_MC_expectation": 0.7155788917217972,
+      "MAE_logM_marginal_median": 1.0568644612097369,
+      "mean_conditional_sd_logM": 1.009943825469713,
+      "mean_conditional_IQR_logM": 1.0162692829502646,
+      "mean_conditional_5_95_width_logM": 3.1014540289062578,
+      "std_logM_realized": 1.3059738828673209
+    },
+    "holdout_c": {
+      "N": 300,
+      "MAE_logM_conditional_median": 0.624388145010036,
+      "MAE_logM_conditional_mean": 0.6246916040169965,
+      "MAE_logM_conditional_median_MC_expectation": 0.5906340800696894,
+      "MAE_logM_conditional_mean_MC_expectation": 0.5981553933129753,
+      "MAE_logM_marginal_median": 1.1655165904874794,
+      "mean_conditional_sd_logM": 0.8536206338046536,
+      "mean_conditional_IQR_logM": 0.8462210957739059,
+      "mean_conditional_5_95_width_logM": 2.5767359549399194,
+      "std_logM_realized": 1.3507441067218395
+    },
+    "holdout_E": {
+      "N": 300,
+      "MAE_logM_conditional_median": 0.6396450932498997,
+      "MAE_logM_conditional_mean": 0.6563899494799504,
+      "MAE_logM_conditional_median_MC_expectation": 0.6212454515650538,
+      "MAE_logM_conditional_mean_MC_expectation": 0.6297165993980748,
+      "MAE_logM_marginal_median": 1.3709686438280364,
+      "mean_conditional_sd_logM": 0.9001638973569758,
+      "mean_conditional_IQR_logM": 0.88590816279973,
+      "mean_conditional_5_95_width_logM": 2.719565690752688,
+      "std_logM_realized": 1.6555402229008422
+    }
+  },
+  "v7_reference": {
+    "conditions_only_MLP_val_v7": 0.6232216787498219,
+    "conditions_only_MLP_stress_base_v7": 0.6509906503359798
+  },
+  "slack_val_MLP_minus_oracle_median": 0.010242794269720079,
+  "slack_stress_MLP_minus_oracle_median": 0.011787002206072428
+}

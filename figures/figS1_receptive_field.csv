@@ -1,0 +1,24 @@
+# figure: figS1_receptive_field
+# inputs: results/revision/A17_v10/variant_summary.csv
+# population: full_dataset_phase1_v10, val split
+# n: 1000
+# checkpoints: A17_v10/checkpoints
+# aggregation: mean over 3 training seeds ± SD (per-run mean, NOT the ensemble)
+# failure_policy: n/a
+# note: width-sweep points are connected and hold parameter count at 1.175-1.192 M; the family base and the depth/capacity variants are separate markers because they change capacity as well
+family,variant,mean,std,count,n_parameters,bins,meV,kind
+cnn,cnn_base,0.2175319972103622,0.0030034374442174,3,614979,7.0,0.35058100000000003,family base
+cnn,cnn_half_depth,0.2668327480971974,0.0052155629602407,3,463267,,,depth / capacity
+cnn,cnn_kernel15,0.1561057595664926,0.0011935792469001,3,1191651,15.0,0.751245,width sweep
+cnn,cnn_kernel21,0.1409854811595959,0.0027473305382228,3,1180803,21.0,1.051743,width sweep
+cnn,cnn_kernel31,0.1358787516430056,0.0025552347988424,3,1179691,31.0,1.552573,width sweep
+cnn,cnn_kernel45,0.136172753902442,0.0129400390838309,3,1174755,45.0,2.2537350000000003,width sweep
+cnn,cnn_param_matched,0.219158445220018,0.0063454822236735,3,682915,,,depth / capacity
+cnn,cnn_wide,0.2239996634058818,0.013376990832199,3,1173475,,,depth / capacity
+tf,tf_base,0.2032349494913708,0.006489615567679,3,687843,10.0,0.50083,family base
+tf,tf_depth8,0.2080399172513608,0.0036936165573616,3,911523,,,depth / capacity
+tf,tf_patch20,0.1857370373427377,0.0081086415320832,3,685923,20.0,1.00166,width sweep
+tf,tf_patch30,0.178520917256486,0.0016857042628582,3,685923,30.0,1.50249,width sweep
+tf,tf_patch40,0.1836794405248117,0.0053863371737875,3,686403,40.0,2.00332,width sweep
+tf,tf_patch5,0.2083191856796481,0.0026544922078847,3,693123,5.0,0.250415,width sweep
+tf,tf_patch60,0.177482147852683,0.0040088463500543,3,687843,60.0,3.00498,width sweep

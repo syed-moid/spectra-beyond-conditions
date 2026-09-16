@@ -1,0 +1,14 @@
+{
+  "task": "A7_postprocess",
+  "script": "review_and_modify/scripts/a7_postprocess.py",
+  "script_sha256": "33142ab37d7ab7905f50dcc4a4ca5ea01f9255f72833fb88d2bf154d3d9c8de2",
+  "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d",
+  "dataset_version": "v10",
+  "seed": 20260905,
+  "n_draws": 2000,
+  "n_boot": 1000,
+  "latent_dataset_seed": 0,
+  "skip_models": false,
+  "wall_time_sec": 148.7,
+  "date_utc": "2026-09-14T03:27:57.476864+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "task": "A17",
+  "dataset_version": "v10",
+  "stopping_protocol": "extended",
+  "train_severity_protocol": "v7",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "wall_time_sec": 11639.753059148788,
+  "date_utc": "2026-09-14T06:42:01.447854+00:00"
+}

@@ -1,0 +1,11 @@
+{
+  "best_cnn": "cnn_kernel15",
+  "best_tf": "tf_patch20",
+  "best_cnn_MAE": 0.16303461169408673,
+  "best_tf_MAE": 0.202777393553644,
+  "diff_cnn_minus_tf": -0.03974278185955727,
+  "lo": -0.05041443976469788,
+  "hi": -0.02935308536259925,
+  "significant": true,
+  "note": "best-of-family selected on the same val split used for the CI; mildly optimistic for both families"
+}

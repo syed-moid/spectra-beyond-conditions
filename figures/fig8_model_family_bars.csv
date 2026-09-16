@@ -1,0 +1,21 @@
+# figure: fig8_model_family_bars
+# inputs: results/revision/A23_v10/network_runs_on_fitting_subset.csv; results/revision/A23_v10/primary_per_spectrum.csv; results/revision/A23_v10/conditions_only_reference.json
+# population: test_v10, the 600-spectrum fitting subset -- EVERY series
+# n: 600
+# checkpoints: A21_v10/checkpoints (ablation_v10_both_seed{0,1,2})
+# aggregation: networks: per-run MAE, mean ± SD over 9 runs (no ensemble); fits: single pass
+# failure_policy: all cases; failed fits replaced by the conditions-only conditional median
+# note: authoritative conditions-only reference 0.633456
+model,family,MAE_logM,sd,n_runs
+tuned CNN,learning,0.11273203944657927,0.0141684884275702,9
+tuned transformer,learning,0.15290829989029925,0.014399234480863913,9
+fusion,learning,0.16330801903935285,0.015867050160391097,9
+1D CNN,learning,0.1868999533715775,0.01930214771629447,9
+ST-5a,learning,0.19141379828119037,0.020204193779908494,9
+ST-5b,learning,0.32815812510291764,0.024327089420543874,9
+prior-regularized fit,fitting,0.4608322478794929,,1
+matched-model fit (trust region),fitting,0.488239594649451,,1
+W = 0 control,fitting,0.502490906835145,,1
+conditions only,reference,0.6334563617410826,,1
+windowed single-mode fit (±8 meV),fitting,0.8577255274824561,,1
+"single-mode fit, full range (±15 meV)",fitting,1.290974258223212,,1

@@ -1,0 +1,43 @@
+{
+  "directory": "manuscript_phase1/results/revision/A7_v10",
+  "dataset_version": "v10",
+  "generated_utc": "2026-09-16T01:09:18.672671+00:00",
+  "files": {
+    "cross_mode_correlation.csv": {
+      "script": "review_and_modify/scripts/a7_postprocess.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "improvement_over_oracle.csv": {
+      "script": "review_and_modify/scripts/a7_postprocess.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "marginal_check.csv": {
+      "script": "review_and_modify/scripts/a7_postprocess.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "mps_reproducibility_pairs.csv": {
+      "script": "review_and_modify/scripts/a7_postprocess.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "oracle_per_setting.csv": {
+      "script": "review_and_modify/scripts/a7_postprocess.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "rho_per_setting.csv": {
+      "script": "review_and_modify/scripts/a7_postprocess.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "training_runs.csv": {
+      "script": "review_and_modify/scripts/a4_train_v8.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "training_runs_dedup.csv": {
+      "script": "review_and_modify/scripts/a7_postprocess.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "variance_decomposition.csv": {
+      "script": "review_and_modify/scripts/a7_postprocess.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    }
+  }
+}

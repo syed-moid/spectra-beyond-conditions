@@ -1,0 +1,14 @@
+{
+  "task": "A5_label_permutation",
+  "script": "review_and_modify/scripts/a5_label_permutation.py",
+  "dataset_version": "v10",
+  "seeds": [
+    42,
+    43
+  ],
+  "permute_seed": 20260905,
+  "note": "log M training column permuted; omega0/log Gamma aux targets left intact",
+  "marginal_median_MAE_logM": 1.3502450098611707,
+  "marginal_mean_MAE_logM": 1.35697655173691,
+  "date_utc": "2026-09-14T23:02:06.564456+00:00"
+}

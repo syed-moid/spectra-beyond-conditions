@@ -1,0 +1,21 @@
+{
+  "task": "A27_feature_ablation",
+  "dataset_version": "v10",
+  "script": "review_and_modify/scripts/a27_feature_ablation_v10.py",
+  "eval_set": "manuscript_phase1/data/full_dataset_phase1_v10/dataset.npz split stress_base",
+  "train_split": "train, severity drawn log-uniform on [0.25, 4] as in the network protocol",
+  "estimator": "HistGradientBoostingRegressor(loss='absolute_error', early_stopping=True, validation_fraction=0.1)",
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "severity": 1.0,
+  "reference": "conditions-only conditional median, Monte Carlo, and the marginal median",
+  "n_draws": 2000,
+  "training": "gradient-boosted trees on hand features; no neural training",
+  "seed": 20260905,
+  "date_utc": "2026-09-13T19:37:48.056161+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "task": "A1",
+  "dataset_version": "v8",
+  "summary": {
+    "holdout_c_extrap": {
+      "N": 300,
+      "MAE_logM_conditional_median": 0.7125826961671051,
+      "MAE_logM_conditional_mean": 0.7179621931441418,
+      "MAE_logM_conditional_median_MC_expectation": 0.7102229955244737,
+      "MAE_logM_conditional_mean_MC_expectation": 0.7217897696236404,
+      "MAE_logM_marginal_median": 1.3549872613024376,
+      "mean_conditional_sd_logM": 1.0363890458587663,
+      "mean_conditional_IQR_logM": 1.007430042434346,
+      "mean_conditional_5_95_width_logM": 3.125474519696322,
+      "std_logM_realized": 1.6192804506500467
+    }
+  },
+  "v7_reference": {
+    "conditions_only_MLP_val_v7": 0.6232216787498219,
+    "conditions_only_MLP_stress_base_v7": 0.6509906503359798
+  }
+}

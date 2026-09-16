@@ -1,0 +1,73 @@
+{
+  "directory": "manuscript_phase1/results/revision/A23_v10",
+  "dataset_version": "v10",
+  "generated_utc": "2026-09-16T01:09:18.452421+00:00",
+  "files": {
+    "conditions_only_reference.json": {
+      "script": "ad hoc (v8), superseded by v9"
+    },
+    "figure2_data.csv": {
+      "script": "ad hoc (v8), superseded by v9"
+    },
+    "fit_parameters_dho_matched.csv": {
+      "script": "ad hoc (v8), superseded by v9"
+    },
+    "fit_parameters_dho_matched_prior.csv": {
+      "script": "ad hoc (v8), superseded by v9"
+    },
+    "fit_parameters_dho_matched_w0.csv": {
+      "script": "ad hoc (v8), superseded by v9"
+    },
+    "fit_parameters_dho_single.csv": {
+      "script": "ad hoc (v8), superseded by v9"
+    },
+    "fit_parameters_dho_single_win.csv": {
+      "script": "ad hoc (v8), superseded by v9"
+    },
+    "fit_results_test.csv": {
+      "script": "ad hoc (v8), superseded by v9"
+    },
+    "fit_summary_test.csv": {
+      "script": "ad hoc (v8), superseded by v9"
+    },
+    "network_by_severity_fitting_subset.csv": {
+      "script": "ad hoc (v8), superseded by v9"
+    },
+    "network_runs_on_fitting_subset.csv": {
+      "script": "ad hoc (v8), superseded by v9"
+    },
+    "network_runs_test.csv": {
+      "script": "ad hoc (v8), superseded by v9"
+    },
+    "network_vs_fit_test.csv": {
+      "script": "ad hoc (v8), superseded by v9"
+    },
+    "primary_fit_results.csv": {
+      "script": "ad hoc (v8), superseded by v9"
+    },
+    "primary_fit_summary.csv": {
+      "script": "ad hoc (v8), superseded by v9"
+    },
+    "primary_gap_fractions.json": {
+      "script": "ad hoc (v8), superseded by v9"
+    },
+    "primary_per_spectrum.csv": {
+      "script": "ad hoc (v8), superseded by v9"
+    },
+    "prior_clip_diagnostic.csv": {
+      "script": "ad hoc (v8), superseded by v9"
+    },
+    "prior_clip_diagnostic.json": {
+      "script": "ad hoc (v8), superseded by v9"
+    },
+    "prior_gap_fractions.json": {
+      "script": "ad hoc (v8), superseded by v9"
+    },
+    "severity_map_fits.csv": {
+      "script": "ad hoc (v8), superseded by v9"
+    },
+    "severity_map_verdict.json": {
+      "script": "ad hoc (v8), superseded by v9"
+    }
+  }
+}

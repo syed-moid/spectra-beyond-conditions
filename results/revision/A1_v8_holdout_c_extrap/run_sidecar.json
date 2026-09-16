@@ -1,0 +1,15 @@
+{
+  "task": "A1",
+  "script": "review_and_modify/scripts/a1_oracle_floor.py",
+  "seed": 20260905,
+  "n_draws": 2000,
+  "dataset_version": "v8",
+  "dataset": "manuscript_phase1/data/holdout_c_extrap_v8/dataset.npz",
+  "dataset_master_seed": 20260906,
+  "dataset_generator_git_sha": "997f2a0e1fe6431497da000c017528cc6a83b21d",
+  "config_hash_sha256_16": "401da4110c2b6b64",
+  "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d",
+  "date_utc": "2026-09-05T20:39:17.083831+00:00",
+  "numpy": "2.5.2",
+  "pandas": "2.3.3"
+}

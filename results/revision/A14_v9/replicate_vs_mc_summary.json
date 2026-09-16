@@ -1,0 +1,19 @@
+{
+  "task": "A14_data",
+  "dataset_version": "v9",
+  "n_tuples": 250,
+  "n_draws_per_tuple": 20,
+  "mc_n_draws": 2000,
+  "median_diff_mean": -0.0003650794570458,
+  "median_diff_sd": 0.18490592648944837,
+  "median_diff_p5_p95": [
+    -0.28754786160711454,
+    0.31284857922487197
+  ],
+  "expected_se_of_20_sample_median": 0.2477995995206846,
+  "corr_emp_vs_mc_median": 0.990033098886387,
+  "sd_diff_mean": -0.047800429281319654,
+  "sd_ratio_mean": 0.9465326840728925,
+  "mean_mc_sd_logM": 0.8842204569145058,
+  "mean_emp_sd_logM": 0.8364200276331862
+}

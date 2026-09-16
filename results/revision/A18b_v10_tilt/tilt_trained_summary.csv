@@ -1,0 +1,8 @@
+dataset_version,quantity,value
+v10,val_MAE_tilt_trained,0.20466742583278927
+v10,val_MAE_base,0.20586878115388346
+v10,paired_diff_tilt_minus_base,-0.0012013553210941904
+v10,ci_lo,-0.00698146415736602
+v10,ci_hi,0.005027024134830043
+v10,replicate_MAE_s1,0.19594155299417854
+v10,replicate_rho_s1,0.9078315789473683

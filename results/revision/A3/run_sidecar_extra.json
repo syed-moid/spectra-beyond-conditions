@@ -1,0 +1,25 @@
+{
+  "task": "A3b",
+  "script": "review_and_modify/scripts/a3b_extra_baselines.py",
+  "master_seed": 20260905,
+  "severities": [
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "n_stress_spectra": 500,
+  "window_meV": 8.0,
+  "st_seeds": [
+    42,
+    43,
+    44
+  ],
+  "st_checkpoints": "manuscript_phase1/results/phase1_st_run",
+  "metadata_fallback_model": "mlp_l1 (A2, seed-averaged)",
+  "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d",
+  "date_utc": "2026-09-05T16:58:08.895373+00:00",
+  "numpy": "2.5.0",
+  "pandas": "3.0.3"
+}

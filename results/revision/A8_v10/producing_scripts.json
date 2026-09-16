@@ -1,0 +1,27 @@
+{
+  "directory": "manuscript_phase1/results/revision/A8_v10",
+  "dataset_version": "v10",
+  "generated_utc": "2026-09-16T01:09:18.714664+00:00",
+  "files": {
+    "dense_sweep_replicate.csv": {
+      "script": "review_and_modify/scripts/a8_dense_sweep.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "dense_sweep_stress.csv": {
+      "script": "review_and_modify/scripts/a8_dense_sweep.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "one_factor_background_shaped.csv": {
+      "script": "review_and_modify/scripts/a8_dense_sweep.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "one_factor_sweeps.csv": {
+      "script": "review_and_modify/scripts/a8_dense_sweep.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "value_crossover.csv": {
+      "script": "review_and_modify/scripts/a8_dense_sweep.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    }
+  }
+}

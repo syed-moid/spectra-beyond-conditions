@@ -1,0 +1,13 @@
+# figure: fig5_channel_ablation
+# inputs: results/revision/A7_v10/oracle_per_setting.csv; results/revision/A7_v10/rho_per_setting.csv
+# population: ablation_v10_{setting}_seed{0,1,2}, val split
+# n: 1000 per realization
+# checkpoints: A7_v10/checkpoints
+# aggregation: mean over 3 realizations x 3 training seeds (ST-5a)
+# failure_policy: n/a
+# note: absolute errors only; no percentage-improvement panel; category labels broken over two lines
+setting,oracle_MAE,model_MAE,rho
+both,0.6051445818991739,0.1974572819972713,0.8974937343358396
+xi1_only,0.6082953316240864,0.20136190020036812,0.8947415887851715
+alpha_per_mode,0.5870498998265562,0.1905735645653925,0.8989573934837091
+xi2_only,0.0252564879322732,0.12674022891043304,0.2061483987820862

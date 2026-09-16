@@ -1,0 +1,7 @@
+dataset_version,model,value_crossover_severity,ranking_crossover_severity
+v9,cnn_kernel45,6.0,
+v9,tf_patch60,6.0,
+v9,cnn,4.0,
+v9,fusion,6.0,
+v9,5a,6.0,12.0
+v9,5b,4.0,

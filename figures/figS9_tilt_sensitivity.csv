@@ -1,0 +1,44 @@
+# figure: figS9_tilt_sensitivity
+# inputs: results/revision/A18b_v10/energy_tilt_sensitivity.csv; results/revision/A18b_v10_tilt/tilt_trained_beta_grid.csv
+# population: full_dataset_phase1_v10 split stress_base, tilted by g(omega) = 1 + beta * (omega / 15 meV)
+# n: 500
+# checkpoints: A21_v10/checkpoints (evaluated) and A18b_v10_tilt/checkpoints (trained)
+# aggregation: mean over runs; tilt-trained arm is the mean over 3 runs
+# failure_policy: n/a (no fitting in this figure)
+# note: all five plotted series are exported, including the tilt-trained CNN, which an earlier version plotted but did not save
+series,model,label,beta,MAE_logM,trained_on
+tilt-evaluated,cnn,1D CNN,-0.2,0.2492147112964373,untilted spectra
+tilt-evaluated,cnn,1D CNN,-0.1,0.2189797717819751,untilted spectra
+tilt-evaluated,cnn,1D CNN,-0.05,0.2094036619937556,untilted spectra
+tilt-evaluated,cnn,1D CNN,0.0,0.2058687811538834,untilted spectra
+tilt-evaluated,cnn,1D CNN,0.05,0.2098954130260454,untilted spectra
+tilt-evaluated,cnn,1D CNN,0.1,0.2205268191813962,untilted spectra
+tilt-evaluated,cnn,1D CNN,0.2,0.2549970367856362,untilted spectra
+tilt-evaluated,5a,ST-5a,-0.2,0.2883097919112221,untilted spectra
+tilt-evaluated,5a,ST-5a,-0.1,0.2317739734161727,untilted spectra
+tilt-evaluated,5a,ST-5a,-0.05,0.2124899127432215,untilted spectra
+tilt-evaluated,5a,ST-5a,0.0,0.201205342361825,untilted spectra
+tilt-evaluated,5a,ST-5a,0.05,0.2033265673876196,untilted spectra
+tilt-evaluated,5a,ST-5a,0.1,0.2193763762314938,untilted spectra
+tilt-evaluated,5a,ST-5a,0.2,0.2697732997871848,untilted spectra
+tilt-evaluated,fusion,fusion,-0.2,0.2143432676959172,untilted spectra
+tilt-evaluated,fusion,fusion,-0.1,0.1851357020050667,untilted spectra
+tilt-evaluated,fusion,fusion,-0.05,0.1748931898300733,untilted spectra
+tilt-evaluated,fusion,fusion,0.0,0.1693443208407321,untilted spectra
+tilt-evaluated,fusion,fusion,0.05,0.1697973177598881,untilted spectra
+tilt-evaluated,fusion,fusion,0.1,0.1760867817196197,untilted spectra
+tilt-evaluated,fusion,fusion,0.2,0.2008291265671383,untilted spectra
+tilt-evaluated,5b,ST-5b,-0.2,0.3351154434677877,untilted spectra
+tilt-evaluated,5b,ST-5b,-0.1,0.3167936940221514,untilted spectra
+tilt-evaluated,5b,ST-5b,-0.05,0.3136485968278497,untilted spectra
+tilt-evaluated,5b,ST-5b,0.0,0.3108617258681091,untilted spectra
+tilt-evaluated,5b,ST-5b,0.05,0.3084372482191279,untilted spectra
+tilt-evaluated,5b,ST-5b,0.1,0.3159916876593548,untilted spectra
+tilt-evaluated,5b,ST-5b,0.2,0.3248835458096873,untilted spectra
+tilt-trained,cnn,"CNN, tilt-augmented training",-0.2,0.2128850368608631,tilt-augmented spectra
+tilt-trained,cnn,"CNN, tilt-augmented training",-0.1,0.207029565140414,tilt-augmented spectra
+tilt-trained,cnn,"CNN, tilt-augmented training",-0.05,0.2054134211962495,tilt-augmented spectra
+tilt-trained,cnn,"CNN, tilt-augmented training",0.0,0.2046674258327892,tilt-augmented spectra
+tilt-trained,cnn,"CNN, tilt-augmented training",0.05,0.2047594169357279,tilt-augmented spectra
+tilt-trained,cnn,"CNN, tilt-augmented training",0.1,0.2058489090942344,tilt-augmented spectra
+tilt-trained,cnn,"CNN, tilt-augmented training",0.2,0.2101714103321791,tilt-augmented spectra

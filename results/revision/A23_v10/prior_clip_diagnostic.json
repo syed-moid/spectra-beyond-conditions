@@ -1,0 +1,25 @@
+{
+  "task": "A29_prior_clip_diagnostic",
+  "dataset_version": "v10",
+  "script": "review_and_modify/scripts/a29_prior_diagnostic.py",
+  "shipped_behaviour": "nlp = max(raw_nlp, 0.0) -- a literal clip, not an offset",
+  "nlp_min_over_support": -3.692371679991498,
+  "max_log_p_multiplier": 0.3650596485065783,
+  "max_log_p_shift": 3.3273120314849196,
+  "n_fits": 600,
+  "frac_fits_entered_negative": 1.0,
+  "mean_frac_evals_clipped": 0.8977335364160376,
+  "frac_fits_final_in_clip": 0.94,
+  "atoms": {
+    "n_spectra": 7400,
+    "frac_multiplier_on_floor_soft": 0.008648648648648649,
+    "frac_multiplier_on_floor_all_modes": 0.008423423423423424,
+    "frac_shift_on_lower_clip": 0.0,
+    "frac_shift_on_upper_clip": 0.016216216216216217,
+    "beta_xi2_min": -0.006651655933528294,
+    "beta_xi2_max": 0.07,
+    "note": "the lower clip at -0.050 is never reached: the realized minimum is -0.006652",
+    "frac_soft_pair_on_any_atom": 0.02472972972972973
+  },
+  "date_utc": "2026-09-14T16:56:47.008663+00:00"
+}

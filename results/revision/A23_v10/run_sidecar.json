@@ -1,0 +1,24 @@
+{
+  "task": "A23_fitting_test",
+  "dataset_version": "v10",
+  "script": "review_and_modify/scripts/a23_fitting_test.py",
+  "eval_set": "manuscript_phase1/data/test_v10/dataset.npz",
+  "n_spectra": 600,
+  "severity": 1.0,
+  "methods": [
+    "dho_matched",
+    "dho_matched_prior",
+    "dho_single_win"
+  ],
+  "regime_definition": "overdamped = Gamma > omega0 (poles at -i*Gamma +- sqrt(omega0^2-Gamma^2))",
+  "prior_weight": 1.0,
+  "prior_residual": "sqrt(2*W*(nlp - nlp_min)) on the continuous interior; nlp_min is the global minimum over the support so the MAP is unchanged. Replaces the earlier max(nlp, 0) clip, which zeroed the penalty and its gradient over most of the support (round 46)",
+  "nlp_min_interior": -3.692371679991498,
+  "failure_definition": "optimizer status <= 0, or omega0 or Gamma within a relative 1e-3 of either of its bounds",
+  "failure_policies": [
+    "failures_excluded (headline)",
+    "failures replaced by the conditions-only conditional median"
+  ],
+  "forward_model_scope": "three DHOs, central peak, linear background, energy offset and a pseudo-Voigt resolution with eta fixed at 0.3. The generator's lineshape skew is NOT in the fit model, and the generator draws eta per spectrum on [0.1, 0.5]. Temperature enters the fit through the Bose factor and the central-peak envelope; c and E enter only through the initialisation.",
+  "date_utc": "2026-09-14T18:32:47.148089+00:00"
+}
