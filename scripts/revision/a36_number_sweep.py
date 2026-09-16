@@ -57,7 +57,7 @@ def _manuscript_dir():
             "code release. Set SBC_MANUSCRIPT_DIR to the directory holding "
             "DRAFT_*_main.md and DRAFT_*_supplement.md, for example:\n"
             "    SBC_MANUSCRIPT_DIR=../manuscript python " + __file__)
-    return Path(d)
+    return Path(d).resolve()
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -71,7 +71,7 @@ SPEC_SOURCES = [
     SCRIPTS / "a3_fitting_baselines.py",
     SCRIPTS / "a3b_extra_baselines.py",
     SCRIPTS / "dataset_paths.py",
-    ROOT / "src" / "data" / "spectrum_generator.py",
+    ROOT / "sbc" / "data" / "spectrum_generator.py",
 ]
 MAX_DECIMALS = 6
 

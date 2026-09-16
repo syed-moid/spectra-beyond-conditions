@@ -1,5 +1,5 @@
 # figure: figS9_tilt_sensitivity
-# inputs: manuscript_phase1/results/revision/A18b_v10/energy_tilt_sensitivity.csv; manuscript_phase1/results/revision/A18b_v10_tilt/tilt_trained_beta_grid.csv
+# inputs: results/revision/A18b_v10/energy_tilt_sensitivity.csv; results/revision/A18b_v10_tilt/tilt_trained_beta_grid.csv
 # population: full_dataset_phase1_v10 split stress_base, tilted by g(omega) = 1 + beta * (omega / 15 meV)
 # n: 500
 # checkpoints: A21_v10/checkpoints (evaluated) and A18b_v10_tilt/checkpoints (trained)

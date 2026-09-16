@@ -1,5 +1,5 @@
 # figure: fig3_two_boundaries
-# inputs: manuscript_phase1/results/revision/A24_v10/ranking_by_severity_v10.csv
+# inputs: results/revision/A24_v10/ranking_by_severity_v10.csv
 # population: replicate_test_v10, 250 tuples x 20 realizations
 # n: 5000
 # checkpoints: A21_v10/checkpoints (ablation_v10_both_seed{0,1,2})

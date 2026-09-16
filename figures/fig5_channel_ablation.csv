@@ -1,5 +1,5 @@
 # figure: fig5_channel_ablation
-# inputs: manuscript_phase1/results/revision/A7_v10/oracle_per_setting.csv; manuscript_phase1/results/revision/A7_v10/rho_per_setting.csv
+# inputs: results/revision/A7_v10/oracle_per_setting.csv; results/revision/A7_v10/rho_per_setting.csv
 # population: ablation_v10_{setting}_seed{0,1,2}, val split
 # n: 1000 per realization
 # checkpoints: A7_v10/checkpoints

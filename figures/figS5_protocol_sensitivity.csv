@@ -1,5 +1,5 @@
 # figure: figS5_protocol_sensitivity
-# inputs: manuscript_phase1/results/revision/A4_v10/training_runs.csv; manuscript_phase1/results/revision/A4_v10_extended/training_runs.csv
+# inputs: results/revision/A4_v10/training_runs.csv; results/revision/A4_v10_extended/training_runs.csv
 # note: per-seed mean +- SD, 5 seeds each
 arch,protocol,seed,dataset_version,stopping_protocol,min_epochs,max_epochs,patience,ema_alpha,train_tilt,stop_epoch,stop_reason,cap_hit,best_within_5_of_cap,n_parameters,epochs_trained,best_epoch,best_val_MAE_logM,wall_time_sec,mean_epoch_sec,severity_sampling_seed,train_severity_protocol,train_severity_range,device,cap_override,git_commit,generator_file_sha256,dataset,date_utc,torch,rule
 5a,v7,42,v10,v7,1,100,10,,0.0,96,patience,False,False,687843,96,86,0.2090751294913422,167.64731740951538,1.7403219441572826,0,v7,"[0.25, 4.0]",mps,,997f2a0e1fe6431497da000c017528cc6a83b21d,8cb82ecfe714cac2a1d37e41ca2928b4c10ff42bf676aec1b61866ffbe4398ab,manuscript_phase1/data/full_dataset_phase1_v10/dataset.npz,2026-09-15T13:04:23.086407+00:00,2.14.0,v7

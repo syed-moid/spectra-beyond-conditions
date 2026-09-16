@@ -34,7 +34,7 @@ _reg = DS.rev("A12") / "figure_inputs.csv"
 if _reg.exists():
     DIGEST_SOURCES |= set(pd.read_csv(_reg).source_file.unique())
 _REL_FULL = str(DS.FULL.relative_to(ROOT))
-_GEN = ROOT / "src" / "data" / "spectrum_generator.py"
+_GEN = ROOT / "sbc" / "data" / "spectrum_generator.py"
 DATASET_PROVENANCE = {
     _REL_FULL: f"generator sha256 {hashlib.sha256(_GEN.read_bytes()).hexdigest()}"}
 

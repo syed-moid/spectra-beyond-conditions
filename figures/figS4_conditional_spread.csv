@@ -1,5 +1,5 @@
 # figure: figS4_conditional_spread
-# inputs: manuscript_phase1/results/revision/A1_v10/conditional_spread_vs_conditions.csv
+# inputs: results/revision/A1_v10/conditional_spread_vs_conditions.csv
 # note: from the A1 oracle, val + stress pooled
 dataset_version,axis,bin,lo,hi,center,n,median_cond_sd,median_cond_IQR,median_cond_5_95,median_cond_median_logM
 v10,T_K,0,100.05008697509766,172.27190704345702,133.85253143310547,150,0.5227530102944363,0.4553239583386206,1.4361374661837092,0.0651780031175204

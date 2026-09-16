@@ -1,5 +1,5 @@
 # figure: figS2_one_factor
-# inputs: manuscript_phase1/results/revision/A8_v10/one_factor_sweeps.csv; manuscript_phase1/results/revision/A8_v10/one_factor_background_shaped.csv
+# inputs: results/revision/A8_v10/one_factor_sweeps.csv; results/revision/A8_v10/one_factor_background_shaped.csv
 # population: test_v10, each degradation channel varied alone
 # n: 500
 # checkpoints: A21_v10/checkpoints (ablation_v10_both_seed{0,1,2})

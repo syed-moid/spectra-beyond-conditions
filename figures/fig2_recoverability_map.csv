@@ -1,5 +1,5 @@
 # figure: fig2_recoverability_map
-# inputs: manuscript_phase1/results/revision/A23_v10/primary_per_spectrum.csv; manuscript_phase1/results/revision/A23_v10/network_by_severity_fitting_subset.csv; manuscript_phase1/results/revision/A23_v10/conditions_only_reference.json
+# inputs: results/revision/A23_v10/primary_per_spectrum.csv; results/revision/A23_v10/network_by_severity_fitting_subset.csv; results/revision/A23_v10/conditions_only_reference.json
 # population: test_v10, the 600-spectrum fitting subset -- EVERY series
 # n: 600
 # checkpoints: A21_v10/checkpoints (ablation_v10_both_seed{0,1,2})

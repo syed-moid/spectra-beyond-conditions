@@ -1,5 +1,5 @@
 # figure: fig4_holdout_heatmap
-# inputs: manuscript_phase1/results/revision/A10_v10/holdout_table_v10.csv
+# inputs: results/revision/A10_v10/holdout_table_v10.csv
 # population: full_dataset_phase1_v10 hold-out splits + holdout_c_extrap_v10
 # n: 1000 (val), 300 per hold-out
 # checkpoints: A21_v10/checkpoints (ablation_v10_both_seed{0,1,2})

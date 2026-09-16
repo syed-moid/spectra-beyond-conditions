@@ -102,7 +102,7 @@ def build(setting, seed, cfg, cfg_text, out):
                         dataset_seed=np.array(seed, np.int32),
                         augmentation_config_yaml=np.array(cfg_text[:4096], "<U4096"),
                         generator_file_sha256=np.array(hashlib.sha256(
-                            (ROOT / "src" / "data"
+                            (ROOT / "sbc" / "data"
                              / "spectrum_generator.py").read_bytes()).hexdigest(), "<U64"),
                         schema_version=np.array(2, np.int32))
     return out.stat().st_size / 1024**2

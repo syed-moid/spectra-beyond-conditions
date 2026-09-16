@@ -38,14 +38,16 @@ def _manuscript_dir():
             "code release. Set SBC_MANUSCRIPT_DIR to the directory holding "
             "DRAFT_*_main.md and DRAFT_*_supplement.md, for example:\n"
             "    SBC_MANUSCRIPT_DIR=../manuscript python " + __file__)
-    return Path(d)
+    return Path(d).resolve()
 
 
 ROOT = Path(__file__).resolve().parents[2]
 REV = ROOT / "results" / "revision"
+# The ledger ships with the code as PROVENANCE.md; the manuscript does not ship at
+# all, so its directory comes from SBC_MANUSCRIPT_DIR and may sit anywhere.
+LEDGER = ROOT / "PROVENANCE.md"
 MS = _manuscript_dir()
-LEDGER = MS / "PROVENANCE_LEDGER.md"
-MAIN = MS / "DRAFT_v8_9" / "DRAFT_v8_9_main.md"
+MAIN = next(iter(sorted(MS.glob("DRAFT_*_main.md"))), MS / "DRAFT_main.md")
 
 # Rows allowed to rest on an earlier generator, with the reason and the label
 # that must appear in the manuscript for the exception to be accepted.
@@ -95,7 +97,7 @@ def sources(cell):
 
 def main():
     if not LEDGER.exists():
-        print(f"FAIL: no ledger at {LEDGER.relative_to(ROOT)}"); return 1
+        print(f"FAIL: no ledger at {LEDGER}"); return 1
     rows = ledger_rows(LEDGER.read_text())
     ms = MAIN.read_text() if MAIN.exists() else ""
     if not rows:

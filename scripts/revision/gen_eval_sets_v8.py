@@ -65,7 +65,7 @@ def _git_sha():
 
 
 def _gen_sha():
-    p = ROOT / "src" / "data" / "spectrum_generator.py"
+    p = ROOT / "sbc" / "data" / "spectrum_generator.py"
     return hashlib.sha256(p.read_bytes()).hexdigest()
 
 

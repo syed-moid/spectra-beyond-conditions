@@ -1,5 +1,5 @@
 # figure: figS3_occlusion
-# inputs: manuscript_phase1/results/revision/A9_v10/occlusion_sensitivity.csv
+# inputs: results/revision/A9_v10/occlusion_sensitivity.csv
 # population: full_dataset_phase1_v10, stress_base
 # n: 500
 # checkpoints: A21_v10/checkpoints (ablation_v10_both_seed{0,1,2})

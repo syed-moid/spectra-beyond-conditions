@@ -39,7 +39,7 @@ def _manuscript_dir():
             "code release. Set SBC_MANUSCRIPT_DIR to the directory holding "
             "DRAFT_*_main.md and DRAFT_*_supplement.md, for example:\n"
             "    SBC_MANUSCRIPT_DIR=../manuscript python " + __file__)
-    return Path(d)
+    return Path(d).resolve()
 
 
 MS = _manuscript_dir()

@@ -1,5 +1,5 @@
 # figure: figS6_bose_control
-# inputs: manuscript_phase1/results/revision/A4_control_buggy_bose/control_runs.csv; manuscript_phase1/results/revision/A4/training_runs.csv
+# inputs: results/revision/A4_control_buggy_bose/control_runs.csv; results/revision/A4/training_runs.csv
 # population: v8 validation split (defective arm: same split, v7 generator semantics)
 # n: 1000
 # checkpoints: A4_control_buggy_bose/checkpoints and A4/checkpoints

@@ -1,5 +1,5 @@
 # figure: figS8_replicate_vs_mc
-# inputs: manuscript_phase1/results/revision/A14_v10/replicate_vs_mc_conditional.csv
+# inputs: results/revision/A14_v10/replicate_vs_mc_conditional.csv
 # note: 250 tuples; validates the A1 oracle construction
 dataset_version,tuple_id,n_draws_empirical,T_K,c_pct,E_kVcm,omega0_baseline_meV,Gamma0_baseline_meV,emp_median_logM,mc_median_logM,emp_mean_logM,mc_mean_logM,emp_sd_logM,mc_sd_logM,emp_iqr_logM,mc_iqr_logM,median_diff,sd_diff
 v10,0,20,387.0281982421875,0.4279559552669525,1.9182695150375368,3.858936989476296,2.764717573405116,-0.5840344761713037,-0.7839438713663385,-0.7344760284691992,-0.6819312610345086,0.8591011951352417,0.8616850925317333,0.7322685932337125,0.915590324719327,0.1999093951950348,-0.0025838973964915

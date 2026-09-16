@@ -3,7 +3,7 @@
 One row per table and figure. Columns: the generator version the numbers were produced on, the
 evaluation set, **the dataset file the models were trained on**, the rule that selected the model
 or checkpoint, the aggregation convention, the file the numbers are read from (relative to
-`manuscript_phase1/results/revision/`), and the `run_id` family.
+`results/revision/`), and the `run_id` family.
 
 **On the two v10 dataset files.** `full_dataset_phase1_v10` and `ablation_v10_both_seed{0,1,2}`
 are independent draws of the **same generator configuration** — identical augmentation-config
@@ -42,8 +42,8 @@ deliberately retained; each says why. No main-text row may read anything but v10
 | F3 | recoverability boundaries (pairwise accuracy) | v10 | `replicate_test_v10` | `ablation_v10_both_seed{0,1,2}` | as T3 | mean over 9 runs | `A24_v10/ranking_by_severity_v10.csv` | as T3 |
 | F4 | hold-out heat map | v10 | as T6 | `ablation_v10_both_seed{0,1,2}` | as T3 | mean over 9 runs | `A10_v10/holdout_table_v10.csv` | as T6 |
 | F5 | channel ablation | v10 | as T10 | `ablation_v10_{setting}_seed{0,1,2}` | as T10 | as T10 | `A7_v10/oracle_per_setting.csv`, `A7_v10/rho_per_setting.csv` | as T10 |
-| F6 | example spectra | v10 | `test_v10` | — (no trained model) | — | six drawn spectra, indices recorded in the CSV | `manuscript_phase1/data/full_dataset_phase1_v10/dataset.npz` | — |
-| F7 | representative converged fits, two regimes | v10 | `test_v10`, the 600-spectrum subset | — (no trained model) | median Γ/ω₀ **converged** case per regime, selected in the plotting code | one spectrum per panel; curves rendered from the stored optimized parameter vectors | `A23_v10/primary_per_spectrum.csv`, `A23_v10/fit_parameters_dho_matched.csv`, `A23_v10/fit_parameters_dho_matched_prior.csv`, `manuscript_phase1/data/test_v10/dataset.npz` | `a32_primary` |
+| F6 | example spectra | v10 | `test_v10` | — (no trained model) | — | six drawn spectra, indices recorded in the CSV | `data/full_dataset_phase1_v10/dataset.npz` | — |
+| F7 | representative converged fits, two regimes | v10 | `test_v10`, the 600-spectrum subset | — (no trained model) | median Γ/ω₀ **converged** case per regime, selected in the plotting code | one spectrum per panel; curves rendered from the stored optimized parameter vectors | `A23_v10/primary_per_spectrum.csv`, `A23_v10/fit_parameters_dho_matched.csv`, `A23_v10/fit_parameters_dho_matched_prior.csv`, `data/test_v10/dataset.npz` | `a32_primary` |
 | F8 | model-family bars | v10 | `test_v10`, s = 1, the 600-spectrum subset — **one population for every series** | `ablation_v10_both_seed{0,1,2}` | as T3 | networks: per-run MAE, mean ± SD over 9 runs (no ensemble); fits single pass, failures replaced; reference MC conditional median | `A23_v10/network_runs_on_fitting_subset.csv`, `A23_v10/primary_per_spectrum.csv`, `A23_v10/conditions_only_reference.json` | `a34_network_subset`, `a32_primary` |
 
 ## Supplement

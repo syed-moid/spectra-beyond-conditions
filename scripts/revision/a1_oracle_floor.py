@@ -85,9 +85,9 @@ def config_hash():
     h = hashlib.sha256()
     for p in (ROOT / "configs" / "phase1_parameter_card.yaml",
               ROOT / "configs" / "augmentation_realistic.yaml",
-              ROOT / "src" / "data" / "latent_perturbations.py",
-              ROOT / "src" / "data" / "merit.py",
-              ROOT / "src" / "data" / "spectrum_generator.py",
+              ROOT / "sbc" / "data" / "latent_perturbations.py",
+              ROOT / "sbc" / "data" / "merit.py",
+              ROOT / "sbc" / "data" / "spectrum_generator.py",
               Path(__file__)):
         h.update(p.read_bytes())
     return h.hexdigest()[:16]

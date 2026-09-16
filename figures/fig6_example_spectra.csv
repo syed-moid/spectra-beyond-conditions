@@ -1,5 +1,5 @@
 # figure: fig6_example_spectra
-# inputs: manuscript_phase1/data/full_dataset_phase1_v10/dataset.npz
+# inputs: data/full_dataset_phase1_v10/dataset.npz
 # note: replicate set, tuple 0; generator sha256 8cb82ecfe714cac2a1d37e41ca2928b4c10ff42bf676aec1b61866ffbe4398ab
 idx,logM,omega_Q,Gamma_Q
 0,-1.2610178425341594,3.995535373687744,3.392380475997925

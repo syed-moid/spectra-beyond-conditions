@@ -1,5 +1,5 @@
 # figure: fig7_fit_overlay
-# inputs: manuscript_phase1/results/revision/A23_v10/primary_per_spectrum.csv; manuscript_phase1/data/test_v10/dataset.npz; manuscript_phase1/results/revision/A23_v10/fit_parameters_dho_matched.csv; manuscript_phase1/results/revision/A23_v10/fit_parameters_dho_matched_prior.csv
+# inputs: results/revision/A23_v10/primary_per_spectrum.csv; data/test_v10/dataset.npz; results/revision/A23_v10/fit_parameters_dho_matched.csv; results/revision/A23_v10/fit_parameters_dho_matched_prior.csv
 # population: test_v10, two cases from the 600-spectrum subset
 # n: 2
 # checkpoints: n/a (fitting only)

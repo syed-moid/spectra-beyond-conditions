@@ -490,8 +490,8 @@ def git_sha():
 
 def config_hash():
     h = hashlib.sha256()
-    for p in (ROOT / "src" / "data" / "spectrum_generator.py",
-              ROOT / "src" / "data" / "augmentations.py",
+    for p in (ROOT / "sbc" / "data" / "spectrum_generator.py",
+              ROOT / "sbc" / "data" / "augmentations.py",
               Path(__file__)):
         h.update(p.read_bytes())
     return h.hexdigest()[:16]

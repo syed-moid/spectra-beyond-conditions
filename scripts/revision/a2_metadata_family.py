@@ -149,7 +149,7 @@ def git_sha():
 
 def config_hash():
     h = hashlib.sha256()
-    for p in (ROOT / "src" / "models" / "nonlinear_conditions_mlp.py",
+    for p in (ROOT / "sbc" / "models" / "nonlinear_conditions_mlp.py",
               Path(__file__)):
         h.update(p.read_bytes())
     return h.hexdigest()[:16]
