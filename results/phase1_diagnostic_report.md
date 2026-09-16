@@ -1,7 +1,7 @@
 # Phase 1 acceptance report (Step F)
 
-- Dataset: `/Users/syed.a.moid/Documents/WORKSPACES/PHD/INS_ML/spectra-beyond-conditions/manuscript_phase1/data/full_dataset_phase1/dataset.npz`
-- ST ablation run dir: `/Users/syed.a.moid/Documents/WORKSPACES/PHD/INS_ML/spectra-beyond-conditions/manuscript_phase1/results/phase1_st_run`
+- Dataset: `<repo>/data/full_dataset_phase1/dataset.npz`
+- ST ablation run dir: `<repo>/results/phase1_st_run`
 - Phase 0 NL-cond floor (historical reference): **0.0048**
 - Phase 1 NL-cond floor (live, new gate basis): **0.6232**
 - Live acceptance threshold (0.70 x Phase 1 floor): **0.4363**
