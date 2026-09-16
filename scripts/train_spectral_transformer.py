@@ -718,12 +718,20 @@ def parse_args() -> argparse.Namespace:
                    help="Dataset .npz. Defaults to data/full_dataset_phase1/dataset.npz (Phase 1).")
     p.add_argument("--param-card", type=str, default=None,
                    help="Path to the Phase 1 parameter card (logged to W&B for provenance).")
+    p.add_argument("--use-wandb", action=argparse.BooleanOptionalAction, default=True,
+                   help="Log to W&B. Automatically disabled if wandb is not installed.")
     return p.parse_args()
 
 
 def main() -> int:
     args = parse_args()
-    import wandb
+    try:
+        import wandb
+    except ImportError:
+        wandb = None
+    wb_on = bool(args.use_wandb) and wandb is not None
+    if args.use_wandb and wandb is None:
+        print("W&B: wandb is not installed -- continuing without logging.")
 
     device = select_device(args.device)
     if device.type != args.device:
@@ -743,10 +751,10 @@ def main() -> int:
     run_root = OUTPUT_ROOT / f"spectral_transformer_{STEP_TAG}_{today}"
     run_root.mkdir(parents=True, exist_ok=True)
 
-    wb_mode = "online" if _wandb_authenticated() else "offline"
-    if wb_mode == "offline":
+    wb_mode = "online" if (wb_on and _wandb_authenticated()) else "offline"
+    if wb_on and wb_mode == "offline":
         print("W&B: no API key detected -- falling back to offline mode.")
-        print("     Run `./venv/bin/wandb login` and `wandb sync <run-dir>` to upload.")
+        print("     Run `./.venv/bin/wandb login` and `wandb sync <run-dir>` to upload.")
 
     splits = prepare_splits(data_path)
 
@@ -796,7 +804,7 @@ def main() -> int:
             mode=wb_mode,
             dir=str(seed_dir),
             reinit="finish_previous",
-        )
+        ) if wb_on else None
 
         result = train_one_seed(
             arch=args.arch, seed=seed, splits=splits, device=device,
@@ -831,10 +839,12 @@ def main() -> int:
             print(f"\nABORT REMAINING SEEDS: end-of-seed train/val ratio "
                   f"{result.train_val_ratio:.2f}x with val_MAE_logM "
                   f"{result.best_val_mae_logM:.4f}. See seed dir for curves.")
-            wb_run.finish()
+            if wb_run is not None:
+                wb_run.finish()
             break
 
-        wb_run.finish()
+        if wb_run is not None:
+            wb_run.finish()
 
     # Cross-seed summary for this arch.
     summary_path = run_root / f"{args.arch}_seed_summary.json"

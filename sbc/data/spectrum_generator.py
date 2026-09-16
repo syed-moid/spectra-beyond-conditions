@@ -68,7 +68,8 @@ from .latent_perturbations import LatentDraw
 # --------------------------------------------------------------------- #
 
 K_B: float = 8.617333262145e-2   # meV/K
-HBAR: float = 0.6582119569       # eV*fs (used as in the published code)
+HBAR: float = 0.6582119569       # meV*ps == eV*fs; overall prefactor in dho() only,
+                                 # absorbed by the F2 calibration. NOT used in bose().
 PI: float = np.pi
 T_C: float = 395.0               # BaTiO3 Curie temperature, K
 
@@ -180,8 +181,21 @@ def Delta_omega(E: float) -> float:
 
 
 def bose(omega: np.ndarray, T: float) -> np.ndarray:
-    """Bose-Einstein occupation factor (public; used by augmentations)."""
-    return 1.0 / (np.exp(HBAR * np.abs(omega) / (K_B * T)) - 1.0 + 1e-12)
+    """Bose-Einstein occupation factor (public; used by augmentations).
+
+    `omega` is an ENERGY in meV, so the exponent is omega / (k_B T) directly.
+
+    Unit fix. The prior form multiplied the exponent by HBAR = 0.6582, which is
+    hbar expressed in meV*ps (equivalently eV*fs) and converts an ANGULAR
+    FREQUENCY in rad/ps into an energy in meV. Applied to a quantity already in
+    meV it is a second, spurious conversion: the exponent evaluated was 0.6582x
+    the correct hbar*omega / k_B T, i.e. the occupation was computed as though
+    every phonon energy were 34.2% smaller (equivalently at 1.519 T). The
+    Stokes/anti-Stokes asymmetry was understated by up to 23% at low T and high
+    omega. Note merit.py has always used the unscaled omega_Q / (2 k_B T), so
+    the spectrum and the target previously disagreed on the thermal factor.
+    """
+    return 1.0 / (np.exp(np.abs(omega) / (K_B * T)) - 1.0 + 1e-12)
 
 
 def dho(
@@ -192,44 +206,90 @@ def dho(
     T: float,
     F2: float,
 ) -> np.ndarray:
-    """Damped-harmonic-oscillator lineshape with detailed-balance weighting.
+    """Damped-harmonic-oscillator dynamic structure factor.
 
-    One-phonon dynamic structure factor. The Bose-Einstein occupation
-    factor is evaluated at the phonon frequency `omega0` (not at the
-    spectral variable `omega`); the lineshape itself is a pure Lorentzian
-    in `omega`. This is the correct form for a one-phonon S(Q, omega):
-    Stokes side (omega > 0, energy loss) carries weight [n(omega0) + 1],
-    anti-Stokes side (omega < 0, energy gain) carries n(omega0).
+    S(w) = (F2/pi) * 4 * Gamma * omega0 * occ(w) / [(w^2 - w0^2 + 2 w0 Delta)^2
+                                                    + 4 Gamma^2 w^2]
 
-    Source-code finding (Session 3). The published BaTiO3HybridINSPlots.py
-    applied `bose(omega, T)` as an envelope on the Lorentzian — i.e.,
-    evaluated the Bose factor at the spectral variable. That introduces
-    a spurious 1/omega divergence at the elastic line that does not
-    exist in real INS data. We correct this here. The published scalar
-    outputs (omega_Q, Gamma_Q, M) do not surface the bug because they
-    don't depend on the lineshape envelope. See SESSION_LOG.
+    with occ(w) = w / (1 - exp(-w / k_B T)), the product [n(w)+1]*w, whose
+    w -> 0 limit is k_B T and is taken analytically. This is the standard DHO
+    response used by the parent framework
+    (../ferroelectric-ins-ml/ml/conventions.py:76-97).
 
-    Gamma may be a scalar (standard symmetric DHO) or an array with the
-    same shape as `omega` (asymmetric / energy-dependent damping; used
-    by the anharmonic_skew augmentation).
+    `Gamma` is the HALF-WIDTH AT HALF-MAXIMUM of the underdamped response; the
+    damping constant of the equation of motion is 2*Gamma. In the overdamped
+    limit the response is a quasi-elastic Lorentzian of half-width
+    kappa = omega0^2 / (2 Gamma).
+
+    Properties, all covered by tests in tests/test_generator.py:
+      * continuous at w = 0 (the odd numerator cancels the 1/w of the
+        occupation factor);
+      * detailed balance S(w)/S(-w) = exp(w / k_B T), a function of the ENERGY
+        TRANSFER;
+      * S(0) = k_B T * 4 * Gamma * omega0 * F2 / (pi * omega0^4) per unit
+        amplitude.
+
+    History (v7 -> v9). v7 multiplied an EVEN lineshape Gamma/[(w^2-w0^2)^2 +
+    4 w0^2 Gamma^2] by a per-spectrum step weight [n(w0)+1] for w >= 0 and
+    n(w0) for w < 0. That is discontinuous at the elastic line (ratio
+    exp(w0/k_B T): median 15%, up to a factor 2 below 200 K) and enforces
+    S(w)/S(-w) = exp(w0/k_B T), independent of w, which is not detailed
+    balance. v8 corrected the occupation scale (the stray hbar); v9 corrects
+    the lineshape. The 1/hbar prefactor carried by the v7 form is dropped: it
+    is a constant absorbed by the one-time F^2 calibration.
+
+    Gamma may be a scalar or an array with the same shape as `omega`
+    (energy-dependent damping; used by the anharmonic_skew augmentation).
     """
-    n_omega0 = bose(np.asarray(omega0, dtype=float), T)  # scalar at phonon freq
-    weight = np.where(np.asarray(omega) >= 0.0, n_omega0 + 1.0, n_omega0)
-    denom = (omega ** 2 - omega0 ** 2 + 2.0 * omega0 * Delta) ** 2 + 4.0 * omega0 ** 2 * Gamma ** 2
-    return (1.0 / HBAR) * weight * (1.0 / PI) * F2 * (Gamma / denom)
+    omega = np.asarray(omega, dtype=float)
+    x = np.clip(omega / (K_B * T), -700.0, 700.0)
+    # occ(w) = w / (1 - exp(-x)); analytic limit k_B T at w -> 0. np.where
+    # evaluates both branches, so the divisor is neutralised on the limit
+    # branch: without it the w = 0 element forms 0/0 and warns. The selected
+    # values are unchanged.
+    near_zero = np.abs(x) < 1e-10
+    occ = np.where(near_zero, K_B * T, omega / np.where(near_zero, 1.0, -np.expm1(-x)))
+    denom = (omega ** 2 - omega0 ** 2 + 2.0 * omega0 * Delta) ** 2 \
+        + 4.0 * Gamma ** 2 * omega ** 2
+    return (F2 / PI) * 4.0 * Gamma * omega0 * occ / denom
 
 
 def central_peak(omega: np.ndarray, T: float, width_meV: float = 1.5) -> np.ndarray:
-    """Lorentzian central-peak term, active only for |T - T_C| < 50 K.
+    """Relaxational central-peak term, active only for |T - T_C| < 50 K.
 
-    `width_meV` is the HWHM of the central-peak Lorentzian (default 1.5,
-    matching the published implementation). Exposed so augmentations can
-    perturb it.
+    v10 form. The contribution is an equilibrium relaxational susceptibility
+    carried by the same Bose factor as the oscillators:
+
+        S_cp(w) = A(T) * [n(w)+1] * w*tau / (1 + w^2 tau^2),   tau = 1/width
+
+    which satisfies S(w)/S(-w) = exp(w/k_B T) exactly and is continuous at
+    w = 0, where it takes the finite value A(T)*k_B*T*tau. In the classical
+    limit [n(w)+1] -> k_B T / w, so the profile reduces to a Lorentzian of
+    HWHM = 1/tau = `width_meV`: the present width is preserved.
+
+    A(T) is fixed so the w = 0 value matches the v7-v9 even-Lorentzian peak
+    I_c/(pi*width), i.e. A = I_c / (pi * k_B * T). The amplitude envelope
+    I_c = 600*exp(-|T-T_C|/30) and the hard gate at |T-T_C| < 50 K are
+    unchanged from v9 and remain stated limitations.
+
+    v7-v9 used an EVEN Lorentzian, I_c*width/(pi*(w^2+width^2)), added
+    directly to S(w) with no thermal factor. That term breaks detailed balance
+    for the assembled spectrum. Its amplitude is <= 0.05% of the intensity at
+    w = 0, so the correction is physically right but numerically immaterial
+    (relative L2 change ~3.5e-07); the benchmark does not test central-peak
+    physics.
     """
     if abs(T - T_C) >= 50.0:
         return np.zeros_like(omega)
     I_c = 600.0 * np.exp(-abs(T - T_C) / 30.0)
-    return I_c * width_meV / (PI * (omega ** 2 + width_meV ** 2))
+    tau = 1.0 / float(width_meV)
+    A = I_c / (PI * K_B * T)
+    omega = np.asarray(omega, dtype=float)
+    x = np.clip(omega / (K_B * T), -700.0, 700.0)
+    near_zero = np.abs(x) < 1e-10
+    # [n(w)+1]*w = w/(1-exp(-x)) -> k_B T as w -> 0; same guarded form as dho()
+    nb1_w = np.where(near_zero, K_B * T, omega / np.where(near_zero, 1.0, -np.expm1(-x)))
+    return A * nb1_w * tau / (1.0 + (omega * tau) ** 2)
 
 
 # Backward-compatible private aliases retained internally.
