@@ -80,8 +80,13 @@ changed in the results.
 
 Datasets and checkpoints are on Zenodo (`[[ZENODO-VERSION]]`), not in git: 1.0 GB of datasets and
 1.46 GB of checkpoints. Unpack the deposit so that `data/` and `results/` sit at the repository root, matching the layout
-above. The v10 dataset (`data/full_dataset_phase1_v10/`) is already in the repository; the deposit
-adds the evaluation and ablation sets and the checkpoints. Every dataset can also be regenerated from source — see
+above. The v10 training dataset (`data/full_dataset_phase1_v10/`) is already in the repository; the
+deposit adds the evaluation and ablation sets and the checkpoints.
+
+Most tables and figures rebuild from the committed result tables alone, with no deposit. Two need
+the spectra themselves and so need `data/test_v10/` from the deposit: Figure 6 (example spectra)
+and Figure 7 (fit overlays). `scripts/revision/a35_zenodo_manifest.py` reports exactly which
+declared inputs are absent from your tree, so it is the quickest way to see what you still need. Every dataset can also be regenerated from source — see
 "Regenerating the datasets".
 
 ## Installing
