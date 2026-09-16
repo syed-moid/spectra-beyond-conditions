@@ -1,10 +1,13 @@
 # Python
 venv/
+.venv/
 __pycache__/
 *.pyc
 *.pyo
 .Python
 *.egg-info/
+build/
+dist/
 
 # Test / tooling caches
 .pytest_cache/
@@ -13,12 +16,65 @@ __pycache__/
 # Weights & Biases (regenerable run dirs)
 wandb/
 
-# Diagnostic/training runs produced by re-running scripts (the curated
-# baseline artifacts live in manuscript_phase1/results/ and ARE tracked)
-manuscript_phase1/results/diagnostic_runs/
-manuscript_phase1/results/training_runs/
+# Revision working directory. Never committed: it holds drafts, reviews, round
+# instructions, logs and DFT working files. The parts of it that belong to the
+# package are copied into scripts/, results/, figures/ and the release documents.
+review_and_modify/
+
+# Datasets. 1.0 GB, distributed through Zenodo, regenerable from scripts/.
+# The v10 main dataset is tracked by an explicit exception below.
+data/ablation_*/
+data/*_v7/
+data/*_v8/
+data/*_v9/
+data/*/augmented_blocks.npz
+data/replicate_eval_*/
+data/replicate_test_*/
+data/test_*/
+data/holdout_*/
+!data/full_dataset_phase1_v10/
+
+# Model weights: 1.46 GB across 543 checkpoints, deposited on Zenodo
+results/**/checkpoints/
+results/**/checkpoints_*/
+*.pt
+*.pth
+*.ckpt
+
+# Regenerable diagnostic and training run directories
+results/diagnostic_runs/
+results/training_runs/
+
+# Driver state and logs
+.pipeline_state_*.json
+*.log
+pipeline.out
 
 # macOS / IDE
 .DS_Store
 .vscode/
 .idea/
+
+# Documents and binary figure formats. Figure CSVs ARE tracked; the PDFs are
+# deposited with their plotting inputs rather than carried in git.
+*.pdf
+*.docx
+*.pptx
+*.png
+*.svg
+*.emf
+
+# Secrets
+.env
+*.key
+*secret*
+*token*
+*password*
+*api_key*
+
+# DFT working artefacts (Phase B, a separate paper)
+srtio3/
+*.save/
+*.wfc*
+*.UPF
+*.upf
