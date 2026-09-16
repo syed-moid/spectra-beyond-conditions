@@ -1,0 +1,23 @@
+{
+  "directory": "manuscript_phase1/results/revision/A9",
+  "dataset_version": "v10",
+  "generated_utc": "2026-09-16T01:09:18.726215+00:00",
+  "files": {
+    "central_peak_mask_severities.csv": {
+      "script": "review_and_modify/scripts/a9_attribution.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "occlusion_sensitivity.csv": {
+      "script": "review_and_modify/scripts/a9_attribution.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "region_shares.csv": {
+      "script": "review_and_modify/scripts/a9_attribution.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "s12_central_peak_mask.csv": {
+      "script": "review_and_modify/scripts/a9_attribution.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    }
+  }
+}

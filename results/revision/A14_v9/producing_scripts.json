@@ -1,0 +1,43 @@
+{
+  "directory": "manuscript_phase1/results/revision/A14_v9",
+  "dataset_version": "v10",
+  "generated_utc": "2026-09-16T01:09:18.239469+00:00",
+  "files": {
+    "a14_within_tuple_rho_by_target.csv": {
+      "script": "review_and_modify/scripts/a5_a14_replicate.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "a5_shuffle_and_a14_rho.csv": {
+      "script": "review_and_modify/scripts/a5_a14_replicate.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "boundaries_threshold_sensitivity.csv": {
+      "script": "review_and_modify/scripts/a14b_boundaries.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "extended_rho_replicate.csv": {
+      "script": "review_and_modify/scripts/a14b_boundaries.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "extended_sweep_stress.csv": {
+      "script": "review_and_modify/scripts/a14b_boundaries.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "replicate_vs_mc_conditional.csv": {
+      "script": "review_and_modify/scripts/a14_data_check.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "replicate_vs_mc_summary.json": {
+      "script": "review_and_modify/scripts/a14_data_check.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "rho_fitting_vs_learning_subsample.csv": {
+      "script": "review_and_modify/scripts/a14c_fitting_rho.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "two_boundaries.csv": {
+      "script": "review_and_modify/scripts/a14b_boundaries.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    }
+  }
+}

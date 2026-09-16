@@ -1,0 +1,17 @@
+{
+  "directory": "manuscript_phase1/results/revision/A10_v10",
+  "dataset_version": "v10",
+  "generated_utc": "2026-09-16T01:09:18.191556+00:00",
+  "files": {
+    "holdout_runs_v10.csv": {
+      "script": "ad hoc (v8), superseded by v9"
+    },
+    "holdout_table.csv": {
+      "script": "review_and_modify/scripts/a6_a10_eval.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "holdout_table_v10.csv": {
+      "script": "ad hoc (v8), superseded by v9"
+    }
+  }
+}

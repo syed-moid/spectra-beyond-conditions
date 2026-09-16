@@ -1,0 +1,15 @@
+{
+  "task": "A1",
+  "script": "review_and_modify/scripts/a1_oracle_floor.py",
+  "seed": 20260905,
+  "n_draws": 2000,
+  "dataset_version": "v10",
+  "dataset": "manuscript_phase1/data/full_dataset_phase1_v10/dataset.npz",
+  "dataset_master_seed": 20260520,
+  "dataset_generator_git_sha": "997f2a0e1fe6431497da000c017528cc6a83b21d",
+  "config_hash_sha256_16": "5316c1a1fd3a453e",
+  "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d",
+  "date_utc": "2026-09-12T14:55:00.957671+00:00",
+  "numpy": "2.5.2",
+  "pandas": "2.3.3"
+}

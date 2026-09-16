@@ -1,0 +1,21 @@
+{
+  "task": "A33_severity_map",
+  "dataset_version": "v10",
+  "script": "review_and_modify/scripts/a33_severity_map.py",
+  "severities": [
+    0.25,
+    0.5,
+    2.0,
+    4.0
+  ],
+  "n": 600,
+  "bounds_rule": "fixed at every severity; energy offset (index 5) +-3.0 meV covers 100% of the generator's draws at every severity tested",
+  "resolution_note": "resolution scales as sqrt(severity) and stays inside its existing bound",
+  "policy": "all cases; failures replaced by the conditions-only conditional median",
+  "failure_limit": 0.25,
+  "worst_failure_rate": 0.29666666666666663,
+  "verdict": "narrow",
+  "training": "none",
+  "seed": 20260915,
+  "date_utc": "2026-09-16T01:03:40.505388+00:00"
+}

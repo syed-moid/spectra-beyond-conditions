@@ -1,0 +1,13 @@
+{
+  "directory": "manuscript_phase1/results/revision/A24_v10",
+  "dataset_version": "v10",
+  "generated_utc": "2026-09-16T01:09:18.459275+00:00",
+  "files": {
+    "parameter_recovery_v10.csv": {
+      "script": "ad hoc (v8), superseded by v9"
+    },
+    "ranking_by_severity_v10.csv": {
+      "script": "ad hoc (v8), superseded by v9"
+    }
+  }
+}

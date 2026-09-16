@@ -1,0 +1,39 @@
+{
+  "directory": "manuscript_phase1/results/revision/A3_v8",
+  "dataset_version": "v10",
+  "generated_utc": "2026-09-16T01:09:18.477778+00:00",
+  "files": {
+    "feature_gbm_predictions.csv": {
+      "script": "review_and_modify/scripts/a3_fitting_baselines.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "feature_set_ablation.csv": {
+      "script": "review_and_modify/scripts/a3_fitting_baselines.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "fit_results_extra_variants.csv": {
+      "script": "review_and_modify/scripts/a3b_extra_baselines.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "fit_results_per_spectrum.csv": {
+      "script": "review_and_modify/scripts/a3_fitting_baselines.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "paired_comparison_stress_base.csv": {
+      "script": "review_and_modify/scripts/a3c_paired_stats.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "st_predictions_stress_base.csv": {
+      "script": "review_and_modify/scripts/a3b_extra_baselines.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "summary_by_severity.csv": {
+      "script": "review_and_modify/scripts/a3_fitting_baselines.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "summary_extra_variants.csv": {
+      "script": "review_and_modify/scripts/a3b_extra_baselines.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    }
+  }
+}

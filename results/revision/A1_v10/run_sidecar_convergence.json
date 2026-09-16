@@ -1,0 +1,21 @@
+{
+  "task": "A1b_oracle_convergence",
+  "script": "review_and_modify/scripts/a1b_oracle_convergence.py",
+  "quantity": "Monte Carlo estimate of the conditions-only Bayes risk under absolute loss",
+  "estimator": "conditional median of log M given (T, c, E), latents redrawn per condition",
+  "draws_per_condition_reported": 2000,
+  "draws_swept": [
+    250,
+    500,
+    1000,
+    2000,
+    4000
+  ],
+  "mc_drift_2000_vs_4000": 4.095792477165627e-05,
+  "se_over_eval_set": 0.014688192277437605,
+  "independence": "latent draws are fresh at each condition tuple and never reuse the stored realization of the evaluation spectrum",
+  "caveat": "not an exact information bound; MAE in nats is not mutual information",
+  "seed": 20260905,
+  "dataset": "manuscript_phase1/data/test_v10/dataset.npz",
+  "date_utc": "2026-09-12T15:12:53.189072+00:00"
+}

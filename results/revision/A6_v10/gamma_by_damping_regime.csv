@@ -1,0 +1,7 @@
+dataset_version,regime,n,model,MAE_Gamma_meV,MAE_omega0_meV
+v10,overdamped (Gamma > omega0),180,tuned 1D CNN,0.3754555159144931,0.11137735578748915
+v10,overdamped (Gamma > omega0),165,dho_matched,1.7719973428717883,0.2920276565373146
+v10,overdamped (Gamma > omega0),174,dho_two_mode,5.149451536034474,5.060995669345359
+v10,underdamped,320,tuned 1D CNN,0.12479175431653858,0.07963355630636215
+v10,underdamped,308,dho_matched,0.5945424147059647,0.421995471872266
+v10,underdamped,314,dho_two_mode,1.2339099106538765,1.5923125319745517

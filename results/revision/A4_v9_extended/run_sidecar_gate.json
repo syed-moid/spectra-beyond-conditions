@@ -1,0 +1,10 @@
+{
+  "task": "A4_gate_eval",
+  "dataset_version": "v9",
+  "stopping_protocol": "extended",
+  "n_boot": 1000,
+  "seed": 20260905,
+  "metadata_reference": "A2 mlp_l1 seed-averaged, val",
+  "oracle": "A1 conditional median, val",
+  "date_utc": "2026-09-11T20:57:28.177900+00:00"
+}

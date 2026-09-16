@@ -1,0 +1,14 @@
+{
+  "task": "A5+A14",
+  "script": "review_and_modify/scripts/a5_a14_replicate.py",
+  "dataset_version": "v10",
+  "shuffle": "within-tuple derangement, no fixed points",
+  "shuffle_seed": 20260905,
+  "severities": [
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "date_utc": "2026-09-15T03:59:28.154307+00:00"
+}

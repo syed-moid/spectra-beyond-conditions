@@ -1,0 +1,62 @@
+{
+  "task": "A38_logM_fallback",
+  "dataset_version": "v10",
+  "table": "manuscript_phase1/results/revision/A23_v10/primary_per_spectrum.csv",
+  "what": "failed fits' log M replaced by the conditional median of log M; previously log merit(median omega0, median Gamma)",
+  "refitted": false,
+  "source_of_truth": "success flags and logM_cond already in the table",
+  "per_method": [
+    {
+      "method": "dho_matched",
+      "n": 600,
+      "n_failed": 42,
+      "n_values_changed": 42,
+      "MAE_logM_all_before": 0.4880473773617433,
+      "MAE_logM_all_after": 0.488239594649451,
+      "max_abs_change_per_case": 0.00959760035316437,
+      "MAE_logM_ok_only": 0.4752957455320527
+    },
+    {
+      "method": "dho_matched_w0",
+      "n": 600,
+      "n_failed": 39,
+      "n_values_changed": 39,
+      "MAE_logM_all_before": 0.502377985276289,
+      "MAE_logM_all_after": 0.502490906835145,
+      "max_abs_change_per_case": 0.00959760035316437,
+      "MAE_logM_ok_only": 0.4846005917695322
+    },
+    {
+      "method": "dho_matched_prior",
+      "n": 600,
+      "n_failed": 6,
+      "n_values_changed": 6,
+      "MAE_logM_all_before": 0.46090306450986823,
+      "MAE_logM_all_after": 0.4608322478794929,
+      "max_abs_change_per_case": 0.009112196976249987,
+      "MAE_logM_ok_only": 0.43896141120346294
+    },
+    {
+      "method": "dho_single",
+      "n": 600,
+      "n_failed": 152,
+      "n_values_changed": 152,
+      "MAE_logM_all_before": 1.290903967043963,
+      "MAE_logM_all_after": 1.290974258223212,
+      "max_abs_change_per_case": 0.010755440071994027,
+      "MAE_logM_ok_only": 1.4875392345337517
+    },
+    {
+      "method": "dho_single_win",
+      "n": 600,
+      "n_failed": 198,
+      "n_values_changed": 198,
+      "MAE_logM_all_before": 0.8577000119835327,
+      "MAE_logM_all_after": 0.8577255274824561,
+      "max_abs_change_per_case": 0.008112747528212338,
+      "MAE_logM_ok_only": 1.0477394113635126
+    }
+  ],
+  "untouched": "every other column asserted bit-identical: omega0/Gamma predictions, success flags, network columns, logM_cond, logM_true",
+  "date_utc": "2026-09-16T18:39:54+00:00"
+}

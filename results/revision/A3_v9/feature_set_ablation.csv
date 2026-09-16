@@ -1,0 +1,4 @@
+dataset_version,feature_set,n_features,severity,N,MAE_logM_mean,MAE_logM_sd,features
+v9,position_width_only,2,1.0,500,0.5257665628771042,0.004146491896771513,peak_pos_meV;fwhm_meV
+v9,plus_intensity,7,1.0,500,0.3984215835707269,0.004316598464076163,peak_pos_meV;fwhm_meV;peak_height;integ_soft_window;central_height;raw_max;raw_min
+v9,all_11,11,1.0,500,0.3338279326866429,0.0023313030423127083,peak_pos_meV;fwhm_meV;peak_height;integ_soft_window;moment1_meV;moment2_meV2;central_to_peak_ratio;central_height;raw_max;raw_min;soft_window_intensity_fraction

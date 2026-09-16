@@ -1,0 +1,8 @@
+{
+  "overall_gap_ml_to_tuned_cnn_meV": 0.9720171886407268,
+  "overall_closed_by_prior_meV": 0.4140699052686221,
+  "overall_fraction_closed": 0.42599031180473185,
+  "overdamped_gap_ml_to_tuned_cnn_meV": 1.8097020651790106,
+  "overdamped_closed_by_prior_meV": 0.9925870734219537,
+  "overdamped_fraction_closed": 0.5484809309336617
+}

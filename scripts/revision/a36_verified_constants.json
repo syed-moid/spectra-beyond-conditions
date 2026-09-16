@@ -1,0 +1,39 @@
+{
+  "_README": [
+    "Numbers quoted in the manuscripts that no results CSV or JSON contains, because they are",
+    "properties of the generator, the dataset file or the architecture rather than outputs of an",
+    "analysis. Each entry names what recomputes it. a36_number_sweep.py reads this file as a",
+    "declared source and reports how many tokens matched here rather than against a result file,",
+    "so the list itself stays auditable: an entry that stops being quoted, or a number that stops",
+    "being reproducible, shows up as a change in that count.",
+    "Verified on 2026-09-15 against dataset v10 by the commands in each 'verified_by' field."
+  ],
+  "constants": [
+    {"value": 4481, "what": "conditions-only MLP parameter count, 3 -> 64 -> 64 -> 1 with GELU",
+     "verified_by": "3*64+64 + 64*64+64 + 64*1+1 = 256 + 4160 + 65 = 4481"},
+    {"value": 3.3786974248751096, "what": "minimum of the omega0 interpolation spline over the sampled T range (meV)",
+     "verified_by": "min(spectrum_generator._omega_interp(linspace(100, 600, 200001)))"},
+    {"value": 3.371940029857006, "what": "the same minimum after the largest composition correction, c = 2.5%, E = 0 (meV)",
+     "verified_by": "spline minimum * (1 - 0.08 * 0.025)"},
+    {"value": 127.32395447351627, "what": "S_cp(0) at T_C in generator units",
+     "verified_by": "I_c * tau / pi = 600 * (1/1.5) / pi"},
+    {"value": 3601, "what": "stratum 'uniform' count in full_dataset_phase1_v10 (48.66%)",
+     "verified_by": "np.unique(np.load(FULL)['stratum'], return_counts=True)"},
+    {"value": 1406, "what": "stratum 'overdamped_near_Tc' count (19.00%)",
+     "verified_by": "np.unique(np.load(FULL)['stratum'], return_counts=True)"},
+    {"value": 1203, "what": "stratum 'central_peak_onset' count (16.26%)",
+     "verified_by": "np.unique(np.load(FULL)['stratum'], return_counts=True)"},
+    {"value": 1190, "what": "stratum 'field_crossover' count (16.08%)",
+     "verified_by": "np.unique(np.load(FULL)['stratum'], return_counts=True)"},
+    {"value": 1.000779, "what": "detailed-balance ratio at the first bin either side of zero, stress_base median",
+     "verified_by": "median(S[:, +0.025042 meV] / S[:, -0.025042 meV]) on full_dataset_phase1_v10 split stress_base"},
+    {"value": 1.167564, "what": "the same ratio at omega = 4.983306 meV, stress_base median",
+     "verified_by": "median(S[:, +4.983306] / S[:, -4.983306]) on the same 500 spectra"}
+  ],
+  "superseded_values_quoted_as_superseded": [
+    {"value": 0.633329, "where": "S5.7 note on three inconsistent conditions-only estimates",
+     "why": "quoted to record that it was superseded by 0.633456; it is not a current result"},
+    {"value": 1.001558, "where": "S8.2 elastic-line row",
+     "why": "quoted as the withdrawn exp(2 delta / kB T) prediction"}
+  ]
+}

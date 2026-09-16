@@ -1,0 +1,24 @@
+source_file,relative,description,used_by,run_id
+manuscript_phase1/results/revision/A6/predicted_vs_reference_scatter.csv,A6/predicted_vs_reference_scatter.csv,"per-spectrum predicted vs reference omega0/Gamma/kappa, s=1",fig1,derived:df32881511a9
+manuscript_phase1/results/revision/A6/logM_error_by_gamma_error.csv,A6/logM_error_by_gamma_error.csv,log M error by Gamma-error quintile,fig1 inset,derived:fea19e1a6afc
+manuscript_phase1/results/revision/A7/improvement_over_oracle.csv,A7/improvement_over_oracle.csv,channel ablation: improvement over per-setting oracle,fig5,derived:3d7b3dbe2a03
+manuscript_phase1/results/revision/A7/rho_per_setting.csv,A7/rho_per_setting.csv,channel ablation: within-condition rho per setting,fig5,derived:3723db63f195
+manuscript_phase1/results/revision/A8/one_factor_sweeps.csv,A8/one_factor_sweeps.csv,"one-factor sweeps (resolution, counts)",figS2,derived:63b729382e86
+manuscript_phase1/results/revision/A8/one_factor_background_shaped.csv,A8/one_factor_background_shaped.csv,"one-factor sweep, shaped background",figS2,derived:a24ad6d5be89
+manuscript_phase1/results/revision/A14/extended_sweep_stress.csv,A14/extended_sweep_stress.csv,"extended severities s in {6,8,12}, stress base",fig3,derived:4737cd29225d
+manuscript_phase1/results/revision/A14/boundaries_threshold_sensitivity.csv,A14/boundaries_threshold_sensitivity.csv,ranking boundaries at rho 0.3/0.5/0.7,fig3,derived:7e0e7d0565f5
+manuscript_phase1/results/revision/A17/variant_paired_vs_base.csv,A17/variant_paired_vs_base.csv,architecture variants vs family base,figS1,derived:c6145829331b
+manuscript_phase1/results/revision/A3_v8/summary_by_severity.csv,A3_v8/summary_by_severity.csv,fitting baselines by severity,fig2,derived:4afaa9b0c7b8
+manuscript_phase1/results/revision/A3_v8/summary_extra_variants.csv,A3_v8/summary_extra_variants.csv,extra fitting variants by severity,fig2,derived:0d4b71046180
+manuscript_phase1/results/revision/A9/occlusion_sensitivity.csv,A9/occlusion_sensitivity.csv,"occlusion delta-MAE vs energy, with T-split",figS3,derived:439a1174a681
+manuscript_phase1/results/revision/A1_v8/conditional_spread_vs_conditions.csv,A1_v8/conditional_spread_vs_conditions.csv,"conditional spread of log M vs T,c,E",figS4,derived:ce21b976efbc
+manuscript_phase1/results/revision/A4/training_runs.csv,A4/training_runs.csv,v7-protocol training runs (protocol sensitivity),figS5,derived:dfc80a6b8b4e
+manuscript_phase1/results/revision/A4_extended/training_runs.csv,A4_extended/training_runs.csv,extended-protocol training runs,figS5,derived:fa93e8094048
+manuscript_phase1/results/revision/A4_control_buggy_bose/control_runs.csv,A4_control_buggy_bose/control_runs.csv,Bose control runs,figS6,derived:16d7b89eee76
+manuscript_phase1/results/revision/A3_v8/feature_set_ablation.csv,A3_v8/feature_set_ablation.csv,feature-set ablation at s=1,figS7,derived:95eb5746bd0e
+manuscript_phase1/results/revision/A14/replicate_vs_mc_conditional.csv,A14/replicate_vs_mc_conditional.csv,replicate empirical vs Monte-Carlo conditional median,figS8,derived:abce4c0adc80
+manuscript_phase1/results/revision/A18b/energy_tilt_sensitivity.csv,A18b/energy_tilt_sensitivity.csv,energy-tilt sensitivity,figS9,derived:ba6431fc1d92
+manuscript_phase1/results/revision/A18b_tilt_trained/tilt_trained_beta_grid.csv,A18b_tilt_trained/tilt_trained_beta_grid.csv,tilt-trained CNN across beta,figS9,derived:033f84ddbf18
+manuscript_phase1/results/revision/A3_v8/fit_results_extra_variants.csv,A3_v8/fit_results_extra_variants.csv,per-spectrum fitted omega0/Gamma,fig7,derived:8bfba1abc86a
+manuscript_phase1/results/revision/A4_extended/gate_and_improvement.csv,A4_extended/gate_and_improvement.csv,gate and improvement with CIs,fig8,derived:b1f82e056ccb
+manuscript_phase1/results/revision/A19/variant_runs.csv,A19/variant_runs.csv,A19 receptive-field variant runs (per-seed),fig8,derived:8891b0c84d7c

@@ -1,0 +1,17 @@
+{
+  "task": "A14_boundary_thresholds",
+  "script": "review_and_modify/scripts/a14d_boundary_thresholds.py",
+  "script_sha256": "4d2bf16b16f4371ff349bd59d7b966e27b5f52eab4b7b206e985e2e4acc83105",
+  "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d",
+  "dataset_version": "v8",
+  "practical_curve": "rho_mean",
+  "comparison_curve": "rho_hi",
+  "thresholds": [
+    0.3,
+    0.5,
+    0.7
+  ],
+  "interpolation": "linear in severity",
+  "statistical_boundary": "first severity at which the tuple-bootstrap CI includes zero",
+  "date_utc": "2026-09-11T17:36:28.763007+00:00"
+}

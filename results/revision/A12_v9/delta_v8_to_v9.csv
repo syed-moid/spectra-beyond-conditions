@@ -1,0 +1,532 @@
+model_id,metric,eval_set,severity,statistic,protocol,display_name,value_v8,value_v9,delta,rel_delta,n_seeds_old,n_seeds_new
+cnn_k45,MAE_Gamma_meV,stress_base,0.25,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.0927055786699056,0.122034891039133,0.029329312369227395,0.3163705225729676,3.0,3.0
+cnn_base,MAE_Gamma_meV,stress_base,0.25,ensemble,extended/v7,1D CNN,0.1512442158013582,0.1630087998360395,0.011764584034681308,0.07778534849975836,3.0,3.0
+tf_p60,MAE_Gamma_meV,stress_base,0.25,ensemble,extended/v7,tuned transformer (patch 60),0.1722496105581522,0.1736980960965156,0.0014484855383634088,0.008409223879634805,3.0,3.0
+tf_fused,MAE_Gamma_meV,stress_base,0.25,ensemble,extended/v7,fused transformer,0.1793978771567344,0.1741328988075256,-0.0052649783492087765,-0.02934805267851039,3.0,3.0
+tf_learned_patch,MAE_Gamma_meV,stress_base,0.25,ensemble,extended/v7,learned-patch transformer,0.2006999946981668,0.189267581731081,-0.011432412967085803,-0.05696269690629059,3.0,3.0
+tf_fourier,MAE_Gamma_meV,stress_base,0.25,ensemble,extended/v7,Fourier-feature transformer,0.2978229840546846,0.349268248423934,0.0514452643692494,0.17273772382793434,3.0,3.0
+cnn_k45,MAE_Gamma_meV,stress_base,0.5,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.1236721859127283,0.1485919480472803,0.024919762134551993,0.20149851763869614,3.0,3.0
+tf_p60,MAE_Gamma_meV,stress_base,0.5,ensemble,extended/v7,tuned transformer (patch 60),0.174027256950736,0.2021072096526622,0.028079952701926203,0.16135376258832335,3.0,3.0
+cnn_base,MAE_Gamma_meV,stress_base,0.5,ensemble,extended/v7,1D CNN,0.185634816661477,0.2079762441664934,0.022341427505016415,0.12035149389975784,3.0,3.0
+tf_fused,MAE_Gamma_meV,stress_base,0.5,ensemble,extended/v7,fused transformer,0.2142676422894001,0.2137199746370315,-0.0005476676523686053,-0.0025559979403184884,3.0,3.0
+tf_learned_patch,MAE_Gamma_meV,stress_base,0.5,ensemble,extended/v7,learned-patch transformer,0.241545955851674,0.2236460446715354,-0.01789991118013859,-0.07410561322388845,3.0,3.0
+tf_fourier,MAE_Gamma_meV,stress_base,0.5,ensemble,extended/v7,Fourier-feature transformer,0.3786959961801767,0.4285837710648775,0.04988777488470081,0.131735680830819,3.0,3.0
+cnn_k45,MAE_Gamma_meV,stress_base,1.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.1884460638463497,0.2159098287820816,0.027463764935731882,0.14573806624119556,3.0,3.0
+tf_p60,MAE_Gamma_meV,stress_base,1.0,ensemble,extended/v7,tuned transformer (patch 60),0.2441938616335392,0.2816007094234228,0.037406847789883596,0.1531850454374644,3.0,3.0
+tf_fused,MAE_Gamma_meV,stress_base,1.0,ensemble,extended/v7,fused transformer,0.3215054755657911,0.3013021939992905,-0.02020328156650064,-0.06283961892389715,3.0,3.0
+tf_learned_patch,MAE_Gamma_meV,stress_base,1.0,ensemble,extended/v7,learned-patch transformer,0.3361752744168043,0.3201197321265936,-0.016055542290210667,-0.047759438340799355,3.0,3.0
+cnn_base,MAE_Gamma_meV,stress_base,1.0,ensemble,extended/v7,1D CNN,0.2905867021232843,0.3244827832728624,0.033896081149578094,0.11664704854662394,3.0,3.0
+tf_fourier,MAE_Gamma_meV,stress_base,1.0,ensemble,extended/v7,Fourier-feature transformer,0.5335692471414805,0.5472880750447512,0.013718827903270725,0.025711429166443433,3.0,3.0
+cnn_k45,MAE_Gamma_meV,stress_base,2.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.3473680559247732,0.350596226081252,0.0032281701564788046,0.00929322688548513,3.0,3.0
+tf_p60,MAE_Gamma_meV,stress_base,2.0,ensemble,extended/v7,tuned transformer (patch 60),0.4040549149662256,0.410597771063447,0.006542856097221439,0.01619298727691098,3.0,3.0
+tf_fused,MAE_Gamma_meV,stress_base,2.0,ensemble,extended/v7,fused transformer,0.5281927771121263,0.4489267113953828,-0.0792660657167435,-0.15007033255950158,3.0,3.0
+tf_learned_patch,MAE_Gamma_meV,stress_base,2.0,ensemble,extended/v7,learned-patch transformer,0.5503489356189967,0.496820273950696,-0.05352866166830067,-0.09726313290330091,3.0,3.0
+cnn_base,MAE_Gamma_meV,stress_base,2.0,ensemble,extended/v7,1D CNN,0.5095117772072554,0.5009765503555537,-0.008535226851701716,-0.0167517753926811,3.0,3.0
+tf_fourier,MAE_Gamma_meV,stress_base,2.0,ensemble,extended/v7,Fourier-feature transformer,0.8509608597904443,0.7675572361499071,-0.08340362364053722,-0.09801111611769782,3.0,3.0
+cnn_k45,MAE_Gamma_meV,stress_base,4.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.7293616103082895,0.730946364685893,0.0015847543776035256,0.002172796532208043,3.0,3.0
+tf_fused,MAE_Gamma_meV,stress_base,4.0,ensemble,extended/v7,fused transformer,0.8534932681173086,0.7605608447343111,-0.09293242338299756,-0.10888477607795782,3.0,3.0
+tf_p60,MAE_Gamma_meV,stress_base,4.0,ensemble,extended/v7,tuned transformer (patch 60),0.8488146143704652,0.8247915021926164,-0.024023112177848804,-0.02830195400872765,3.0,3.0
+tf_learned_patch,MAE_Gamma_meV,stress_base,4.0,ensemble,extended/v7,learned-patch transformer,1.0543275947719812,0.91986453191936,-0.13446306285262122,-0.12753442432823875,3.0,3.0
+cnn_base,MAE_Gamma_meV,stress_base,4.0,ensemble,extended/v7,1D CNN,0.9661806105524302,0.9785621002465488,0.012381489694118564,0.012814881150470652,3.0,3.0
+tf_fourier,MAE_Gamma_meV,stress_base,4.0,ensemble,extended/v7,Fourier-feature transformer,1.3437758979946377,1.2084899685531854,-0.13528592944145235,-0.10067596065932134,3.0,3.0
+cnn_k45,MAE_Gamma_over_omega0,stress_base,0.25,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.0283943826857239,0.0194943955254921,-0.008899987160231802,-0.31344182610832133,3.0,3.0
+tf_p60,MAE_Gamma_over_omega0,stress_base,0.25,ensemble,extended/v7,tuned transformer (patch 60),0.0435029212273118,0.0265918333900693,-0.016911087837242503,-0.3887345346046661,3.0,3.0
+tf_fused,MAE_Gamma_over_omega0,stress_base,0.25,ensemble,extended/v7,fused transformer,0.0465756255094129,0.0281539830972667,-0.018421642412146205,-0.3955210952222897,3.0,3.0
+cnn_base,MAE_Gamma_over_omega0,stress_base,0.25,ensemble,extended/v7,1D CNN,0.0411892302985535,0.0310789733451682,-0.010110256953385303,-0.2454587492920536,3.0,3.0
+tf_learned_patch,MAE_Gamma_over_omega0,stress_base,0.25,ensemble,extended/v7,learned-patch transformer,0.0507223722472854,0.0311157000396406,-0.019606672207644803,-0.3865488016226238,3.0,3.0
+tf_fourier,MAE_Gamma_over_omega0,stress_base,0.25,ensemble,extended/v7,Fourier-feature transformer,0.0734861415338106,0.0562768786768863,-0.0172092628569243,-0.23418378619057587,3.0,3.0
+cnn_k45,MAE_Gamma_over_omega0,stress_base,0.5,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.0363738358927995,0.0247253826576394,-0.011648453235160103,-0.3202426400528741,3.0,3.0
+tf_p60,MAE_Gamma_over_omega0,stress_base,0.5,ensemble,extended/v7,tuned transformer (patch 60),0.0471136617063529,0.0322176309882511,-0.014896030718101798,-0.3161722137189177,3.0,3.0
+tf_fused,MAE_Gamma_over_omega0,stress_base,0.5,ensemble,extended/v7,fused transformer,0.0567128162650972,0.0347745330415422,-0.021938283223555004,-0.38683113744532016,3.0,3.0
+tf_learned_patch,MAE_Gamma_over_omega0,stress_base,0.5,ensemble,extended/v7,learned-patch transformer,0.0620705918405219,0.037042994502151,-0.025027597338370906,-0.4032118366564695,3.0,3.0
+cnn_base,MAE_Gamma_over_omega0,stress_base,0.5,ensemble,extended/v7,1D CNN,0.0523296059061377,0.0398513554243715,-0.0124782504817662,-0.238454891178583,3.0,3.0
+tf_fourier,MAE_Gamma_over_omega0,stress_base,0.5,ensemble,extended/v7,Fourier-feature transformer,0.0933248073706974,0.0715281958303429,-0.021796611540354505,-0.2335564589356797,3.0,3.0
+cnn_k45,MAE_Gamma_over_omega0,stress_base,1.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.0546259717416454,0.0366794271030261,-0.017946544638619298,-0.3285350185347335,3.0,3.0
+tf_p60,MAE_Gamma_over_omega0,stress_base,1.0,ensemble,extended/v7,tuned transformer (patch 60),0.0665059328645847,0.048034353393249,-0.0184715794713357,-0.27774333319925604,3.0,3.0
+tf_fused,MAE_Gamma_over_omega0,stress_base,1.0,ensemble,extended/v7,fused transformer,0.0817385180797636,0.0529489350933295,-0.028789582986434095,-0.35221562199525214,3.0,3.0
+tf_learned_patch,MAE_Gamma_over_omega0,stress_base,1.0,ensemble,extended/v7,learned-patch transformer,0.0859825397603018,0.0556973309768578,-0.030285208783444005,-0.35222510137374086,3.0,3.0
+cnn_base,MAE_Gamma_over_omega0,stress_base,1.0,ensemble,extended/v7,1D CNN,0.0803876577534661,0.0597073724511162,-0.020680285302349895,-0.25725697053859264,3.0,3.0
+tf_fourier,MAE_Gamma_over_omega0,stress_base,1.0,ensemble,extended/v7,Fourier-feature transformer,0.1353396647408999,0.0958201997717467,-0.03951946496915319,-0.2920020900362873,3.0,3.0
+cnn_k45,MAE_Gamma_over_omega0,stress_base,2.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.0947068730579377,0.0633730046287085,-0.031333868429229195,-0.330851050377943,3.0,3.0
+tf_p60,MAE_Gamma_over_omega0,stress_base,2.0,ensemble,extended/v7,tuned transformer (patch 60),0.1061134083135968,0.0724221526749177,-0.0336912556386791,-0.31750234182575104,3.0,3.0
+tf_fused,MAE_Gamma_over_omega0,stress_base,2.0,ensemble,extended/v7,fused transformer,0.1386352207249482,0.0828261506362785,-0.055809070088669685,-0.4025605455585828,3.0,3.0
+tf_learned_patch,MAE_Gamma_over_omega0,stress_base,2.0,ensemble,extended/v7,learned-patch transformer,0.1406862789309581,0.0889894312749147,-0.05169684765604339,-0.3674619021049925,3.0,3.0
+cnn_base,MAE_Gamma_over_omega0,stress_base,2.0,ensemble,extended/v7,1D CNN,0.1336434305237556,0.0945399392331678,-0.03910349129058781,-0.2925956864272279,3.0,3.0
+tf_fourier,MAE_Gamma_over_omega0,stress_base,2.0,ensemble,extended/v7,Fourier-feature transformer,0.2159363242229515,0.1397166256728361,-0.0762196985501154,-0.3529730295465229,3.0,3.0
+cnn_k45,MAE_Gamma_over_omega0,stress_base,4.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.1785368819889086,0.1443260980074637,-0.03421078398144489,-0.19161746077524866,3.0,3.0
+tf_fused,MAE_Gamma_over_omega0,stress_base,4.0,ensemble,extended/v7,fused transformer,0.2165769997502225,0.1598745710941794,-0.05670242865604308,-0.26181186701006015,3.0,3.0
+tf_p60,MAE_Gamma_over_omega0,stress_base,4.0,ensemble,extended/v7,tuned transformer (patch 60),0.2128025748664045,0.1627781033740601,-0.0500244714923444,-0.23507455924228973,3.0,3.0
+tf_learned_patch,MAE_Gamma_over_omega0,stress_base,4.0,ensemble,extended/v7,learned-patch transformer,0.2580071469809359,0.1854631976504883,-0.07254394933044761,-0.2811703093473138,3.0,3.0
+cnn_base,MAE_Gamma_over_omega0,stress_base,4.0,ensemble,extended/v7,1D CNN,0.2417011837110564,0.2085872422534102,-0.03311394145764621,-0.1370036379185984,3.0,3.0
+tf_fourier,MAE_Gamma_over_omega0,stress_base,4.0,ensemble,extended/v7,Fourier-feature transformer,0.3386414833874304,0.2438745893879376,-0.09476689399949279,-0.2798443151486925,3.0,3.0
+cnn_k45,MAE_logM,holdout_E,1.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.1671985908132651,0.1359774158913325,-0.031221174921932604,-0.18673108888101703,3.0,3.0
+tf_fused,MAE_logM,holdout_E,1.0,ensemble,extended/v7,fused transformer,0.2924353139030247,0.1789531283174074,-0.11348218558561729,-0.3880591029551562,3.0,3.0
+tf_p60,MAE_logM,holdout_E,1.0,ensemble,extended/v7,tuned transformer (patch 60),0.2281730936114205,0.179878383498628,-0.04829471011279249,-0.2116582167879905,3.0,3.0
+tf_learned_patch,MAE_logM,holdout_E,1.0,ensemble,extended/v7,learned-patch transformer,0.2976091660719545,0.20705537365438,-0.09055379241757447,-0.3042708449231057,3.0,3.0
+cnn_base,MAE_logM,holdout_E,1.0,ensemble,extended/v7,1D CNN,0.2412330242631218,0.220164249466189,-0.021068774796932782,-0.08733785459636027,3.0,3.0
+tf_fourier,MAE_logM,holdout_E,1.0,ensemble,extended/v7,Fourier-feature transformer,0.4038141836113413,0.3370878561712742,-0.06672632744006712,-0.16524017765628846,3.0,3.0
+metadata_oracle,MAE_logM,holdout_E,1.0,ensemble,,metadata oracle (bound),0.6396450932498996,0.6396450932498996,0.0,0.0,3.0,3.0
+metadata_oracle,MAE_logM,holdout_E,1.0,bound,,metadata oracle (bound),0.6396450932498997,0.6396450932498997,0.0,0.0,,
+metadata_hgb,MAE_logM,holdout_E,1.0,ensemble,,metadata GBT,0.6858497510199358,0.6858497510199358,0.0,0.0,3.0,3.0
+metadata_mlp_l1,MAE_logM,holdout_E,1.0,ensemble,,metadata MLP (L1),0.8339218236699004,0.8339218236699004,0.0,0.0,3.0,3.0
+tf_fused,MAE_logM,holdout_T,1.0,ensemble,extended/v7,fused transformer,1.220735867519201,0.4950110444562762,-0.7257248230629249,-0.5944978290330359,3.0,3.0
+tf_learned_patch,MAE_logM,holdout_T,1.0,ensemble,extended/v7,learned-patch transformer,1.5220366024719405,0.5230626388325778,-0.9989739636393627,-0.6563403022088488,3.0,3.0
+cnn_k45,MAE_logM,holdout_T,1.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.8912186980175488,0.5488822632731879,-0.34233643474436093,-0.3841216925832721,3.0,3.0
+tf_p60,MAE_logM,holdout_T,1.0,ensemble,extended/v7,tuned transformer (patch 60),1.1704121336721132,0.5785991856911615,-0.5918129479809516,-0.5056449185332403,3.0,3.0
+metadata_oracle,MAE_logM,holdout_T,1.0,bound,,metadata oracle (bound),0.6633976489425747,0.6633976489425747,0.0,0.0,,
+metadata_oracle,MAE_logM,holdout_T,1.0,ensemble,,metadata oracle (bound),0.6633976489425747,0.6633976489425747,0.0,0.0,3.0,3.0
+cnn_base,MAE_logM,holdout_T,1.0,ensemble,extended/v7,1D CNN,1.0289652065968535,0.8934082001865481,-0.13555700641030544,-0.13174109828129144,3.0,3.0
+metadata_hgb,MAE_logM,holdout_T,1.0,ensemble,,metadata GBT,0.9253112622774652,0.9253112622774652,0.0,0.0,3.0,3.0
+tf_fourier,MAE_logM,holdout_T,1.0,ensemble,extended/v7,Fourier-feature transformer,1.8350230198739128,0.987051761544492,-0.8479712583294208,-0.46210388052117524,3.0,3.0
+metadata_mlp_l1,MAE_logM,holdout_T,1.0,ensemble,,metadata MLP (L1),3.7331396185206898,3.7331396185206898,0.0,0.0,3.0,3.0
+cnn_k45,MAE_logM,holdout_c,1.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.1186128942100653,0.1065941727201409,-0.012018721489924389,-0.10132727617824623,3.0,3.0
+tf_fused,MAE_logM,holdout_c,1.0,ensemble,extended/v7,fused transformer,0.2004343985576419,0.1444292690743868,-0.05600512948325509,-0.2794187519022533,3.0,3.0
+tf_p60,MAE_logM,holdout_c,1.0,ensemble,extended/v7,tuned transformer (patch 60),0.155784060245346,0.1479906053996705,-0.007793454845675507,-0.05002729312229705,3.0,3.0
+cnn_base,MAE_logM,holdout_c,1.0,ensemble,extended/v7,1D CNN,0.1749214319746859,0.1703311589781009,-0.004590272996585015,-0.02624191298210562,3.0,3.0
+tf_learned_patch,MAE_logM,holdout_c,1.0,ensemble,extended/v7,learned-patch transformer,0.2195532635122427,0.1818711761362764,-0.03768208737596629,-0.171630732211207,3.0,3.0
+tf_fourier,MAE_logM,holdout_c,1.0,ensemble,extended/v7,Fourier-feature transformer,0.3026084624227299,0.2715997503093301,-0.031008712113399783,-0.10247139774327284,3.0,3.0
+metadata_mlp_l1,MAE_logM,holdout_c,1.0,ensemble,,metadata MLP (L1),0.6230908532570637,0.6230908532570637,0.0,0.0,3.0,3.0
+metadata_oracle,MAE_logM,holdout_c,1.0,ensemble,,metadata oracle (bound),0.6243881450100358,0.6243881450100358,0.0,0.0,3.0,3.0
+metadata_oracle,MAE_logM,holdout_c,1.0,bound,,metadata oracle (bound),0.624388145010036,0.624388145010036,0.0,0.0,,
+metadata_hgb,MAE_logM,holdout_c,1.0,ensemble,,metadata GBT,0.632876818442435,0.632876818442435,0.0,0.0,3.0,3.0
+cnn_k45,MAE_logM,holdout_c_extrap,1.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.2784822442331193,0.1953889854243715,-0.0830932588087478,-0.29837901887629825,3.0,3.0
+tf_p60,MAE_logM,holdout_c_extrap,1.0,ensemble,extended/v7,tuned transformer (patch 60),0.3263549212707463,0.2463887732464654,-0.07996614802428087,-0.2450281666135514,3.0,3.0
+tf_fused,MAE_logM,holdout_c_extrap,1.0,ensemble,extended/v7,fused transformer,0.3706603111759272,0.2548301680733433,-0.11583014310258388,-0.3124967513654496,3.0,3.0
+tf_learned_patch,MAE_logM,holdout_c_extrap,1.0,ensemble,extended/v7,learned-patch transformer,0.4571534146674075,0.2747222773660374,-0.18243113730137012,-0.3990588967471546,3.0,3.0
+cnn_base,MAE_logM,holdout_c_extrap,1.0,ensemble,extended/v7,1D CNN,0.3664612950712562,0.3195440577505175,-0.046917237320738714,-0.12802781071768013,3.0,3.0
+tf_fourier,MAE_logM,holdout_c_extrap,1.0,ensemble,extended/v7,Fourier-feature transformer,0.7085705980957694,0.4793799639864653,-0.22919063410930407,-0.3234549030473982,3.0,3.0
+metadata_oracle,MAE_logM,holdout_c_extrap,1.0,ensemble,,metadata oracle (bound),0.7125826961671051,0.7125826961671051,0.0,0.0,3.0,3.0
+metadata_mlp_l1,MAE_logM,holdout_c_extrap,1.0,ensemble,,metadata MLP (L1),0.7344535200862237,0.7344535200862237,0.0,0.0,3.0,3.0
+metadata_mlp_l1,MAE_logM,holdout_c_extrap,1.0,per_seed_mean,,metadata MLP (L1),0.735318904347252,0.735318904347252,0.0,0.0,5.0,5.0
+metadata_hgb,MAE_logM,holdout_c_extrap,1.0,ensemble,,metadata GBT,0.8348203577274342,0.8348203577274342,0.0,0.0,3.0,3.0
+metadata_hgb,MAE_logM,holdout_c_extrap,1.0,per_seed_mean,,metadata GBT,0.8368425311353134,0.8368425311353134,0.0,0.0,5.0,5.0
+metadata_knn,MAE_logM,holdout_c_extrap,1.0,per_seed_mean,,metadata k-NN,0.8786554941490369,0.8786554941490369,0.0,0.0,5.0,5.0
+cnn_k45,MAE_logM,replicate_eval,0.25,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.0839735866135632,0.0732807099774131,-0.010692876636150109,-0.1273361906685908,3.0,3.0
+tf_fused,MAE_logM,replicate_eval,0.25,ensemble,extended/v7,fused transformer,0.1244357421826321,0.0778740302900266,-0.04656171189260551,-0.37418277960899465,3.0,3.0
+tf_p60,MAE_logM,replicate_eval,0.25,ensemble,extended/v7,tuned transformer (patch 60),0.1302114834925457,0.0974931741088224,-0.03271830938372329,-0.25127053702292196,3.0,3.0
+tf_learned_patch,MAE_logM,replicate_eval,0.25,ensemble,extended/v7,learned-patch transformer,0.156872211732914,0.1042738638124474,-0.052598347920466595,-0.33529423305396494,3.0,3.0
+cnn_base,MAE_logM,replicate_eval,0.25,ensemble,extended/v7,1D CNN,0.1228031288248357,0.107402146871396,-0.015400981953439696,-0.12541196711207087,3.0,3.0
+tf_fourier,MAE_logM,replicate_eval,0.25,ensemble,extended/v7,Fourier-feature transformer,0.2128868915469405,0.1776582905393964,-0.035228601007544075,-0.16548036730470247,3.0,3.0
+cnn_k45,MAE_logM,replicate_eval,0.5,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.1054336085843062,0.0886131434939272,-0.016820465090379003,-0.15953608452023266,3.0,3.0
+tf_fused,MAE_logM,replicate_eval,0.5,ensemble,extended/v7,fused transformer,0.1544007403713556,0.103995098733894,-0.0504056416374616,-0.32645984414471657,3.0,3.0
+tf_p60,MAE_logM,replicate_eval,0.5,ensemble,extended/v7,tuned transformer (patch 60),0.1449151062974907,0.1158097061683086,-0.029105400129182085,-0.2008444866295217,3.0,3.0
+tf_learned_patch,MAE_logM,replicate_eval,0.5,ensemble,extended/v7,learned-patch transformer,0.1883167671372476,0.1283400989857845,-0.0599766681514631,-0.3184881997668926,3.0,3.0
+cnn_base,MAE_logM,replicate_eval,0.5,ensemble,extended/v7,1D CNN,0.1456049310651675,0.1319135130069227,-0.013691418058244809,-0.09403128010903027,3.0,3.0
+tf_fourier,MAE_logM,replicate_eval,0.5,ensemble,extended/v7,Fourier-feature transformer,0.255251388601477,0.2165741305394626,-0.038677258062014414,-0.15152614163600522,3.0,3.0
+cnn_k45,MAE_logM,replicate_eval,0.75,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.1300958991828016,0.1068294701260918,-0.023266429056709795,-0.17884060299254664,3.0,3.0
+tf_fused,MAE_logM,replicate_eval,0.75,ensemble,extended/v7,fused transformer,0.1906310288514859,0.1310708269828191,-0.059560201868666784,-0.3124370792494022,3.0,3.0
+tf_p60,MAE_logM,replicate_eval,0.75,ensemble,extended/v7,tuned transformer (patch 60),0.1677394603581594,0.1363828950111017,-0.03135656534705769,-0.18693612868495438,3.0,3.0
+tf_learned_patch,MAE_logM,replicate_eval,0.75,ensemble,extended/v7,learned-patch transformer,0.2272877301087299,0.154782423801983,-0.0725053063067469,-0.3190022896179297,3.0,3.0
+cnn_base,MAE_logM,replicate_eval,0.75,ensemble,extended/v7,1D CNN,0.178636100217503,0.1644493149405049,-0.014186785276998098,-0.07941723570837368,3.0,3.0
+tf_fourier,MAE_logM,replicate_eval,0.75,ensemble,extended/v7,Fourier-feature transformer,0.3074033104087854,0.2624020592117674,-0.04500125119701798,-0.14639156337378165,3.0,3.0
+cnn_k45,MAE_logM,replicate_eval,1.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.1540456735449203,0.1254923083961556,-0.028553365148764692,-0.18535648870682775,3.0,3.0
+tf_fused,MAE_logM,replicate_eval,1.0,ensemble,extended/v7,fused transformer,0.2271765859419045,0.1547013641901476,-0.07247522175175691,-0.31902593064890444,3.0,3.0
+tf_p60,MAE_logM,replicate_eval,1.0,ensemble,extended/v7,tuned transformer (patch 60),0.1937796758837685,0.1586612679254422,-0.0351184079583263,-0.18122854111589476,3.0,3.0
+tf_learned_patch,MAE_logM,replicate_eval,1.0,ensemble,extended/v7,learned-patch transformer,0.2608742108706191,0.1798602521490266,-0.08101395872159253,-0.31054797808960694,3.0,3.0
+cnn_base,MAE_logM,replicate_eval,1.0,ensemble,extended/v7,1D CNN,0.2165808361240906,0.1976169581830499,-0.018963877941040708,-0.08756027670968682,3.0,3.0
+tf_fourier,MAE_logM,replicate_eval,1.0,ensemble,extended/v7,Fourier-feature transformer,0.3592094918935056,0.3070697387075041,-0.0521397531860015,-0.14515137924434166,3.0,3.0
+metadata_mlp_l1,MAE_logM,replicate_eval,1.0,per_seed_mean,,metadata MLP (L1),0.6057139980559627,0.6057139980559627,0.0,0.0,5.0,5.0
+metadata_hgb,MAE_logM,replicate_eval,1.0,per_seed_mean,,metadata GBT,0.6193410044231007,0.6193410044231007,0.0,0.0,5.0,5.0
+metadata_knn,MAE_logM,replicate_eval,1.0,per_seed_mean,,metadata k-NN,0.6299770691795479,0.6299770691795479,0.0,0.0,5.0,5.0
+cnn_k45,MAE_logM,replicate_eval,1.5,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.2028601252508464,0.1643341510940759,-0.038525974156770504,-0.18991398190813136,3.0,3.0
+tf_fused,MAE_logM,replicate_eval,1.5,ensemble,extended/v7,fused transformer,0.2906683861901079,0.2021195772241038,-0.08854880896600406,-0.3046385956403593,3.0,3.0
+tf_p60,MAE_logM,replicate_eval,1.5,ensemble,extended/v7,tuned transformer (patch 60),0.2462985558322285,0.2035790686620109,-0.04271948717021762,-0.1734459506913102,3.0,3.0
+tf_learned_patch,MAE_logM,replicate_eval,1.5,ensemble,extended/v7,learned-patch transformer,0.3339470997727602,0.230006576684171,-0.10394052308858923,-0.3112484676744229,3.0,3.0
+cnn_base,MAE_logM,replicate_eval,1.5,ensemble,extended/v7,1D CNN,0.2977349407785322,0.2628725993845587,-0.034862341393973484,-0.1170918713900817,3.0,3.0
+tf_fourier,MAE_logM,replicate_eval,1.5,ensemble,extended/v7,Fourier-feature transformer,0.4670241542608911,0.3843585872786834,-0.08266556698220773,-0.17700490697966922,3.0,3.0
+cnn_k45,MAE_logM,replicate_eval,2.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.2541684585679057,0.2086577753696954,-0.045510683198210306,-0.1790571633263901,3.0,3.0
+tf_fused,MAE_logM,replicate_eval,2.0,ensemble,extended/v7,fused transformer,0.3543487730506899,0.2508656777690015,-0.10348309528168842,-0.29203740255898974,3.0,3.0
+tf_p60,MAE_logM,replicate_eval,2.0,ensemble,extended/v7,tuned transformer (patch 60),0.3047869493978005,0.2547856997113429,-0.05000124968645758,-0.16405311902379774,3.0,3.0
+tf_learned_patch,MAE_logM,replicate_eval,2.0,ensemble,extended/v7,learned-patch transformer,0.4114539733212308,0.2857738874223995,-0.12568008589883128,-0.30545357208328666,3.0,3.0
+cnn_base,MAE_logM,replicate_eval,2.0,ensemble,extended/v7,1D CNN,0.3760795485300663,0.3219627932530075,-0.05411675527705884,-0.14389709700667858,3.0,3.0
+tf_fourier,MAE_logM,replicate_eval,2.0,ensemble,extended/v7,Fourier-feature transformer,0.5652204351126248,0.4582217365353105,-0.10699869857731426,-0.18930437034887795,3.0,3.0
+cnn_k45,MAE_logM,replicate_eval,3.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.3766369409369735,0.3159813723521422,-0.06065556858483129,-0.16104519231155662,3.0,3.0
+tf_fused,MAE_logM,replicate_eval,3.0,ensemble,extended/v7,fused transformer,0.4813449585845487,0.3601710274702122,-0.1211739311143365,-0.25174031420348236,3.0,3.0
+tf_p60,MAE_logM,replicate_eval,3.0,ensemble,extended/v7,tuned transformer (patch 60),0.4390583281873115,0.3707808142589789,-0.06827751392833259,-0.1555089826224728,3.0,3.0
+tf_learned_patch,MAE_logM,replicate_eval,3.0,ensemble,extended/v7,learned-patch transformer,0.5733642204067811,0.4191141620670802,-0.15425005833970096,-0.26902630622864143,3.0,3.0
+cnn_base,MAE_logM,replicate_eval,3.0,ensemble,extended/v7,1D CNN,0.5357871372345083,0.4516492099459009,-0.08413792728860742,-0.15703610900942763,3.0,3.0
+tf_fourier,MAE_logM,replicate_eval,3.0,ensemble,extended/v7,Fourier-feature transformer,0.7566686384042707,0.6133069449087634,-0.14336169349550731,-0.18946429945589002,3.0,3.0
+cnn_k45,MAE_logM,replicate_eval,4.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.5139051478575659,0.4432196713077359,-0.07068547654983004,-0.1375457647087459,3.0,3.0
+tf_fused,MAE_logM,replicate_eval,4.0,ensemble,extended/v7,fused transformer,0.596405309206592,0.4796340856520337,-0.11677122355455827,-0.19579172376902712,3.0,3.0
+tf_p60,MAE_logM,replicate_eval,4.0,ensemble,extended/v7,tuned transformer (patch 60),0.6005743934427876,0.504840151241325,-0.09573424220146265,-0.15940446886632464,3.0,3.0
+tf_learned_patch,MAE_logM,replicate_eval,4.0,ensemble,extended/v7,learned-patch transformer,0.7458869119788336,0.5646237298030257,-0.18126318217580795,-0.24301697652116966,3.0,3.0
+cnn_base,MAE_logM,replicate_eval,4.0,ensemble,extended/v7,1D CNN,0.6905271616144201,0.5899059048608187,-0.10062125675360134,-0.14571658053008887,3.0,3.0
+tf_fourier,MAE_logM,replicate_eval,4.0,ensemble,extended/v7,Fourier-feature transformer,0.9195904637101132,0.7442092906557061,-0.17538117305440715,-0.1907166069848386,3.0,3.0
+cnn_k45,MAE_logM,replicate_eval,6.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.7546893036313125,0.6861209850294837,-0.06856831860182877,-0.09085635409419605,3.0,3.0
+tf_fused,MAE_logM,replicate_eval,6.0,ensemble,extended/v7,fused transformer,0.7606849822948061,0.7094792386907636,-0.05120574360404251,-0.06731530764491621,3.0,3.0
+tf_p60,MAE_logM,replicate_eval,6.0,ensemble,extended/v7,tuned transformer (patch 60),0.8906645344576515,0.7843454959659079,-0.10631903849174362,-0.11937046371391,3.0,3.0
+cnn_base,MAE_logM,replicate_eval,6.0,ensemble,extended/v7,1D CNN,0.887806270145216,0.7863790239044998,-0.1014272462407162,-0.11424479602304005,3.0,3.0
+tf_learned_patch,MAE_logM,replicate_eval,6.0,ensemble,extended/v7,learned-patch transformer,1.0263495466725272,0.8648500187041033,-0.16149952796842393,-0.15735333882302854,3.0,3.0
+tf_fourier,MAE_logM,replicate_eval,6.0,ensemble,extended/v7,Fourier-feature transformer,1.1287946026418123,0.9744953401549984,-0.15429926248681392,-0.13669383440148852,3.0,3.0
+cnn_base,MAE_logM,replicate_eval,8.0,ensemble,extended/v7,1D CNN,1.0475518104804322,0.928961070045746,-0.1185907404346862,-0.11320751799407197,3.0,3.0
+cnn_k45,MAE_logM,replicate_eval,8.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.9771520848433696,0.9313534333757636,-0.04579865146760598,-0.04686952233740275,3.0,3.0
+tf_fused,MAE_logM,replicate_eval,8.0,ensemble,extended/v7,fused transformer,0.8641042009821913,0.9843577654616394,0.12025356447944813,0.13916558251048994,3.0,3.0
+tf_p60,MAE_logM,replicate_eval,8.0,ensemble,extended/v7,tuned transformer (patch 60),1.114736189899881,1.0770180082270486,-0.037718181672832474,-0.03383597125004087,3.0,3.0
+tf_fourier,MAE_logM,replicate_eval,8.0,ensemble,extended/v7,Fourier-feature transformer,1.2776685834041654,1.1750504305828582,-0.10261815282130726,-0.08031672231299282,3.0,3.0
+tf_learned_patch,MAE_logM,replicate_eval,8.0,ensemble,extended/v7,learned-patch transformer,1.2170859997522023,1.2072243150779982,-0.009861684674204119,-0.008102701597267531,3.0,3.0
+cnn_base,MAE_logM,replicate_eval,12.0,ensemble,extended/v7,1D CNN,1.2917870229895243,1.1238317627825558,-0.1679552602069685,-0.13001776393315767,3.0,3.0
+cnn_k45,MAE_logM,replicate_eval,12.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),1.3174382062136691,1.2724468717830022,-0.04499133443066694,-0.03415062218361838,3.0,3.0
+tf_fused,MAE_logM,replicate_eval,12.0,ensemble,extended/v7,fused transformer,0.96752210000157,1.2996759457379463,0.3321538457363763,0.34330362658986013,3.0,3.0
+tf_fourier,MAE_logM,replicate_eval,12.0,ensemble,extended/v7,Fourier-feature transformer,1.4611637260114243,1.4033173225025888,-0.05784640350883552,-0.03958926879928803,3.0,3.0
+tf_p60,MAE_logM,replicate_eval,12.0,ensemble,extended/v7,tuned transformer (patch 60),1.418267436620596,1.439876218980629,0.02160878236003283,0.015236042090567609,3.0,3.0
+tf_learned_patch,MAE_logM,replicate_eval,12.0,ensemble,extended/v7,learned-patch transformer,1.434228826947425,1.547303754690066,0.11307492774264105,0.0788402280152929,3.0,3.0
+cnn_k45,MAE_logM,stress_base,0.25,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.0795687080682358,0.0680019040192863,-0.011566804048949497,-0.14536875525275772,3.0,3.0
+cnn_k45,MAE_logM,stress_base,0.25,per_seed_mean,extended/v7,tuned 1D CNN (kernel 45),0.0820561773170581,0.0759852210826865,-0.006070956234371594,-0.07398536506171784,3.0,3.0
+tf_fused,MAE_logM,stress_base,0.25,ensemble,extended/v7,fused transformer,0.1129899416641053,0.0818609436909911,-0.031128997973114192,-0.2755023811380838,3.0,3.0
+tf_fused,MAE_logM,stress_base,0.25,per_seed_mean,extended/v7,fused transformer,0.1228040855257361,0.0875311004927443,-0.0352729850329918,-0.2872297357370869,3.0,3.0
+tf_learned_patch_low,MAE_logM,stress_base,0.25,ensemble,extended/v7,learned-patch transformer (s<=1),0.1195676030310567,0.0907733119532621,-0.02879429107779459,-0.24082017492911947,3.0,3.0
+tf_fused_fixed1,MAE_logM,stress_base,0.25,ensemble,extended/v7,fused transformer (fixed s=1),0.1410676290072459,0.0931053781024451,-0.0479622509048008,-0.33999473332281804,3.0,3.0
+tf_learned_patch_low,MAE_logM,stress_base,0.25,per_seed_mean,extended/v7,learned-patch transformer (s<=1),0.1295466740435666,0.0936623249243008,-0.0358843491192658,-0.2769993856206442,3.0,3.0
+tf_p60,MAE_logM,stress_base,0.25,ensemble,extended/v7,tuned transformer (patch 60),0.1234718144409951,0.0940356946961761,-0.029436119744818995,-0.2384035569420256,3.0,3.0
+tf_p60,MAE_logM,stress_base,0.25,per_seed_mean,extended/v7,tuned transformer (patch 60),0.127404088400757,0.0989053672368929,-0.028498721163864107,-0.22368765022845824,3.0,3.0
+tf_fused_fixed1,MAE_logM,stress_base,0.25,per_seed_mean,extended/v7,fused transformer (fixed s=1),0.1513851721998435,0.1000923613528304,-0.05129281084701309,-0.33882321565352175,3.0,3.0
+tf_learned_patch,MAE_logM,stress_base,0.25,ensemble,extended/v7,learned-patch transformer,0.1391929898632315,0.1025789956131005,-0.03661399425013101,-0.26304481487255393,3.0,3.0
+cnn_base,MAE_logM,stress_base,0.25,ensemble,extended/v7,1D CNN,0.1155524042931619,0.1041110067973738,-0.011441397495788097,-0.09901479390044306,3.0,3.0
+tf_learned_patch_fixed1,MAE_logM,stress_base,0.25,ensemble,extended/v7,learned-patch transformer (fixed s=1),0.1605947128272169,0.1054269917732861,-0.05516772105393081,-0.343521402932396,3.0,3.0
+tf_learned_patch,MAE_logM,stress_base,0.25,per_seed_mean,extended/v7,learned-patch transformer,0.1523527125992491,0.1085986777521983,-0.0437540348470508,-0.2871890765879705,3.0,3.0
+cnn_base,MAE_logM,stress_base,0.25,per_seed_mean,extended/v7,1D CNN,0.1316002865975973,0.1132100824619481,-0.018390204135649194,-0.13974288818900607,3.0,3.0
+tf_learned_patch_fixed1,MAE_logM,stress_base,0.25,per_seed_mean,extended/v7,learned-patch transformer (fixed s=1),0.1728682281664028,0.1170147781147848,-0.05585345005161799,-0.32309841226493924,3.0,3.0
+tf_fourier,MAE_logM,stress_base,0.25,ensemble,extended/v7,Fourier-feature transformer,0.2153164592834963,0.1875188631811003,-0.02779759610239599,-0.12910112025294035,3.0,3.0
+tf_fourier,MAE_logM,stress_base,0.25,per_seed_mean,extended/v7,Fourier-feature transformer,0.2418041625579865,0.2083776343115445,-0.03342652824644202,-0.1382380182906325,3.0,3.0
+metadata_mlp_l1,MAE_logM,stress_base,0.25,per_seed_mean,,metadata MLP (L1),0.6423995689308856,0.6423995689308856,0.0,0.0,3.0,3.0
+metadata_mlp_l1,MAE_logM,stress_base,0.25,ensemble,,metadata MLP (L1),0.6423995689308856,0.6423995689308856,0.0,0.0,3.0,3.0
+cnn_k45,MAE_logM,stress_base,0.5,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.1010115074835108,0.0823946104294073,-0.018616897054103507,-0.18430471456078945,3.0,3.0
+cnn_k45,MAE_logM,stress_base,0.5,per_seed_mean,extended/v7,tuned 1D CNN (kernel 45),0.1041670439393314,0.0912731528187635,-0.012893891120567907,-0.12378090644558869,3.0,3.0
+tf_fused,MAE_logM,stress_base,0.5,ensemble,extended/v7,fused transformer,0.1424700893872872,0.1017223127133651,-0.0407477766739221,-0.286009343078001,3.0,3.0
+tf_fused_fixed1,MAE_logM,stress_base,0.5,ensemble,extended/v7,fused transformer (fixed s=1),0.1457416981798262,0.1031716310953973,-0.04257006708442891,-0.29209256936133,3.0,3.0
+tf_fused,MAE_logM,stress_base,0.5,per_seed_mean,extended/v7,fused transformer,0.1518513696493081,0.1088727443028851,-0.042978625346422994,-0.28303087055243314,3.0,3.0
+tf_p60,MAE_logM,stress_base,0.5,ensemble,extended/v7,tuned transformer (patch 60),0.1339295931425203,0.1095298246749829,-0.024399768467537386,-0.18218354804955267,3.0,3.0
+tf_learned_patch_low,MAE_logM,stress_base,0.5,ensemble,extended/v7,learned-patch transformer (s<=1),0.1521496587188348,0.1107470283485121,-0.041402630370322685,-0.27211779979626993,3.0,3.0
+tf_fused_fixed1,MAE_logM,stress_base,0.5,per_seed_mean,extended/v7,fused transformer (fixed s=1),0.1567441823113594,0.1112961628940561,-0.045448019417303295,-0.28995027915629146,3.0,3.0
+tf_p60,MAE_logM,stress_base,0.5,per_seed_mean,extended/v7,tuned transformer (patch 60),0.1388888808865804,0.1141037703830821,-0.02478511050349831,-0.17845280590703552,3.0,3.0
+tf_learned_patch_low,MAE_logM,stress_base,0.5,per_seed_mean,extended/v7,learned-patch transformer (s<=1),0.1648241933929518,0.1154485360056623,-0.049375657387289495,-0.2995655939269465,3.0,3.0
+tf_learned_patch,MAE_logM,stress_base,0.5,ensemble,extended/v7,learned-patch transformer,0.165953962761703,0.1189422117622162,-0.04701175099948679,-0.28328188262061577,3.0,3.0
+cnn_base,MAE_logM,stress_base,0.5,ensemble,extended/v7,1D CNN,0.1407788256313327,0.1232388345774286,-0.017539991053904108,-0.1245925370896139,3.0,3.0
+tf_learned_patch_fixed1,MAE_logM,stress_base,0.5,ensemble,extended/v7,learned-patch transformer (fixed s=1),0.164853942213621,0.1253663378266648,-0.03948760438695623,-0.2395308468619295,3.0,3.0
+tf_learned_patch,MAE_logM,stress_base,0.5,per_seed_mean,extended/v7,learned-patch transformer,0.1785354793238285,0.1259482489732832,-0.0525872303505453,-0.29454778708248985,3.0,3.0
+tf_learned_patch_fixed1,MAE_logM,stress_base,0.5,per_seed_mean,extended/v7,learned-patch transformer (fixed s=1),0.1784220575043018,0.1336876947781907,-0.04473436272611109,-0.25072215482680743,3.0,3.0
+cnn_base,MAE_logM,stress_base,0.5,per_seed_mean,extended/v7,1D CNN,0.1593855533207775,0.135625269832166,-0.023760283488611506,-0.14907426045566274,3.0,3.0
+tf_fourier,MAE_logM,stress_base,0.5,ensemble,extended/v7,Fourier-feature transformer,0.2627699982773924,0.2284506321380746,-0.0343193661393178,-0.1306061055839741,3.0,3.0
+tf_fourier,MAE_logM,stress_base,0.5,per_seed_mean,extended/v7,Fourier-feature transformer,0.2946084700451318,0.2498624140425883,-0.0447460560025435,-0.15188312812489316,3.0,3.0
+metadata_mlp_l1,MAE_logM,stress_base,0.5,per_seed_mean,,metadata MLP (L1),0.6423995689308856,0.6423995689308856,0.0,0.0,3.0,3.0
+metadata_mlp_l1,MAE_logM,stress_base,0.5,ensemble,,metadata MLP (L1),0.6423995689308856,0.6423995689308856,0.0,0.0,3.0,3.0
+cnn_k45,MAE_logM,stress_base,0.75,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.1237514008346485,0.0990490564681213,-0.0247023443665272,-0.199612644381565,3.0,3.0
+cnn_k45,MAE_logM,stress_base,0.75,per_seed_mean,extended/v7,tuned 1D CNN (kernel 45),0.1271187719961804,0.1068573130721675,-0.020261458924012904,-0.1593899831302784,3.0,3.0
+tf_fused_fixed1,MAE_logM,stress_base,0.75,ensemble,extended/v7,fused transformer (fixed s=1),0.1601997732390228,0.1142791519400846,-0.04592062129893819,-0.2866459818917675,3.0,3.0
+tf_fused_fixed1,MAE_logM,stress_base,0.75,per_seed_mean,extended/v7,fused transformer (fixed s=1),0.1714434709576738,0.1208202651874156,-0.050623205770258195,-0.2952763700331063,3.0,3.0
+tf_p60,MAE_logM,stress_base,0.75,ensemble,extended/v7,tuned transformer (patch 60),0.1576048948829974,0.1277238070782797,-0.029881087804717682,-0.1895949223334769,3.0,3.0
+tf_fused,MAE_logM,stress_base,0.75,ensemble,extended/v7,fused transformer,0.1834368870772872,0.1279006109669992,-0.055536276110287996,-0.3027541351968592,3.0,3.0
+tf_fused,MAE_logM,stress_base,0.75,per_seed_mean,extended/v7,fused transformer,0.1954535150294705,0.1345701028439248,-0.060883412185545716,-0.3114981696612911,3.0,3.0
+tf_p60,MAE_logM,stress_base,0.75,per_seed_mean,extended/v7,tuned transformer (patch 60),0.1634418275588154,0.1346993781828815,-0.0287424493759339,-0.17585736653361134,3.0,3.0
+tf_learned_patch_fixed1,MAE_logM,stress_base,0.75,ensemble,extended/v7,learned-patch transformer (fixed s=1),0.179654683970534,0.1370334751190289,-0.04262120885150508,-0.23723961941618837,3.0,3.0
+tf_learned_patch_low,MAE_logM,stress_base,0.75,ensemble,extended/v7,learned-patch transformer (s<=1),0.1969281873739516,0.1399612795002227,-0.056966907873728906,-0.2892775718569587,3.0,3.0
+tf_learned_patch,MAE_logM,stress_base,0.75,ensemble,extended/v7,learned-patch transformer,0.200489896599768,0.1467222697799672,-0.05376762681980082,-0.2681812287386009,3.0,3.0
+tf_learned_patch_fixed1,MAE_logM,stress_base,0.75,per_seed_mean,extended/v7,learned-patch transformer (fixed s=1),0.1943568135492991,0.1471610145284388,-0.047195799020860296,-0.2428306893850622,3.0,3.0
+tf_learned_patch_low,MAE_logM,stress_base,0.75,per_seed_mean,extended/v7,learned-patch transformer (s<=1),0.209978520274413,0.1476563574113298,-0.0623221628630832,-0.2968025623841749,3.0,3.0
+cnn_base,MAE_logM,stress_base,0.75,ensemble,extended/v7,1D CNN,0.171989722389802,0.1531790828780576,-0.018810639511744415,-0.10937071849625694,3.0,3.0
+tf_learned_patch,MAE_logM,stress_base,0.75,per_seed_mean,extended/v7,learned-patch transformer,0.2141488850901162,0.1557618031622598,-0.05838708192785641,-0.272647144080561,3.0,3.0
+cnn_base,MAE_logM,stress_base,0.75,per_seed_mean,extended/v7,1D CNN,0.1917078200924004,0.1667876206071925,-0.024920199485207906,-0.12999052137360245,3.0,3.0
+tf_fourier,MAE_logM,stress_base,0.75,ensemble,extended/v7,Fourier-feature transformer,0.3084097614539615,0.2635045970608024,-0.04490516439315906,-0.1456022798417889,3.0,3.0
+tf_fourier,MAE_logM,stress_base,0.75,per_seed_mean,extended/v7,Fourier-feature transformer,0.3436757688361959,0.2860138418096967,-0.05766192702649919,-0.1677800190038485,3.0,3.0
+metadata_mlp_l1,MAE_logM,stress_base,0.75,per_seed_mean,,metadata MLP (L1),0.6423995689308856,0.6423995689308856,0.0,0.0,3.0,3.0
+metadata_mlp_l1,MAE_logM,stress_base,0.75,ensemble,,metadata MLP (L1),0.6423995689308856,0.6423995689308856,0.0,0.0,3.0,3.0
+cnn_k45,MAE_logM,stress_base,1.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.1468300101779374,0.1141113935648077,-0.03271861661312969,-0.2228333061713972,3.0,3.0
+cnn_k45,MAE_logM,stress_base,1.0,per_seed_mean,extended/v7,tuned 1D CNN (kernel 45),0.1503376505260302,0.1227129209394295,-0.027624729586600713,-0.18375123922678058,3.0,3.0
+tf_fused_fixed1,MAE_logM,stress_base,1.0,ensemble,extended/v7,fused transformer (fixed s=1),0.187064866846378,0.135400457355089,-0.051664409491289004,-0.2761844613703813,3.0,3.0
+tf_fused_fixed1,MAE_logM,stress_base,1.0,per_seed_mean,extended/v7,fused transformer (fixed s=1),0.2011090537642332,0.1420039519691597,-0.0591051017950735,-0.2938957778816083,3.0,3.0
+tf_fused,MAE_logM,stress_base,1.0,ensemble,extended/v7,fused transformer,0.2168477689706223,0.1491021148707058,-0.06774565409991651,-0.3124111187378387,3.0,3.0
+tf_p60,MAE_logM,stress_base,1.0,ensemble,extended/v7,tuned transformer (patch 60),0.1797231734588529,0.1507712166347038,-0.028951956824149083,-0.16109195195564222,3.0,3.0
+tf_fused,MAE_logM,stress_base,1.0,per_seed_mean,extended/v7,fused transformer,0.2336220034465387,0.1565209051128084,-0.0771010983337303,-0.33002498564470134,3.0,3.0
+tf_p60,MAE_logM,stress_base,1.0,per_seed_mean,extended/v7,tuned transformer (patch 60),0.1894223407357368,0.1574467886445161,-0.03197555209122069,-0.16880560110821244,3.0,3.0
+tf_learned_patch_fixed1,MAE_logM,stress_base,1.0,ensemble,extended/v7,learned-patch transformer (fixed s=1),0.2146182806401109,0.15838356029455,-0.0562347203455609,-0.2620220429398546,3.0,3.0
+tf_learned_patch_fixed1,MAE_logM,stress_base,1.0,per_seed_mean,extended/v7,learned-patch transformer (fixed s=1),0.2281807665196666,0.1682452720142266,-0.05993549450544,-0.2626667243677361,3.0,3.0
+tf_learned_patch,MAE_logM,stress_base,1.0,ensemble,extended/v7,learned-patch transformer,0.2292789829643887,0.1733921618339654,-0.055886821130423286,-0.24375030108670515,3.0,3.0
+cnn_base,MAE_logM,stress_base,1.0,ensemble,extended/v7,1D CNN,0.2021313680336217,0.1765455432834767,-0.02558582475014498,-0.12658017901451665,3.0,3.0
+tf_learned_patch_low,MAE_logM,stress_base,1.0,ensemble,extended/v7,learned-patch transformer (s<=1),0.2533847935055981,0.1815467929613092,-0.0718380005442889,-0.28351346404969546,3.0,3.0
+tf_learned_patch,MAE_logM,stress_base,1.0,per_seed_mean,extended/v7,learned-patch transformer,0.2462562395682073,0.1833214442276354,-0.06293479534057189,-0.25556629732884556,3.0,3.0
+tf_learned_patch_low,MAE_logM,stress_base,1.0,per_seed_mean,extended/v7,learned-patch transformer (s<=1),0.268494034406967,0.1898722959574866,-0.07862173844948042,-0.29282489878456797,3.0,3.0
+cnn_base,MAE_logM,stress_base,1.0,per_seed_mean,extended/v7,1D CNN,0.2266216834768021,0.1912616140699414,-0.03536006940686068,-0.15603127143162485,3.0,3.0
+tf_fourier,MAE_logM,stress_base,1.0,ensemble,extended/v7,Fourier-feature transformer,0.3705840832021496,0.3071695605668744,-0.0634145226352752,-0.1711204703864285,3.0,3.0
+tf_fourier,MAE_logM,stress_base,1.0,per_seed_mean,extended/v7,Fourier-feature transformer,0.4045305543459528,0.3318804483523612,-0.07265010599359162,-0.17959114636236242,3.0,3.0
+metadata_oracle,MAE_logM,stress_base,1.0,bound,,metadata oracle (bound),0.6392036481299074,0.6392036481299074,0.0,0.0,,
+metadata_mlp_l1,MAE_logM,stress_base,1.0,ensemble,,metadata MLP (L1),0.6423995689308856,0.6423995689308856,0.0,0.0,3.0,3.0
+cnn_k45,MAE_logM,stress_base,1.5,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.1926785481127511,0.149352419625185,-0.04332612848756609,-0.22486223252114515,3.0,3.0
+cnn_k45,MAE_logM,stress_base,1.5,per_seed_mean,extended/v7,tuned 1D CNN (kernel 45),0.196694806719976,0.161385468375731,-0.03530933834424499,-0.1795133228632367,3.0,3.0
+tf_p60,MAE_logM,stress_base,1.5,ensemble,extended/v7,tuned transformer (patch 60),0.2258939205451958,0.1874703721572128,-0.03842354838798301,-0.1700955399563106,3.0,3.0
+tf_fused,MAE_logM,stress_base,1.5,ensemble,extended/v7,fused transformer,0.2865293086807444,0.1891211115602695,-0.09740819712047488,-0.3399589297477721,3.0,3.0
+tf_p60,MAE_logM,stress_base,1.5,per_seed_mean,extended/v7,tuned transformer (patch 60),0.2380322620543213,0.1969121958797544,-0.0411200661745669,-0.1727499701917839,3.0,3.0
+tf_fused_fixed1,MAE_logM,stress_base,1.5,ensemble,extended/v7,fused transformer (fixed s=1),0.2969792267464345,0.1984423210720721,-0.09853690567436241,-0.3317973002822004,3.0,3.0
+tf_fused,MAE_logM,stress_base,1.5,per_seed_mean,extended/v7,fused transformer,0.3051254736913422,0.2008266108918788,-0.10429886279946338,-0.3418228623709395,3.0,3.0
+tf_fused_fixed1,MAE_logM,stress_base,1.5,per_seed_mean,extended/v7,fused transformer (fixed s=1),0.3104465688997331,0.2097762788994791,-0.10067029000025399,-0.32427573722925607,3.0,3.0
+tf_learned_patch,MAE_logM,stress_base,1.5,ensemble,extended/v7,learned-patch transformer,0.3020488148114443,0.2190537077550954,-0.08299510705634891,-0.2747738212717672,3.0,3.0
+tf_learned_patch_fixed1,MAE_logM,stress_base,1.5,ensemble,extended/v7,learned-patch transformer (fixed s=1),0.3175961650069305,0.2301787185525036,-0.0874174464544269,-0.2752471726241382,3.0,3.0
+cnn_base,MAE_logM,stress_base,1.5,ensemble,extended/v7,1D CNN,0.2810929534538628,0.2320494230145678,-0.04904353043929502,-0.17447442149183856,3.0,3.0
+tf_learned_patch,MAE_logM,stress_base,1.5,per_seed_mean,extended/v7,learned-patch transformer,0.325573447613804,0.2324282830081511,-0.09314516460565292,-0.2860957037139648,3.0,3.0
+tf_learned_patch_fixed1,MAE_logM,stress_base,1.5,per_seed_mean,extended/v7,learned-patch transformer (fixed s=1),0.3375171573797805,0.2435562154459604,-0.0939609419338201,-0.278388638560657,3.0,3.0
+cnn_base,MAE_logM,stress_base,1.5,per_seed_mean,extended/v7,1D CNN,0.3015393716362806,0.2472400121153456,-0.05429935952093498,-0.1800738630789194,3.0,3.0
+tf_learned_patch_low,MAE_logM,stress_base,1.5,ensemble,extended/v7,learned-patch transformer (s<=1),0.3925001227286513,0.281565471007839,-0.1109346517208123,-0.2826359669637739,3.0,3.0
+tf_learned_patch_low,MAE_logM,stress_base,1.5,per_seed_mean,extended/v7,learned-patch transformer (s<=1),0.4185931550781269,0.2985695361736918,-0.12002361890443508,-0.2867309640599204,3.0,3.0
+tf_fourier,MAE_logM,stress_base,1.5,ensemble,extended/v7,Fourier-feature transformer,0.4641677809362378,0.3787562003588375,-0.08541158057740028,-0.1840101447910129,3.0,3.0
+tf_fourier,MAE_logM,stress_base,1.5,per_seed_mean,extended/v7,Fourier-feature transformer,0.501045825932904,0.4031066368082898,-0.09793918912461425,-0.19546952405453122,3.0,3.0
+metadata_mlp_l1,MAE_logM,stress_base,1.5,per_seed_mean,,metadata MLP (L1),0.6423995689308856,0.6423995689308856,0.0,0.0,3.0,3.0
+metadata_mlp_l1,MAE_logM,stress_base,1.5,ensemble,,metadata MLP (L1),0.6423995689308856,0.6423995689308856,0.0,0.0,3.0,3.0
+cnn_k45,MAE_logM,stress_base,2.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.2452984643368075,0.1882406601165825,-0.057057804220224995,-0.23260563157004388,3.0,3.0
+cnn_k45,MAE_logM,stress_base,2.0,per_seed_mean,extended/v7,tuned 1D CNN (kernel 45),0.250572097249853,0.2019472581815427,-0.04862483906831033,-0.1940552822999483,3.0,3.0
+tf_p60,MAE_logM,stress_base,2.0,ensemble,extended/v7,tuned transformer (patch 60),0.2852893512787722,0.2298634035207731,-0.05542594775799908,-0.19427976371904357,3.0,3.0
+tf_fused,MAE_logM,stress_base,2.0,ensemble,extended/v7,fused transformer,0.3683666858497554,0.2366017271045365,-0.1317649587452189,-0.3577005299522701,3.0,3.0
+tf_p60,MAE_logM,stress_base,2.0,per_seed_mean,extended/v7,tuned transformer (patch 60),0.3017744553044004,0.2419584473519636,-0.0598160079524368,-0.19821428520880038,3.0,3.0
+tf_fused,MAE_logM,stress_base,2.0,per_seed_mean,extended/v7,fused transformer,0.3863652675457827,0.2509785280526049,-0.1353867394931778,-0.35041125811634977,3.0,3.0
+cnn_base,MAE_logM,stress_base,2.0,ensemble,extended/v7,1D CNN,0.3637846392972508,0.2827791804865618,-0.08100545881068899,-0.22267421452201258,3.0,3.0
+tf_learned_patch,MAE_logM,stress_base,2.0,ensemble,extended/v7,learned-patch transformer,0.3870674306517743,0.2849804288480428,-0.10208700180373148,-0.2637447476059389,3.0,3.0
+tf_fused_fixed1,MAE_logM,stress_base,2.0,ensemble,extended/v7,fused transformer (fixed s=1),0.4486821799003009,0.2947916872199678,-0.1538904926803331,-0.3429832954688065,3.0,3.0
+cnn_base,MAE_logM,stress_base,2.0,per_seed_mean,extended/v7,1D CNN,0.3806534914879082,0.2983233363985891,-0.08233015508931912,-0.21628635210333913,3.0,3.0
+tf_learned_patch,MAE_logM,stress_base,2.0,per_seed_mean,extended/v7,learned-patch transformer,0.4143817861882013,0.3039423364787932,-0.11043944970940811,-0.2665161775697579,3.0,3.0
+tf_fused_fixed1,MAE_logM,stress_base,2.0,per_seed_mean,extended/v7,fused transformer (fixed s=1),0.4687990943235864,0.3102449208087482,-0.1585541735148382,-0.3382134808592376,3.0,3.0
+tf_learned_patch_fixed1,MAE_logM,stress_base,2.0,ensemble,extended/v7,learned-patch transformer (fixed s=1),0.4672880345942847,0.3367481293511216,-0.1305399052431631,-0.279356404570689,3.0,3.0
+tf_learned_patch_fixed1,MAE_logM,stress_base,2.0,per_seed_mean,extended/v7,learned-patch transformer (fixed s=1),0.4923999073463372,0.3548401889534123,-0.1375597183929249,-0.27936584946627563,3.0,3.0
+tf_learned_patch_low,MAE_logM,stress_base,2.0,ensemble,extended/v7,learned-patch transformer (s<=1),0.5606651667490503,0.4091186246916462,-0.1515465420574041,-0.2702977660198306,3.0,3.0
+tf_learned_patch_low,MAE_logM,stress_base,2.0,per_seed_mean,extended/v7,learned-patch transformer (s<=1),0.5885863389582752,0.4344484617485702,-0.15413787720970495,-0.26187810862635696,3.0,3.0
+tf_fourier,MAE_logM,stress_base,2.0,ensemble,extended/v7,Fourier-feature transformer,0.580565544318244,0.4395783947256345,-0.14098714959260955,-0.24284450045717101,3.0,3.0
+tf_fourier,MAE_logM,stress_base,2.0,per_seed_mean,extended/v7,Fourier-feature transformer,0.6108589132820487,0.4703187184467916,-0.1405401948352571,-0.23006981117809475,3.0,3.0
+metadata_mlp_l1,MAE_logM,stress_base,2.0,per_seed_mean,,metadata MLP (L1),0.6423995689308856,0.6423995689308856,0.0,0.0,3.0,3.0
+metadata_mlp_l1,MAE_logM,stress_base,2.0,ensemble,,metadata MLP (L1),0.6423995689308856,0.6423995689308856,0.0,0.0,3.0,3.0
+cnn_k45,MAE_logM,stress_base,3.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.3533418849118834,0.2942201280040303,-0.059121756907853096,-0.16732167748127827,3.0,3.0
+cnn_k45,MAE_logM,stress_base,3.0,per_seed_mean,extended/v7,tuned 1D CNN (kernel 45),0.3615824642255366,0.3068328890960124,-0.054749575129524164,-0.15141656619546182,3.0,3.0
+tf_fused,MAE_logM,stress_base,3.0,ensemble,extended/v7,fused transformer,0.4820438454279669,0.3328466019296003,-0.1491972434983666,-0.30950969484094687,3.0,3.0
+tf_p60,MAE_logM,stress_base,3.0,ensemble,extended/v7,tuned transformer (patch 60),0.4273291442373032,0.3445174950610296,-0.08281164917627365,-0.1937889102417197,3.0,3.0
+tf_fused,MAE_logM,stress_base,3.0,per_seed_mean,extended/v7,fused transformer,0.5079734045776135,0.3520131194673231,-0.15596028511029042,-0.307024508970058,3.0,3.0
+tf_p60,MAE_logM,stress_base,3.0,per_seed_mean,extended/v7,tuned transformer (patch 60),0.4469637681263279,0.3621465666326813,-0.08481720149364658,-0.18976303571361117,3.0,3.0
+tf_learned_patch,MAE_logM,stress_base,3.0,ensemble,extended/v7,learned-patch transformer,0.5521863455479169,0.4096806312560597,-0.1425057142918572,-0.25807540414722374,3.0,3.0
+cnn_base,MAE_logM,stress_base,3.0,ensemble,extended/v7,1D CNN,0.5064512266863616,0.4306051510729274,-0.07584607561343415,-0.14975988134076454,3.0,3.0
+tf_learned_patch,MAE_logM,stress_base,3.0,per_seed_mean,extended/v7,learned-patch transformer,0.5863520525747931,0.433346773691128,-0.15300527888366505,-0.2609443903398773,3.0,3.0
+cnn_base,MAE_logM,stress_base,3.0,per_seed_mean,extended/v7,1D CNN,0.5268728468441347,0.4456309100166071,-0.08124193682752762,-0.15419647703264824,3.0,3.0
+tf_fourier,MAE_logM,stress_base,3.0,ensemble,extended/v7,Fourier-feature transformer,0.7412654529325955,0.574671202549089,-0.1665942503835065,-0.22474303871093154,3.0,3.0
+tf_fused_fixed1,MAE_logM,stress_base,3.0,ensemble,extended/v7,fused transformer (fixed s=1),0.8194670795884947,0.5798593536319983,-0.2396077259564965,-0.2923945719415823,3.0,3.0
+tf_fourier,MAE_logM,stress_base,3.0,per_seed_mean,extended/v7,Fourier-feature transformer,0.7801891507596027,0.6049100602801057,-0.17527909047949697,-0.2246623018390385,3.0,3.0
+tf_fused_fixed1,MAE_logM,stress_base,3.0,per_seed_mean,extended/v7,fused transformer (fixed s=1),0.8454247099699449,0.61434554427393,-0.23107916569601494,-0.2733290888838935,3.0,3.0
+tf_learned_patch_fixed1,MAE_logM,stress_base,3.0,ensemble,extended/v7,learned-patch transformer (fixed s=1),0.8380325647859695,0.6217411201281868,-0.21629144465778272,-0.2580943196557317,3.0,3.0
+metadata_mlp_l1,MAE_logM,stress_base,3.0,per_seed_mean,,metadata MLP (L1),0.6423995689308856,0.6423995689308856,0.0,0.0,3.0,3.0
+metadata_mlp_l1,MAE_logM,stress_base,3.0,ensemble,,metadata MLP (L1),0.6423995689308856,0.6423995689308856,0.0,0.0,3.0,3.0
+tf_learned_patch_fixed1,MAE_logM,stress_base,3.0,per_seed_mean,extended/v7,learned-patch transformer (fixed s=1),0.8701290905444474,0.6577205373871401,-0.21240855315730733,-0.2441115409949131,3.0,3.0
+tf_learned_patch_low,MAE_logM,stress_base,3.0,ensemble,extended/v7,learned-patch transformer (s<=1),0.9063731951306764,0.7322833192724314,-0.17408987585824498,-0.19207306305339886,3.0,3.0
+tf_learned_patch_low,MAE_logM,stress_base,3.0,per_seed_mean,extended/v7,learned-patch transformer (s<=1),0.9380132469021976,0.7755903459801985,-0.16242290092199907,-0.17315629758791048,3.0,3.0
+cnn_k45,MAE_logM,stress_base,4.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.4874783517653132,0.4184005763293996,-0.06907777543591359,-0.14170429350505748,3.0,3.0
+cnn_k45,MAE_logM,stress_base,4.0,per_seed_mean,extended/v7,tuned 1D CNN (kernel 45),0.4971760307639128,0.4308619499394341,-0.0663140808244787,-0.13338149210971992,3.0,3.0
+tf_fused,MAE_logM,stress_base,4.0,ensemble,extended/v7,fused transformer,0.5930890009472969,0.4573916263114806,-0.13569737463581627,-0.22879765839372668,3.0,3.0
+tf_p60,MAE_logM,stress_base,4.0,ensemble,extended/v7,tuned transformer (patch 60),0.5985902623522055,0.4746174245030349,-0.12397283784917057,-0.2071080096792921,3.0,3.0
+tf_fused,MAE_logM,stress_base,4.0,per_seed_mean,extended/v7,fused transformer,0.6279067273595347,0.4765691264677454,-0.15133760089178927,-0.2410192378861622,3.0,3.0
+tf_p60,MAE_logM,stress_base,4.0,per_seed_mean,extended/v7,tuned transformer (patch 60),0.6263229323170302,0.5004976375879573,-0.1258252947290729,-0.20089523828162026,3.0,3.0
+tf_learned_patch,MAE_logM,stress_base,4.0,ensemble,extended/v7,learned-patch transformer,0.7200909013136613,0.5357097365259738,-0.1843811647876875,-0.256052623983057,3.0,3.0
+tf_learned_patch,MAE_logM,stress_base,4.0,per_seed_mean,extended/v7,learned-patch transformer,0.7576549056502007,0.5648693521144508,-0.1927855535357499,-0.254450346850597,3.0,3.0
+cnn_base,MAE_logM,stress_base,4.0,ensemble,extended/v7,1D CNN,0.6532125514295207,0.5854296741648757,-0.06778287726464505,-0.10376848564269907,3.0,3.0
+cnn_base,MAE_logM,stress_base,4.0,per_seed_mean,extended/v7,1D CNN,0.6729168853739599,0.5986436677128661,-0.07427321766109374,-0.11037502442789485,3.0,3.0
+metadata_mlp_l1,MAE_logM,stress_base,4.0,per_seed_mean,,metadata MLP (L1),0.6423995689308856,0.6423995689308856,0.0,0.0,3.0,3.0
+metadata_mlp_l1,MAE_logM,stress_base,4.0,ensemble,,metadata MLP (L1),0.6423995689308856,0.6423995689308856,0.0,0.0,3.0,3.0
+tf_fourier,MAE_logM,stress_base,4.0,ensemble,extended/v7,Fourier-feature transformer,0.9093650663931832,0.7084000346180083,-0.20096503177517488,-0.22099488885389337,3.0,3.0
+tf_fourier,MAE_logM,stress_base,4.0,per_seed_mean,extended/v7,Fourier-feature transformer,0.9573941993878944,0.7449403501344136,-0.21245384925348076,-0.22190843582435757,3.0,3.0
+tf_fused_fixed1,MAE_logM,stress_base,4.0,ensemble,extended/v7,fused transformer (fixed s=1),1.1537462890196333,0.9013896224880372,-0.25235666653159605,-0.21872804180027286,3.0,3.0
+tf_learned_patch_fixed1,MAE_logM,stress_base,4.0,ensemble,extended/v7,learned-patch transformer (fixed s=1),1.174885836960719,0.9371069312320016,-0.2377789057287173,-0.20238468985533203,3.0,3.0
+tf_fused_fixed1,MAE_logM,stress_base,4.0,per_seed_mean,extended/v7,fused transformer (fixed s=1),1.1799914403050258,0.9452814539586823,-0.23470998634634344,-0.1989082109660654,3.0,3.0
+tf_learned_patch_fixed1,MAE_logM,stress_base,4.0,per_seed_mean,extended/v7,learned-patch transformer (fixed s=1),1.2205475939072163,0.995602814865868,-0.22494477904134835,-0.18429824462744238,3.0,3.0
+tf_learned_patch_low,MAE_logM,stress_base,4.0,ensemble,extended/v7,learned-patch transformer (s<=1),1.2076625459907362,1.023664037145312,-0.18399850884542412,-0.15235920784019708,3.0,3.0
+tf_learned_patch_low,MAE_logM,stress_base,4.0,per_seed_mean,extended/v7,learned-patch transformer (s<=1),1.2505098839739006,1.0706391840730975,-0.17987069990080307,-0.14383788741373688,3.0,3.0
+cnn_k45,MAE_logM,val,1.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.1523824870380194,0.1287343573864798,-0.023648129651539618,-0.15518928789788955,3.0,3.0
+tf_fused_fixed1,MAE_logM,val,1.0,ensemble,extended/fixed1,fused transformer (fixed s=1),0.2023005046426528,0.1501791091735189,-0.05212139546913391,-0.25764342783623834,3.0,3.0
+cnn_k15,MAE_logM,val,1.0,ensemble,extended/v7,1D CNN (kernel 15),0.1630346116940867,0.1541591527005139,-0.00887545899357281,-0.05443910898028486,3.0,3.0
+tf_fused_fixed1,MAE_logM,val,1.0,per_seed_mean,extended/fixed1,fused transformer (fixed s=1),0.2145433436844839,0.1566934268838679,-0.05784991680061602,-0.2696420956582668,3.0,3.0
+tf_fused,MAE_logM,val,1.0,ensemble,extended/v7,fused transformer,0.2302016353449322,0.169064912813412,-0.06113672253152022,-0.2655790105049144,5.0,5.0
+tf_p60,MAE_logM,val,1.0,ensemble,extended/v7,tuned transformer (patch 60),0.1869411987315958,0.1727759262287006,-0.014165272502895176,-0.07577394709677251,3.0,3.0
+tf_p20,MAE_logM,val,1.0,ensemble,extended/v7,transformer (patch 20),0.202777393553644,0.1770252677613819,-0.025752125792262104,-0.12699702536342877,3.0,3.0
+tf_learned_patch_fixed1,MAE_logM,val,1.0,ensemble,extended/fixed1,learned-patch transformer (fixed s=1),0.2203587563178818,0.177864517465786,-0.0424942388520958,-0.19284116302959664,3.0,3.0
+tf_fused,MAE_logM,val,1.0,per_seed_mean,extended/v7,fused transformer,0.247592353151812,0.1806470857470203,-0.0669452674047917,-0.2703850363413446,5.0,5.0
+tf_learned_patch_fixed1,MAE_logM,val,1.0,per_seed_mean,extended/fixed1,learned-patch transformer (fixed s=1),0.2314228701187385,0.1872092631523867,-0.04421360696635179,-0.1910511564551363,3.0,3.0
+tf_p5,MAE_logM,val,1.0,ensemble,extended/v7,transformer (patch 5),0.2921144287341167,0.1960118341019727,-0.09610259463214399,-0.32898955059702584,3.0,3.0
+tf_learned_patch,MAE_logM,val,1.0,ensemble,extended/v7,learned-patch transformer,0.2617740435765837,0.1995150906410202,-0.062258952935563494,-0.23783470692864642,5.0,5.0
+cnn_base,MAE_logM,val,1.0,ensemble,extended/v7,1D CNN,0.2115655077295316,0.2011800743919601,-0.010385433337571498,-0.04908849958117174,5.0,5.0
+tf_d8,MAE_logM,val,1.0,ensemble,extended/v7,transformer (8 layers),0.2592205972914739,0.2018663949973934,-0.0573542022940805,-0.22125634649931022,3.0,3.0
+cnn_wide,MAE_logM,val,1.0,ensemble,extended/v7,1D CNN (wide),0.2187840565250904,0.2066180818889682,-0.012165974636122179,-0.05560722673010211,3.0,3.0
+cnn_pm,MAE_logM,val,1.0,ensemble,extended/v7,1D CNN (parameter-matched),0.2154804997282159,0.2074548750513394,-0.008025624676876508,-0.03724524811757526,3.0,3.0
+tf_learned_patch_low,MAE_logM,val,1.0,ensemble,extended/low,learned-patch transformer (s<=1),0.2689046505223318,0.2105334842500839,-0.05837116627224792,-0.21707012563325062,3.0,3.0
+tf_learned_patch,MAE_logM,val,1.0,per_seed_mean,extended/v7,learned-patch transformer,0.2801464216600765,0.2121971387916221,-0.06794928286845436,-0.24254917291395045,5.0,5.0
+cnn_base,MAE_logM,val,1.0,per_seed_mean,extended/v7,1D CNN,0.2304691900525814,0.2163828780848865,-0.014086311967694914,-0.06112015217513947,5.0,5.0
+tf_learned_patch_low,MAE_logM,val,1.0,per_seed_mean,extended/low,learned-patch transformer (s<=1),0.2829018901207505,0.2183693473481489,-0.06453254277260162,-0.22810926694430111,3.0,3.0
+cnn_hd,MAE_logM,val,1.0,ensemble,extended/v7,1D CNN (half depth),0.349400228490726,0.2564343621991937,-0.0929658662915323,-0.26607271178129716,3.0,3.0
+tf_fourier,MAE_logM,val,1.0,ensemble,extended/v7,Fourier-feature transformer,0.3598021233072007,0.308426574711648,-0.051375548595552656,-0.14278834189004488,5.0,5.0
+tf_fourier,MAE_logM,val,1.0,per_seed_mean,extended/v7,Fourier-feature transformer,0.396726214427346,0.333710527969344,-0.06301568645800204,-0.15883923009464337,5.0,5.0
+metadata_oracle,MAE_logM,val,1.0,bound,,metadata oracle (bound),0.6129788844801018,0.6129788844801018,0.0,0.0,,
+metadata_oracle,MAE_logM,val,1.0,ensemble,,metadata oracle (bound),0.6129788844801018,0.6129788844801018,0.0,0.0,3.0,3.0
+metadata_mlp_l1,MAE_logM,val,1.0,ensemble,,metadata MLP (L1),0.6139624659507745,0.6139624659507745,0.0,0.0,3.0,3.0
+metadata_hgb,MAE_logM,val,1.0,ensemble,,metadata GBT,0.6285395265802399,0.6285395265802399,0.0,0.0,3.0,3.0
+fit_matched,MAE_logM_failures_replaced,stress_base,0.25,single,,matched-model fit (oracle),0.1363629194572402,0.1404279589268447,0.0040650394696045145,0.029810446166629655,,
+feat_gbm,MAE_logM_failures_replaced,stress_base,0.25,per_seed_mean,,feature regression,0.3141463034444019,0.2323778807625416,-0.08176842268186033,-0.26028771239809234,5.0,5.0
+fit_single_win,MAE_logM_failures_replaced,stress_base,0.25,single,,windowed single-mode fit,0.3872168057556722,0.7457187885557708,0.3585019828000986,0.9258430354035506,,
+fit_single_track,MAE_logM_failures_replaced,stress_base,0.25,single,,dispersion-tracking single-mode fit,1.0518365335468889,1.0025413474977565,-0.04929518604913241,-0.04686582418173339,,
+tf_fourier,MAE_logM_failures_replaced,stress_base,0.25,single,,Fourier-feature transformer,0.2447162562515914,1.647223003376591,1.4025067471249997,5.731154801923295,,
+tf_learned_patch,MAE_logM_failures_replaced,stress_base,0.25,single,,learned-patch transformer,0.1534755410578134,2.2868178607946965,2.133342319736883,13.900210450688455,,
+fit_two_mode,MAE_logM_failures_replaced,stress_base,0.25,single,,two-mode fit,0.4042918371327035,2.630468018600683,2.2261761814679795,5.506359458692871,,
+fit_single_naive,MAE_logM_failures_replaced,stress_base,0.25,single,,naive single-mode fit,1.7563620837229077,2.9640689156482014,1.2077068319252937,0.6876183693087669,,
+feat_gbm,MAE_logM_failures_replaced,stress_base,0.5,per_seed_mean,,feature regression,0.3662176043604254,0.2656414437705991,-0.10057616058982627,-0.27463496946160143,5.0,5.0
+fit_matched,MAE_logM_failures_replaced,stress_base,0.5,single,,matched-model fit (oracle),0.2706797851597706,0.2698685873971263,-0.0008111977626442668,-0.002996890817559397,,
+fit_single_win,MAE_logM_failures_replaced,stress_base,0.5,single,,windowed single-mode fit,0.4870844967544701,0.7482531124039575,0.26116861564948746,0.5361874939352412,,
+fit_single_track,MAE_logM_failures_replaced,stress_base,0.5,single,,dispersion-tracking single-mode fit,1.097840181783169,0.9874921153270392,-0.11034806645612971,-0.10051377995374214,,
+tf_fourier,MAE_logM_failures_replaced,stress_base,0.5,single,,Fourier-feature transformer,0.2973562531041067,1.5455557390173966,1.2481994859132899,4.19765675980685,,
+tf_learned_patch,MAE_logM_failures_replaced,stress_base,0.5,single,,learned-patch transformer,0.1804278682384332,2.252788970193783,2.07236110195535,11.485814925312702,,
+fit_two_mode,MAE_logM_failures_replaced,stress_base,0.5,single,,two-mode fit,0.5940192110962028,2.536991305806577,1.9429720947103741,3.270891005570029,,
+fit_single_naive,MAE_logM_failures_replaced,stress_base,0.5,single,,naive single-mode fit,1.598371129019274,2.8222765550956703,1.2239054260763964,0.7657204286637475,,
+feat_gbm,MAE_logM_failures_replaced,stress_base,1.0,per_seed_mean,,feature regression,0.4654734025080021,0.3338279326866429,-0.13164546982135922,-0.2828206061013251,5.0,5.0
+fit_matched,MAE_logM_failures_replaced,stress_base,1.0,single,,matched-model fit (oracle),0.5908544916868942,0.4397949818532931,-0.1510595098336011,-0.25566279339321774,,
+fit_single_win,MAE_logM_failures_replaced,stress_base,1.0,single,,windowed single-mode fit,0.702016426849372,0.7974895199895652,0.09547309314019314,0.13599837480822696,,
+fit_single_track,MAE_logM_failures_replaced,stress_base,1.0,single,,dispersion-tracking single-mode fit,1.183388052589154,0.9918872531560226,-0.19150079943313147,-0.16182417847986866,,
+tf_fourier,MAE_logM_failures_replaced,stress_base,1.0,single,,Fourier-feature transformer,0.4100418301330684,1.4822798909576484,1.07223806082458,2.6149479931757527,,
+tf_learned_patch,MAE_logM_failures_replaced,stress_base,1.0,single,,learned-patch transformer,0.2518590166033118,2.160196519616838,1.9083375030135263,7.577006885638864,,
+fit_two_mode,MAE_logM_failures_replaced,stress_base,1.0,single,,two-mode fit,0.870401652268406,2.369163636089824,1.4987619838214177,1.7219199663918423,,
+fit_single_naive,MAE_logM_failures_replaced,stress_base,1.0,single,,naive single-mode fit,1.3309410714415613,2.3963348473637316,1.0653937759221703,0.8004815530774981,,
+feat_gbm,MAE_logM_failures_replaced,stress_base,2.0,per_seed_mean,,feature regression,0.6480510742626651,0.4713539129675347,-0.17669716129513036,-0.2726593139223966,5.0,5.0
+fit_matched,MAE_logM_failures_replaced,stress_base,2.0,single,,matched-model fit (oracle),1.0803503554291551,0.6990170316959382,-0.38133332373321693,-0.3529719056571581,,
+fit_single_win,MAE_logM_failures_replaced,stress_base,2.0,single,,windowed single-mode fit,1.0084001554451894,0.8636099794277479,-0.14479017601744149,-0.1435840476973344,,
+fit_single_track,MAE_logM_failures_replaced,stress_base,2.0,single,,dispersion-tracking single-mode fit,1.3627934875249403,1.1250932619304368,-0.23770022559450354,-0.1744213101767948,,
+tf_fourier,MAE_logM_failures_replaced,stress_base,2.0,single,,Fourier-feature transformer,0.6274873260746304,1.4014741908447137,0.7739868647700833,1.233470115821955,,
+fit_single_naive,MAE_logM_failures_replaced,stress_base,2.0,single,,naive single-mode fit,1.248635967469672,1.784878417007465,0.5362424495377929,0.429462600396234,,
+tf_learned_patch,MAE_logM_failures_replaced,stress_base,2.0,single,,learned-patch transformer,0.4238921897679322,1.9642552410667855,1.5403630512988533,3.6338557031261987,,
+fit_two_mode,MAE_logM_failures_replaced,stress_base,2.0,single,,two-mode fit,1.0707096073392817,2.1995068141195775,1.1287972067802958,1.0542514973647823,,
+feat_gbm,MAE_logM_failures_replaced,stress_base,4.0,per_seed_mean,,feature regression,0.9279041626566918,0.7649126589323958,-0.16299150372429605,-0.17565553672874298,5.0,5.0
+fit_matched,MAE_logM_failures_replaced,stress_base,4.0,single,,matched-model fit (oracle),1.4333027061037864,0.9867924847100012,-0.44651022139378516,-0.3115254157354902,,
+fit_single_win,MAE_logM_failures_replaced,stress_base,4.0,single,,windowed single-mode fit,1.2795557661910577,1.0157596532879067,-0.26379611290315097,-0.20616226339896943,,
+fit_single_track,MAE_logM_failures_replaced,stress_base,4.0,single,,dispersion-tracking single-mode fit,1.6592734360938752,1.334605087303626,-0.3246683487902493,-0.19566898482660988,,
+tf_fourier,MAE_logM_failures_replaced,stress_base,4.0,single,,Fourier-feature transformer,0.9726890572948846,1.451166709241713,0.47847765194682845,0.49191223891991526,,
+fit_single_naive,MAE_logM_failures_replaced,stress_base,4.0,single,,naive single-mode fit,1.3258417880727502,1.4575989739920323,0.1317571859192821,0.09937625069941788,,
+tf_learned_patch,MAE_logM_failures_replaced,stress_base,4.0,single,,learned-patch transformer,0.7572259595436212,1.7259179986455184,0.9686920391018973,1.2792641706125956,,
+fit_two_mode,MAE_logM_failures_replaced,stress_base,4.0,single,,two-mode fit,1.3741238924282526,2.0714638310394173,0.6973399386111647,0.5074796693760094,,
+tf_fused,MAE_logM_gamma_err_q0,stress_base,1.0,ensemble,extended/v7,fused transformer,0.0457465357451607,0.0410567542221682,-0.0046897815229925005,-0.1025166484543829,3.0,3.0
+cnn_k45,MAE_logM_gamma_err_q0,stress_base,1.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.0647451999725891,0.0668395973944418,0.0020943974218527034,0.03234830416369707,3.0,3.0
+cnn_base,MAE_logM_gamma_err_q0,stress_base,1.0,ensemble,extended/v7,1D CNN,0.0734817359251155,0.0770904468685418,0.0036087109434262965,0.049110311535153404,3.0,3.0
+tf_p60,MAE_logM_gamma_err_q0,stress_base,1.0,ensemble,extended/v7,tuned transformer (patch 60),0.0717415762361169,0.0816295765673728,0.009888000331255892,0.13782803292072038,3.0,3.0
+tf_learned_patch,MAE_logM_gamma_err_q0,stress_base,1.0,ensemble,extended/v7,learned-patch transformer,0.0807891186262848,0.082951056658382,0.002161938032097202,0.026760262630143535,3.0,3.0
+tf_fourier,MAE_logM_gamma_err_q0,stress_base,1.0,ensemble,extended/v7,Fourier-feature transformer,0.1195699641906233,0.112168142446477,-0.007401821744146289,-0.06190368788892505,3.0,3.0
+tf_fused,MAE_logM_gamma_err_q1,stress_base,1.0,ensemble,extended/v7,fused transformer,0.0929190302161,0.065521547763909,-0.027397482452190994,-0.29485329741898075,3.0,3.0
+cnn_k45,MAE_logM_gamma_err_q1,stress_base,1.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.0752479861239382,0.0667585012058406,-0.00848948491809759,-0.11282009466824627,3.0,3.0
+tf_p60,MAE_logM_gamma_err_q1,stress_base,1.0,ensemble,extended/v7,tuned transformer (patch 60),0.0951353964735039,0.0890388969376731,-0.006096499535830802,-0.06408234749438117,3.0,3.0
+tf_learned_patch,MAE_logM_gamma_err_q1,stress_base,1.0,ensemble,extended/v7,learned-patch transformer,0.1073445354970044,0.0942750269456913,-0.0130695085513131,-0.12175290051609403,3.0,3.0
+cnn_base,MAE_logM_gamma_err_q1,stress_base,1.0,ensemble,extended/v7,1D CNN,0.0829704373728625,0.1092729549602789,0.026302517587416405,0.31701071393917085,3.0,3.0
+tf_fourier,MAE_logM_gamma_err_q1,stress_base,1.0,ensemble,extended/v7,Fourier-feature transformer,0.149159908681098,0.1536373687648412,0.0044774600837431955,0.030017852138244122,3.0,3.0
+cnn_k45,MAE_logM_gamma_err_q2,stress_base,1.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.1096967851981889,0.0826572461099595,-0.027039539088229397,-0.24649345046326682,3.0,3.0
+tf_fused,MAE_logM_gamma_err_q2,stress_base,1.0,ensemble,extended/v7,fused transformer,0.1467660447580608,0.1156864670546834,-0.031079577703377395,-0.21176272587171713,3.0,3.0
+tf_p60,MAE_logM_gamma_err_q2,stress_base,1.0,ensemble,extended/v7,tuned transformer (patch 60),0.1295151018679277,0.1217665301472374,-0.007748571720690295,-0.05982755376737346,3.0,3.0
+tf_learned_patch,MAE_logM_gamma_err_q2,stress_base,1.0,ensemble,extended/v7,learned-patch transformer,0.1881606599085206,0.1345514933982915,-0.053609166510229095,-0.28491166291770365,3.0,3.0
+cnn_base,MAE_logM_gamma_err_q2,stress_base,1.0,ensemble,extended/v7,1D CNN,0.1434242580947065,0.1412211642018558,-0.0022030938928506993,-0.01536067832678586,3.0,3.0
+tf_fourier,MAE_logM_gamma_err_q2,stress_base,1.0,ensemble,extended/v7,Fourier-feature transformer,0.2730675954888613,0.2790491047009956,0.005981509212134306,0.021904866454131495,3.0,3.0
+cnn_k45,MAE_logM_gamma_err_q3,stress_base,1.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.1666582178578884,0.1038947382694039,-0.0627634795884845,-0.3765999684576234,3.0,3.0
+tf_p60,MAE_logM_gamma_err_q3,stress_base,1.0,ensemble,extended/v7,tuned transformer (patch 60),0.2318274473891066,0.1528553970405165,-0.07897205034859009,-0.34065013111256354,3.0,3.0
+tf_learned_patch,MAE_logM_gamma_err_q3,stress_base,1.0,ensemble,extended/v7,learned-patch transformer,0.2329440939474155,0.1660179351785414,-0.06692615876887409,-0.2873056690760398,3.0,3.0
+cnn_base,MAE_logM_gamma_err_q3,stress_base,1.0,ensemble,extended/v7,1D CNN,0.2477938361825981,0.176086106692999,-0.07170772948959908,-0.289384637625764,3.0,3.0
+tf_fused,MAE_logM_gamma_err_q3,stress_base,1.0,ensemble,extended/v7,fused transformer,0.2931315075147861,0.1783574234820365,-0.11477408403274961,-0.3915446858845775,3.0,3.0
+tf_fourier,MAE_logM_gamma_err_q3,stress_base,1.0,ensemble,extended/v7,Fourier-feature transformer,0.4330675081596539,0.3583293639746129,-0.07473814418504099,-0.17257850745405762,3.0,3.0
+cnn_k45,MAE_logM_gamma_err_q4,stress_base,1.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.3178018617370824,0.2504068848443929,-0.06739497689268953,-0.21206602291224277,3.0,3.0
+tf_p60,MAE_logM_gamma_err_q4,stress_base,1.0,ensemble,extended/v7,tuned transformer (patch 60),0.3703963453276095,0.308565682480719,-0.06183066284689054,-0.16693108241174012,3.0,3.0
+tf_fused,MAE_logM_gamma_err_q4,stress_base,1.0,ensemble,extended/v7,fused transformer,0.5056757360067352,0.3448883914462495,-0.1607873445604857,-0.31796531474934,3.0,3.0
+cnn_base,MAE_logM_gamma_err_q4,stress_base,1.0,ensemble,extended/v7,1D CNN,0.462986541308051,0.3790570514333868,-0.0839294898746642,-0.18127846575743373,3.0,3.0
+tf_learned_patch,MAE_logM_gamma_err_q4,stress_base,1.0,ensemble,extended/v7,learned-patch transformer,0.5371565123600285,0.3891652930054796,-0.1479912193545489,-0.275508563983225,3.0,3.0
+tf_fourier,MAE_logM_gamma_err_q4,stress_base,1.0,ensemble,extended/v7,Fourier-feature transformer,0.8780554436228676,0.632663840195151,-0.2453916034277166,-0.2794716497801412,3.0,3.0
+cnn_k45,MAE_omega0_meV,stress_base,0.25,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.0480977144241333,0.0630632967948913,0.014965582370757999,0.31114955356899315,3.0,3.0
+cnn_base,MAE_omega0_meV,stress_base,0.25,ensemble,extended/v7,1D CNN,0.0899288344383239,0.0799305763244628,-0.009998258113861111,-0.11117966975006485,3.0,3.0
+tf_fused,MAE_omega0_meV,stress_base,0.25,ensemble,extended/v7,fused transformer,0.0904788007736206,0.1035681190490722,0.013089318275451609,0.144667238773437,3.0,3.0
+tf_learned_patch,MAE_omega0_meV,stress_base,0.25,ensemble,extended/v7,learned-patch transformer,0.0830821504592895,0.1043476967811584,0.021265546321868903,0.2559580632459566,3.0,3.0
+tf_p60,MAE_omega0_meV,stress_base,0.25,ensemble,extended/v7,tuned transformer (patch 60),0.081833475112915,0.110183874130249,0.028350399017333994,0.3464401209678033,3.0,3.0
+tf_fourier,MAE_omega0_meV,stress_base,0.25,ensemble,extended/v7,Fourier-feature transformer,0.1475843005180359,0.1602632474899292,0.012678946971893312,0.0859098625489901,3.0,3.0
+cnn_k45,MAE_omega0_meV,stress_base,0.5,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.0570413146018981,0.0671511116027832,0.010109797000885101,0.1772363956098005,3.0,3.0
+cnn_base,MAE_omega0_meV,stress_base,0.5,ensemble,extended/v7,1D CNN,0.1077717566490173,0.0957895288467407,-0.01198222780227659,-0.11118152078841381,3.0,3.0
+tf_learned_patch,MAE_omega0_meV,stress_base,0.5,ensemble,extended/v7,learned-patch transformer,0.1007615346908569,0.1126234898567199,0.011861955165862997,0.11772304979530399,3.0,3.0
+tf_fused,MAE_omega0_meV,stress_base,0.5,ensemble,extended/v7,fused transformer,0.1024096899032592,0.1136425514221191,0.011232861518859896,0.10968553395163058,3.0,3.0
+tf_p60,MAE_omega0_meV,stress_base,0.5,ensemble,extended/v7,tuned transformer (patch 60),0.0909146656990051,0.1150649423599243,0.024150276660919207,0.2656367537100616,3.0,3.0
+tf_fourier,MAE_omega0_meV,stress_base,0.5,ensemble,extended/v7,Fourier-feature transformer,0.1627848863601684,0.1754857234954834,0.012700837135314974,0.07802221335962257,3.0,3.0
+cnn_k45,MAE_omega0_meV,stress_base,1.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.082987045764923,0.0879101915359497,0.004923145771026705,0.0593242683318608,3.0,3.0
+tf_p60,MAE_omega0_meV,stress_base,1.0,ensemble,extended/v7,tuned transformer (patch 60),0.1188053698539733,0.1307238707542419,0.011918500900268608,0.10031954712920754,3.0,3.0
+tf_fused,MAE_omega0_meV,stress_base,1.0,ensemble,extended/v7,fused transformer,0.1343892312049865,0.134193480014801,-0.00019575119018550025,-0.0014565987797557764,3.0,3.0
+cnn_base,MAE_omega0_meV,stress_base,1.0,ensemble,extended/v7,1D CNN,0.1593686237335205,0.1344493050575256,-0.024919318675994923,-0.15636276509272234,3.0,3.0
+tf_learned_patch,MAE_omega0_meV,stress_base,1.0,ensemble,extended/v7,learned-patch transformer,0.1445671663284301,0.1358217010498046,-0.00874546527862552,-0.0604941322482411,3.0,3.0
+tf_fourier,MAE_omega0_meV,stress_base,1.0,ensemble,extended/v7,Fourier-feature transformer,0.23572696352005,0.2072955665588378,-0.02843139696121219,-0.12061156066600727,3.0,3.0
+cnn_k45,MAE_omega0_meV,stress_base,2.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.1513597354888916,0.138252429485321,-0.013107306003570601,-0.08659704617766431,3.0,3.0
+tf_p60,MAE_omega0_meV,stress_base,2.0,ensemble,extended/v7,tuned transformer (patch 60),0.1786763401031494,0.1788083539009094,0.0001320137977600111,0.0007388431936976092,3.0,3.0
+tf_fused,MAE_omega0_meV,stress_base,2.0,ensemble,extended/v7,fused transformer,0.2145036368370056,0.1849284205436706,-0.02957521629333501,-0.13787745853376027,3.0,3.0
+tf_learned_patch,MAE_omega0_meV,stress_base,2.0,ensemble,extended/v7,learned-patch transformer,0.2313566079139709,0.2034043440818786,-0.02795226383209229,-0.12081895600097248,3.0,3.0
+cnn_base,MAE_omega0_meV,stress_base,2.0,ensemble,extended/v7,1D CNN,0.2343865704536438,0.2061554813385009,-0.02823108911514291,-0.12044670076661393,3.0,3.0
+tf_fourier,MAE_omega0_meV,stress_base,2.0,ensemble,extended/v7,Fourier-feature transformer,0.3463773026466369,0.2941337690353393,-0.05224353361129763,-0.1508283978543329,3.0,3.0
+cnn_k45,MAE_omega0_meV,stress_base,4.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.2804302625656128,0.2815713906288147,0.0011411280632018794,0.004069204417390179,3.0,3.0
+tf_fused,MAE_omega0_meV,stress_base,4.0,ensemble,extended/v7,fused transformer,0.362373854637146,0.3254355587959289,-0.036938295841217106,-0.1019342189524251,3.0,3.0
+tf_p60,MAE_omega0_meV,stress_base,4.0,ensemble,extended/v7,tuned transformer (patch 60),0.35110347366333,0.3571241807937622,0.006020707130432179,0.017147956605537265,3.0,3.0
+tf_learned_patch,MAE_omega0_meV,stress_base,4.0,ensemble,extended/v7,learned-patch transformer,0.460424684047699,0.4054477171897888,-0.0549769668579102,-0.11940490760528971,3.0,3.0
+cnn_base,MAE_omega0_meV,stress_base,4.0,ensemble,extended/v7,1D CNN,0.443061604976654,0.4204000244140625,-0.022661580562591488,-0.051147696636420534,3.0,3.0
+tf_fourier,MAE_omega0_meV,stress_base,4.0,ensemble,extended/v7,Fourier-feature transformer,0.6451002173423767,0.54661634349823,-0.0984838738441467,-0.15266445615205543,3.0,3.0
+tf_fourier,improvement_vs_metadata_reference,val,1.0,ensemble,extended/v7,Fourier-feature transformer,0.4139672321010443,0.4976458793225697,0.0836786472215254,0.2021383354349662,5.0,5.0
+tf_learned_patch_low,improvement_vs_metadata_reference,val,1.0,ensemble,extended/low,learned-patch transformer (s<=1),0.5620177691059509,0.6570906269912535,0.09507285788530262,0.16916343772643175,3.0,3.0
+cnn_base,improvement_vs_metadata_reference,val,1.0,ensemble,extended/v7,1D CNN,0.6554097042367176,0.6723251248259693,0.016915420589251662,0.025808926050234732,5.0,5.0
+tf_learned_patch,improvement_vs_metadata_reference,val,1.0,ensemble,extended/v7,learned-patch transformer,0.5736318454399265,0.6750369905234292,0.10140514508350273,0.17677739806396847,5.0,5.0
+tf_learned_patch_fixed1,improvement_vs_metadata_reference,val,1.0,ensemble,extended/fixed1,learned-patch transformer (fixed s=1),0.641087576947172,0.71030066603445,0.06921308908727797,0.10796198768484541,3.0,3.0
+tf_fused,improvement_vs_metadata_reference,val,1.0,ensemble,extended/v7,fused transformer,0.6250558493206179,0.7246331458526536,0.09957729653203573,0.15930943873298317,5.0,5.0
+tf_fused_fixed1,improvement_vs_metadata_reference,val,1.0,ensemble,extended/fixed1,fused transformer (fixed s=1),0.6705002082995859,0.755393664104607,0.08489345580502106,0.126612124432167,3.0,3.0
+tf_fourier,within_condition_rho,replicate_eval,0.25,ensemble,extended/v7,Fourier-feature transformer,0.8925714285714285,0.9220872180451126,0.029515789473684162,0.033068266055664076,3.0,3.0
+cnn_base,within_condition_rho,replicate_eval,0.25,ensemble,extended/v7,1D CNN,0.9720240601503758,0.9708812030075188,-0.0011428571428570011,-0.0011757498499370446,3.0,3.0
+tf_learned_patch,within_condition_rho,replicate_eval,0.25,ensemble,extended/v7,learned-patch transformer,0.9506646616541352,0.9749654135338344,0.024300751879699156,0.025561854626442507,3.0,3.0
+tf_fused,within_condition_rho,replicate_eval,0.25,ensemble,extended/v7,fused transformer,0.9572631578947368,0.97750977443609,0.02024661654135318,0.0211505231078574,3.0,3.0
+tf_p60,within_condition_rho,replicate_eval,0.25,ensemble,extended/v7,tuned transformer (patch 60),0.9635488721804508,0.9788390977443608,0.01529022556391002,0.015868655971034658,3.0,3.0
+cnn_k45,within_condition_rho,replicate_eval,0.25,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.9818766917293232,0.9866105263157894,0.004733834586466146,0.004821210877435856,3.0,3.0
+tf_fourier,within_condition_rho,replicate_eval,0.5,ensemble,extended/v7,Fourier-feature transformer,0.8432541353383458,0.8872721804511278,0.044018045112781956,0.052200212567140546,3.0,3.0
+tf_learned_patch,within_condition_rho,replicate_eval,0.5,ensemble,extended/v7,learned-patch transformer,0.9289082706766916,0.9556872180451128,0.026778947368421235,0.028828408803932056,3.0,3.0
+cnn_base,within_condition_rho,replicate_eval,0.5,ensemble,extended/v7,1D CNN,0.9542255639097744,0.9576842105263156,0.003458646616541161,0.0036245587493694406,3.0,3.0
+tf_fused,within_condition_rho,replicate_eval,0.5,ensemble,extended/v7,fused transformer,0.9341413533834584,0.9632,0.02905864661654156,0.031107333500750387,3.0,3.0
+tf_p60,within_condition_rho,replicate_eval,0.5,ensemble,extended/v7,tuned transformer (patch 60),0.9541654135338344,0.9675248120300752,0.013359398496240793,0.014001134716006003,3.0,3.0
+cnn_k45,within_condition_rho,replicate_eval,0.5,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.9722766917293232,0.979145864661654,0.006869172932330803,0.007065039191789187,3.0,3.0
+tf_fourier,within_condition_rho,replicate_eval,0.75,ensemble,extended/v7,Fourier-feature transformer,0.7957112781954886,0.847987969924812,0.052276691729323366,0.06569806556955718,3.0,3.0
+tf_learned_patch,within_condition_rho,replicate_eval,0.75,ensemble,extended/v7,learned-patch transformer,0.8969142857142856,0.933545864661654,0.03663157894736846,0.04084178335747631,3.0,3.0
+cnn_base,within_condition_rho,replicate_eval,0.75,ensemble,extended/v7,1D CNN,0.9306285714285714,0.933984962406015,0.0033563909774436684,0.0036065849260262925,3.0,3.0
+tf_fused,within_condition_rho,replicate_eval,0.75,ensemble,extended/v7,fused transformer,0.9064902255639096,0.9442646616541353,0.03777443609022568,0.04167109034929412,3.0,3.0
+tf_p60,within_condition_rho,replicate_eval,0.75,ensemble,extended/v7,tuned transformer (patch 60),0.9406616541353384,0.9520842105263158,0.011422556390977334,0.012143108354381697,3.0,3.0
+cnn_k45,within_condition_rho,replicate_eval,0.75,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.9579187969924812,0.966363909774436,0.008445112781954811,0.008816105089981962,3.0,3.0
+tf_fourier,within_condition_rho,replicate_eval,1.0,ensemble,extended/v7,Fourier-feature transformer,0.7464842105263158,0.815981954887218,0.06949774436090228,0.09310008621870547,3.0,3.0
+cnn_base,within_condition_rho,replicate_eval,1.0,ensemble,extended/v7,1D CNN,0.8998075187969923,0.9026045112781952,0.002796992481202909,0.003108434218178549,3.0,3.0
+tf_learned_patch,within_condition_rho,replicate_eval,1.0,ensemble,extended/v7,learned-patch transformer,0.8634586466165414,0.9114526315789472,0.04799398496240581,0.05558342041100638,3.0,3.0
+tf_fused,within_condition_rho,replicate_eval,1.0,ensemble,extended/v7,fused transformer,0.8722285714285712,0.9256781954887218,0.053449624060150525,0.06127937768950697,3.0,3.0
+tf_p60,within_condition_rho,replicate_eval,1.0,ensemble,extended/v7,tuned transformer (patch 60),0.9208781954887216,0.9339368421052632,0.013058646616541547,0.01418064482416283,3.0,3.0
+cnn_k45,within_condition_rho,replicate_eval,1.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.941606015037594,0.952384962406015,0.010778947368420999,0.011447407085638302,3.0,3.0
+tf_fourier,within_condition_rho,replicate_eval,1.5,ensemble,extended/v7,Fourier-feature transformer,0.6515969924812028,0.7487518796992481,0.09715488721804522,0.1491027250572338,3.0,3.0
+cnn_base,within_condition_rho,replicate_eval,1.5,ensemble,extended/v7,1D CNN,0.8229714285714286,0.8446015037593984,0.021630075187969777,0.02628289930492092,3.0,3.0
+tf_learned_patch,within_condition_rho,replicate_eval,1.5,ensemble,extended/v7,learned-patch transformer,0.7962285714285714,0.8636812030075189,0.06745263157894754,0.08471516094671896,3.0,3.0
+tf_fused,within_condition_rho,replicate_eval,1.5,ensemble,extended/v7,fused transformer,0.8026105263157894,0.8840962406015037,0.08148571428571427,0.10152584798477149,3.0,3.0
+tf_p60,within_condition_rho,replicate_eval,1.5,ensemble,extended/v7,tuned transformer (patch 60),0.8737263157894736,0.8934917293233082,0.019765413533834653,0.02262197346771592,3.0,3.0
+cnn_k45,within_condition_rho,replicate_eval,1.5,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.9044571428571428,0.920366917293233,0.015909774436090096,0.017590412726281063,3.0,3.0
+tf_fourier,within_condition_rho,replicate_eval,2.0,ensemble,extended/v7,Fourier-feature transformer,0.5633864661654133,0.6741593984962405,0.11077293233082719,0.1966197965044898,3.0,3.0
+cnn_base,within_condition_rho,replicate_eval,2.0,ensemble,extended/v7,1D CNN,0.7405714285714284,0.7845654135338346,0.04399398496240614,0.059405458089668794,3.0,3.0
+tf_learned_patch,within_condition_rho,replicate_eval,2.0,ensemble,extended/v7,learned-patch transformer,0.7315007518796991,0.8147909774436088,0.08329022556390975,0.11386211886984836,3.0,3.0
+tf_fused,within_condition_rho,replicate_eval,2.0,ensemble,extended/v7,fused transformer,0.731566917293233,0.8285233082706766,0.09695639097744357,0.13253249796502303,3.0,3.0
+tf_p60,within_condition_rho,replicate_eval,2.0,ensemble,extended/v7,tuned transformer (patch 60),0.8140992481203007,0.8477233082706767,0.033624060150376,0.04130216337628569,3.0,3.0
+cnn_k45,within_condition_rho,replicate_eval,2.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.8541714285714284,0.8810526315789473,0.02688120300751895,0.03147050124642639,3.0,3.0
+tf_fourier,within_condition_rho,replicate_eval,3.0,ensemble,extended/v7,Fourier-feature transformer,0.4084090225563909,0.5200360902255639,0.11162706766917296,0.2733217473268728,3.0,3.0
+cnn_base,within_condition_rho,replicate_eval,3.0,ensemble,extended/v7,1D CNN,0.5966436090225563,0.6658706766917292,0.06922706766917286,0.1160275022179207,3.0,3.0
+tf_learned_patch,within_condition_rho,replicate_eval,3.0,ensemble,extended/v7,learned-patch transformer,0.59033984962406,0.6947067669172932,0.10436691729323311,0.17679124551679173,3.0,3.0
+tf_fused,within_condition_rho,replicate_eval,3.0,ensemble,extended/v7,fused transformer,0.5798015037593984,0.7021894736842105,0.12238796992481205,0.21108598223919003,3.0,3.0
+tf_p60,within_condition_rho,replicate_eval,3.0,ensemble,extended/v7,tuned transformer (patch 60),0.700793984962406,0.7426947368421053,0.04190075187969933,0.05979039886015444,3.0,3.0
+cnn_k45,within_condition_rho,replicate_eval,3.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.7367999999999999,0.7812992481203007,0.044499248120300816,0.060395287894002204,3.0,3.0
+tf_fourier,within_condition_rho,replicate_eval,4.0,ensemble,extended/v7,Fourier-feature transformer,0.3001864661654135,0.408775939849624,0.10858947368421051,0.3617400713341081,3.0,3.0
+cnn_base,within_condition_rho,replicate_eval,4.0,ensemble,extended/v7,1D CNN,0.4644932330827067,0.5461233082706766,0.08163007518796989,0.17574007407215556,3.0,3.0
+tf_learned_patch,within_condition_rho,replicate_eval,4.0,ensemble,extended/v7,learned-patch transformer,0.4545624060150375,0.5714887218045113,0.11692631578947377,0.25722830186182555,3.0,3.0
+tf_fused,within_condition_rho,replicate_eval,4.0,ensemble,extended/v7,fused transformer,0.4475007518796992,0.5738646616541353,0.12636390977443612,0.2823769775662998,3.0,3.0
+tf_p60,within_condition_rho,replicate_eval,4.0,ensemble,extended/v7,tuned transformer (patch 60),0.5594586466165413,0.6170345864661654,0.05757593984962406,0.10291366519729062,3.0,3.0
+cnn_k45,within_condition_rho,replicate_eval,4.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.6094195488721805,0.6641744360902255,0.054754887218045,0.08984760551146888,3.0,3.0
+tf_fourier,within_condition_rho,replicate_eval,6.0,ensemble,extended/v7,Fourier-feature transformer,0.1881744360902255,0.2630917293233083,0.07491729323308283,0.3981268380002565,3.0,3.0
+tf_fused,within_condition_rho,replicate_eval,6.0,ensemble,extended/v7,fused transformer,0.2630556390977443,0.3468872180451127,0.08383157894736837,0.31868383143164186,3.0,3.0
+tf_learned_patch,within_condition_rho,replicate_eval,6.0,ensemble,extended/v7,learned-patch transformer,0.2814436090225564,0.352378947368421,0.07093533834586463,0.25204103440906167,3.0,3.0
+cnn_base,within_condition_rho,replicate_eval,6.0,ensemble,extended/v7,1D CNN,0.3221533834586465,0.3843488721804511,0.06219548872180458,0.19306172747302017,3.0,3.0
+tf_p60,within_condition_rho,replicate_eval,6.0,ensemble,extended/v7,tuned transformer (patch 60),0.3558556390977443,0.3998616541353383,0.04400601503759399,0.1236625479623401,3.0,3.0
+cnn_k45,within_condition_rho,replicate_eval,6.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.4274646616541352,0.4621112781954887,0.03464661654135348,0.08105141699265497,3.0,3.0
+tf_fourier,within_condition_rho,replicate_eval,8.0,ensemble,extended/v7,Fourier-feature transformer,0.1297984962406014,0.1410225563909774,0.011224060150375997,0.08647295982204972,3.0,3.0
+tf_fused,within_condition_rho,replicate_eval,8.0,ensemble,extended/v7,fused transformer,0.1808120300751879,0.1880781954887218,0.007266165413533893,0.04018629407850999,3.0,3.0
+tf_learned_patch,within_condition_rho,replicate_eval,8.0,ensemble,extended/v7,learned-patch transformer,0.1882827067669172,0.1897082706766917,0.0014255639097744965,0.0075714011884227906,3.0,3.0
+tf_p60,within_condition_rho,replicate_eval,8.0,ensemble,extended/v7,tuned transformer (patch 60),0.2403368421052631,0.222375939849624,-0.017960902255639094,-0.07473220542596856,3.0,3.0
+cnn_base,within_condition_rho,replicate_eval,8.0,ensemble,extended/v7,1D CNN,0.24556992481203,0.2813593984962406,0.03578947368421059,0.14574045951109618,3.0,3.0
+cnn_k45,within_condition_rho,replicate_eval,8.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.3054195488721804,0.2929624060150376,-0.012457142857142833,-0.04078698597762715,3.0,3.0
+tf_learned_patch,within_condition_rho,replicate_eval,12.0,ensemble,extended/v7,learned-patch transformer,0.0981353383458646,0.0260631578947368,-0.0720721804511278,-0.7344161814281339,3.0,3.0
+tf_fused,within_condition_rho,replicate_eval,12.0,ensemble,extended/v7,fused transformer,0.0965172932330827,0.0436932330827067,-0.052824060150375995,-0.547301508164029,3.0,3.0
+tf_fourier,within_condition_rho,replicate_eval,12.0,ensemble,extended/v7,Fourier-feature transformer,0.057178947368421,0.0453593984962406,-0.011819548872180403,-0.20671155059962062,3.0,3.0
+tf_p60,within_condition_rho,replicate_eval,12.0,ensemble,extended/v7,tuned transformer (patch 60),0.1245052631578947,0.0532872180451127,-0.071218045112782,-0.5720083095801735,3.0,3.0
+cnn_k45,within_condition_rho,replicate_eval,12.0,ensemble,extended/v7,tuned 1D CNN (kernel 45),0.1811428571428571,0.1070015037593985,-0.0741413533834586,-0.40929769217997664,3.0,3.0
+cnn_base,within_condition_rho,replicate_eval,12.0,ensemble,extended/v7,1D CNN,0.159206015037594,0.1553383458646616,-0.003867669172932381,-0.02429348647423335,3.0,3.0

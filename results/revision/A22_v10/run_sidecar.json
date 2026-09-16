@@ -1,0 +1,17 @@
+{
+  "task": "A22_test_eval",
+  "dataset_version": "v10",
+  "script": "review_and_modify/scripts/a22_test_eval.py",
+  "test_set": "manuscript_phase1/data/test_v10/dataset.npz",
+  "replicate_test_set": "manuscript_phase1/data/replicate_test_v10/dataset.npz",
+  "selection_note": "models selected on each realization's val split; these sets were generated with fresh seeds after selection was frozen",
+  "severities": [
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "out_of_training_range": [],
+  "seed": 20260913,
+  "date_utc": "2026-09-13T13:09:37.666888+00:00"
+}

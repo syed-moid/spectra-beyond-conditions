@@ -1,0 +1,9 @@
+{
+  "task": "A3c",
+  "seed": 20260905,
+  "n_boot": 1000,
+  "dataset_version": "v9",
+  "reference_model": "ST-5a",
+  "metadata_reference": "A2 mlp_l1 seed-averaged on stress_base",
+  "failure_handling": "fit failures replaced by the metadata-only prediction"
+}

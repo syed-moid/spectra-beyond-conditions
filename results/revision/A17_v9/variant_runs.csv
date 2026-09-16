@@ -1,0 +1,22 @@
+arch,protocol,seed,dataset_version,stopping_protocol,min_epochs,max_epochs,patience,ema_alpha,train_tilt,stop_epoch,stop_reason,cap_hit,best_within_5_of_cap,n_parameters,epochs_trained,best_epoch,best_val_MAE_logM,wall_time_sec,mean_epoch_sec,severity_sampling_seed,train_severity_protocol,train_severity_range,device,variant,family
+cnn_half_depth,v7,42,v9,extended,30,200,20,0.3,0.0,200,cap,True,False,463267,200,183,0.2609525122928401,184.6860158443451,0.9222232115268708,0,v7,"[0.25, 4.0]",mps,cnn_half_depth,cnn
+cnn_half_depth,v7,43,v9,extended,30,200,20,0.3,0.0,200,cap,True,False,463267,200,187,0.2677492988695534,192.33698391914368,0.9605716240406036,0,v7,"[0.25, 4.0]",mps,cnn_half_depth,cnn
+cnn_half_depth,v7,44,v9,extended,30,200,20,0.3,0.0,200,cap,True,False,463267,200,187,0.2702134049640698,186.53149008750916,0.9317300951480866,0,v7,"[0.25, 4.0]",mps,cnn_half_depth,cnn
+cnn_wide,v7,42,v9,extended,30,200,20,0.3,0.0,64,patience,False,False,1173475,64,44,0.2316384143140037,73.50885081291199,1.145153485238552,0,v7,"[0.25, 4.0]",mps,cnn_wide,cnn
+cnn_wide,v7,43,v9,extended,30,200,20,0.3,0.0,87,patience,False,False,1173475,87,69,0.2303084943007912,99.93509674072266,1.1465811126533596,0,v7,"[0.25, 4.0]",mps,cnn_wide,cnn
+cnn_wide,v7,44,v9,extended,30,200,20,0.3,0.0,152,patience,False,False,1173475,152,113,0.2058581963989241,175.92783498764038,1.1563511710417895,0,v7,"[0.25, 4.0]",mps,cnn_wide,cnn
+cnn_kernel15,v7,42,v9,extended,30,200,20,0.3,0.0,200,cap,True,True,1191651,200,195,0.153455485352782,216.54074811935425,1.081213573217392,0,v7,"[0.25, 4.0]",mps,cnn_kernel15,cnn
+cnn_kernel15,v7,43,v9,extended,30,200,20,0.3,0.0,200,cap,True,False,1191651,200,192,0.1561454461961761,213.65418815612793,1.0667434453964233,0,v7,"[0.25, 4.0]",mps,cnn_kernel15,cnn
+cnn_kernel15,v7,44,v9,extended,30,200,20,0.3,0.0,82,patience,False,False,1191651,82,77,0.177627516684364,88.05392789840698,1.0714520681195143,0,v7,"[0.25, 4.0]",mps,cnn_kernel15,cnn
+cnn_param_matched,v7,42,v9,extended,30,200,20,0.3,0.0,128,patience,False,False,682915,128,103,0.2185398642913837,969.2034020423888,7.570520531386137,0,v7,"[0.25, 4.0]",mps,cnn_param_matched,cnn
+cnn_param_matched,v7,43,v9,extended,30,200,20,0.3,0.0,87,patience,False,False,682915,87,84,0.23368074507256,68.18371605873108,0.7819733948543154,0,v7,"[0.25, 4.0]",mps,cnn_param_matched,cnn
+cnn_param_matched,v7,44,v9,extended,30,200,20,0.3,0.0,200,cap,True,False,682915,200,149,0.2118596654962471,178.92451190948486,0.8934009313583374,0,v7,"[0.25, 4.0]",mps,cnn_param_matched,cnn
+tf_patch5,v7,42,v9,extended,30,200,20,0.3,0.0,141,patience,False,False,693123,141,139,0.2134315451928273,636.559574842453,4.51103283327522,0,v7,"[0.25, 4.0]",mps,tf_patch5,tf
+tf_patch5,v7,43,v9,extended,30,200,20,0.3,0.0,200,cap,True,False,693123,200,140,0.2044711751951642,4322.860877990723,21.611458230018616,0,v7,"[0.25, 4.0]",mps,tf_patch5,tf
+tf_patch5,v7,44,v9,extended,30,200,20,0.3,0.0,198,patience,False,False,693123,198,172,0.2103713019563941,1083.9876589775083,5.47156532003422,0,v7,"[0.25, 4.0]",mps,tf_patch5,tf
+tf_patch20,v7,42,v9,extended,30,200,20,0.3,0.0,200,cap,True,False,685923,200,186,0.1895157491337964,214.53659915924072,1.0696640157699584,0,v7,"[0.25, 4.0]",mps,tf_patch20,tf
+tf_patch20,v7,43,v9,extended,30,200,20,0.3,0.0,200,cap,True,False,685923,200,146,0.1881418447703291,202.95917010307312,1.011620364189148,0,v7,"[0.25, 4.0]",mps,tf_patch20,tf
+tf_patch20,v7,44,v9,extended,30,200,20,0.3,0.0,197,patience,False,False,685923,197,173,0.1821804967477432,202.55961799621585,1.0253543127611808,0,v7,"[0.25, 4.0]",mps,tf_patch20,tf
+tf_depth8,v7,42,v9,extended,30,200,20,0.3,0.0,61,patience,False,False,911523,61,41,0.2549107272630648,143.03857493400574,2.3383721640852633,0,v7,"[0.25, 4.0]",mps,tf_depth8,tf
+tf_depth8,v7,43,v9,extended,30,200,20,0.3,0.0,156,patience,False,False,911523,156,135,0.2113096550319711,1812.7685539722445,11.615793034052237,0,v7,"[0.25, 4.0]",mps,tf_depth8,tf
+tf_depth8,v7,44,v9,extended,30,200,20,0.3,0.0,200,cap,True,False,911523,200,177,0.2019295365217109,484.1463088989258,2.4164523792266848,0,v7,"[0.25, 4.0]",mps,tf_depth8,tf

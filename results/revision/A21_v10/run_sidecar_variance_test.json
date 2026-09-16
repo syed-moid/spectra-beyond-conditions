@@ -1,0 +1,12 @@
+{
+  "task": "A30_variance_on_test",
+  "dataset_version": "v10",
+  "script": "review_and_modify/scripts/a30_variance_on_test.py",
+  "source": "manuscript_phase1/results/revision/A22_v10/test_eval_runs.csv",
+  "eval_set": "test_v10",
+  "severity": 1.0,
+  "estimator": "one-way random effects (ANOVA), dataset component truncated at 0",
+  "why": "the val-split version confounds realization effects with evaluation-set effects, because each realization has its own validation split; this version uses the single fixed test set every run is scored on",
+  "training": "none; reuses the A22 evaluations of the existing A21 checkpoints",
+  "date_utc": "2026-09-14T17:00:06.119353+00:00"
+}

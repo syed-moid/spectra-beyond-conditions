@@ -1,0 +1,28 @@
+{
+  "task": "A3b",
+  "script": "review_and_modify/scripts/a3b_extra_baselines.py",
+  "dataset_version": "v10",
+  "dataset_npz": "manuscript_phase1/data/full_dataset_phase1_v10/dataset.npz",
+  "master_seed": 20260905,
+  "severities": [
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "n_stress_spectra": 500,
+  "window_meV": 8.0,
+  "track_half_width_meV": 4.0,
+  "st_seeds": [
+    42,
+    43,
+    44
+  ],
+  "st_source": "v7_run",
+  "metadata_fallback_model": "mlp_l1 (A2, seed-averaged)",
+  "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d",
+  "date_utc": "2026-09-14T23:26:43.291670+00:00",
+  "numpy": "2.5.2",
+  "pandas": "2.3.3"
+}

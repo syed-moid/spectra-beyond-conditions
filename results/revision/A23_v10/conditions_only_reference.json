@@ -1,0 +1,11 @@
+{
+  "MAE_logM": 0.6334563617410826,
+  "n": 600,
+  "draws_per_condition": 20000,
+  "seed": 20260915,
+  "eval_set": "manuscript_phase1/data/test_v10/dataset.npz",
+  "subset": "np.linspace(0, N-1, 600) of the test split",
+  "predictor": "conditional median of log M over redrawn latents",
+  "note": "the median of log M over draws, not merit() at the median omega0 and Gamma; those differ and only the former is the MAE-optimal conditions-only predictor for this target",
+  "date_utc": "2026-09-16T00:35:23.387946+00:00"
+}

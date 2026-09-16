@@ -1,0 +1,17 @@
+{
+  "task": "A24_recompute_v10",
+  "dataset_version": "v10",
+  "script": "review_and_modify/scripts/a24_recompute_v10.py",
+  "eval_sets": [
+    "manuscript_phase1/data/test_v10/dataset.npz",
+    "manuscript_phase1/data/replicate_test_v10/dataset.npz"
+  ],
+  "kappa": "kappa_slow = Gamma - sqrt(Gamma^2 - omega0^2), exact slow decay rate",
+  "n_null_permutations": 200,
+  "n_null_derangements": 200,
+  "oracle_draws": 2000,
+  "in_training_range": "s in [0.25, 4]; s > 4 is out-of-training-range",
+  "training": "none; evaluation of existing A21 checkpoints only",
+  "seed": 20260913,
+  "date_utc": "2026-09-13T19:56:49.520159+00:00"
+}

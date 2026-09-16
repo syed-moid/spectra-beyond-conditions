@@ -1,0 +1,19 @@
+{
+  "task": "A32_primary_comparison",
+  "dataset_version": "v10",
+  "script": "review_and_modify/scripts/a32_primary_comparison.py",
+  "eval_set": "manuscript_phase1/data/test_v10/dataset.npz",
+  "subset": "np.linspace(0, N-1, 600) of the test split; identical to A23",
+  "severity": 1.0,
+  "primary_policy": "all 600 cases; failures replaced by the conditions-only conditional median",
+  "secondary_policy": "successful fits only",
+  "success_test": {
+    "least_squares": "result.status > 0",
+    "L-BFGS-B": "result.success (status 0 means converged)"
+  },
+  "bound_check": "soft-mode omega0 or Gamma within a relative 1e-3 of either bound",
+  "W0_control": "same objective, optimizer, init, bounds and tolerances, penalty weight 0",
+  "training": "none",
+  "seed": 20260915,
+  "date_utc": "2026-09-16T00:35:23.395544+00:00"
+}

@@ -13,11 +13,11 @@ import numpy as np
 import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "manuscript_phase1"))
-sys.path.insert(0, str(ROOT / "review_and_modify" / "scripts"))
+sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(ROOT / "scripts" / "revision"))
 
 import a3_fitting_baselines as A3           # noqa: E402
-from src.data.merit import K_B_meV_per_K    # noqa: E402
+from sbc.data.merit import K_B_meV_per_K    # noqa: E402
 
 GRID = np.linspace(-15.0, 15.0, 600)
 

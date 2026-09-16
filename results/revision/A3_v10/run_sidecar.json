@@ -1,0 +1,47 @@
+{
+  "task": "A3",
+  "script": "review_and_modify/scripts/a3_fitting_baselines.py",
+  "dataset_version": "v10",
+  "dataset_npz": "manuscript_phase1/data/full_dataset_phase1_v10/dataset.npz",
+  "metadata_fallback_model": "mlp_mse",
+  "feature_ablation_severity": 1.0,
+  "master_seed": 20260905,
+  "gbm_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "severities": [
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "n_stress_spectra": 500,
+  "train_severity_range": [
+    0.25,
+    4.0
+  ],
+  "feature_names": [
+    "peak_pos_meV",
+    "fwhm_meV",
+    "peak_height",
+    "integ_soft_window",
+    "moment1_meV",
+    "moment2_meV2",
+    "central_to_peak_ratio",
+    "central_height",
+    "raw_max",
+    "raw_min",
+    "soft_window_intensity_fraction"
+  ],
+  "config_hash_sha256_16": "3851f71b31b1fc2b",
+  "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d",
+  "date_utc": "2026-09-14T23:22:08.804572+00:00",
+  "numpy": "2.5.2",
+  "scipy_least_squares": "trf, max_nfev=4000",
+  "pandas": "2.3.3"
+}

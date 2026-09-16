@@ -1,0 +1,13 @@
+# figure: figS6_bose_control
+# inputs: manuscript_phase1/results/revision/A4_control_buggy_bose/control_runs.csv; manuscript_phase1/results/revision/A4/training_runs.csv
+# population: v8 validation split (defective arm: same split, v7 generator semantics)
+# n: 1000
+# checkpoints: A4_control_buggy_bose/checkpoints and A4/checkpoints
+# aggregation: mean +- SD over 5 training seeds per arm
+# failure_policy: n/a (no fitting in this figure)
+# note: BOTH arms are v7-protocol and pre-v9: the defective arm is the pre-fix occupation factor, the corrected arm is v8. Paths are literal so the version resolver cannot redirect them to v10. This figure is the one deliberate pre-v10 item in the package
+arch,architecture,arm,dataset_version,protocol,n_seeds,mean_val_MAE_logM,sd_val_MAE_logM,seed_values
+5a,learned-patch,defective occupation factor,v7_generator_semantics,v7,5,0.3189331196790262,0.04226154846979504,0.282603;0.293782;0.302201;0.327600;0.388479
+5a,learned-patch,corrected (v8),v8,v7,5,0.34873617975486404,0.04358160030437339,0.322635;0.327074;0.329141;0.338859;0.425972
+5b,Fourier-feature,defective occupation factor,v7_generator_semantics,v7,5,0.41758070393503594,0.022460552986592695,0.383391;0.408937;0.423722;0.430297;0.441557
+5b,Fourier-feature,corrected (v8),v8,v7,5,0.41370499684483564,0.02482907473307817,0.379466;0.405285;0.410941;0.426839;0.445994

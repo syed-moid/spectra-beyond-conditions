@@ -1,0 +1,7 @@
+# figure: figS7_feature_ablation
+# inputs: manuscript_phase1/results/revision/A3_v10/feature_set_ablation.csv
+# note: s = 1, 5 seeds
+dataset_version,feature_set,n_features,severity,N,MAE_logM_mean,MAE_logM_sd,features
+v10,position_width_only,2,1.0,500,0.5246921907750842,0.0029907255553043,peak_pos_meV;fwhm_meV
+v10,plus_intensity,7,1.0,500,0.3963390098232807,0.003535026731154,peak_pos_meV;fwhm_meV;peak_height;integ_soft_window;central_height;raw_max;raw_min
+v10,all_11,11,1.0,500,0.3347168275264005,0.0028280081623262,peak_pos_meV;fwhm_meV;peak_height;integ_soft_window;moment1_meV;moment2_meV2;central_to_peak_ratio;central_height;raw_max;raw_min;soft_window_intensity_fraction

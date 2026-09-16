@@ -1,0 +1,129 @@
+# figure: figS2_one_factor
+# inputs: manuscript_phase1/results/revision/A8_v10/one_factor_sweeps.csv; manuscript_phase1/results/revision/A8_v10/one_factor_background_shaped.csv
+# population: test_v10, each degradation channel varied alone
+# n: 500
+# checkpoints: A21_v10/checkpoints (ablation_v10_both_seed{0,1,2})
+# aggregation: ensemble over the 9 runs
+# failure_policy: n/a (no fitting in this figure)
+# note: x axes are the source table's physical `level` column -- resolution FWHM in meV, counts at the peak, background as a fraction of the peak -- NOT the combined severity s. Panel 3 is the constant-background control (flat by construction under per-sample standardization); panel 4 is the shaped background, which is the experiment that moves
+factor,model,label,level,level_units,MAE_logM_ensemble
+resolution,cnn_kernel45,tuned CNN,0.715,resolution FWHM (meV),0.0556906054499651
+resolution,cnn_kernel45,tuned CNN,1.012,resolution FWHM (meV),0.0582220944044664
+resolution,cnn_kernel45,tuned CNN,1.431,resolution FWHM (meV),0.0637762559657346
+resolution,cnn_kernel45,tuned CNN,2.023,resolution FWHM (meV),0.0876938430354468
+resolution,cnn_kernel45,tuned CNN,2.861,resolution FWHM (meV),0.1076022187212361
+resolution,tf_patch60,tuned transformer,0.715,resolution FWHM (meV),0.0726986007326868
+resolution,tf_patch60,tuned transformer,1.012,resolution FWHM (meV),0.0756915184512554
+resolution,tf_patch60,tuned transformer,1.431,resolution FWHM (meV),0.0830930189566538
+resolution,tf_patch60,tuned transformer,2.023,resolution FWHM (meV),0.1076624631435567
+resolution,tf_patch60,tuned transformer,2.861,resolution FWHM (meV),0.1405996954290605
+resolution,fusion,fusion,0.715,resolution FWHM (meV),0.0577328447249376
+resolution,fusion,fusion,1.012,resolution FWHM (meV),0.060504546808284
+resolution,fusion,fusion,1.431,resolution FWHM (meV),0.0717867656385311
+resolution,fusion,fusion,2.023,resolution FWHM (meV),0.1101819428514343
+resolution,fusion,fusion,2.861,resolution FWHM (meV),0.1601236947626905
+resolution,cnn,1D CNN,0.715,resolution FWHM (meV),0.0773634677501846
+resolution,cnn,1D CNN,1.012,resolution FWHM (meV),0.0744679088405194
+resolution,cnn,1D CNN,1.431,resolution FWHM (meV),0.0837232084887813
+resolution,cnn,1D CNN,2.023,resolution FWHM (meV),0.1137618970948366
+resolution,cnn,1D CNN,2.861,resolution FWHM (meV),0.162043575442538
+resolution,5a,ST-5a,0.715,resolution FWHM (meV),0.0846967562284844
+resolution,5a,ST-5a,1.012,resolution FWHM (meV),0.0831331542096797
+resolution,5a,ST-5a,1.431,resolution FWHM (meV),0.0967848210962662
+resolution,5a,ST-5a,2.023,resolution FWHM (meV),0.1349316250031048
+resolution,5a,ST-5a,2.861,resolution FWHM (meV),0.1835721608539198
+resolution,5b,ST-5b,0.715,resolution FWHM (meV),0.146830761220436
+resolution,5b,ST-5b,1.012,resolution FWHM (meV),0.1505580766454717
+resolution,5b,ST-5b,1.431,resolution FWHM (meV),0.1459871583100483
+resolution,5b,ST-5b,2.023,resolution FWHM (meV),0.1729034300422705
+resolution,5b,ST-5b,2.861,resolution FWHM (meV),0.2480266356656748
+counts,cnn_kernel45,tuned CNN,2322.0,counts at peak,0.0923304508412751
+counts,cnn_kernel45,tuned CNN,4643.0,counts at peak,0.0880385342095703
+counts,cnn_kernel45,tuned CNN,9287.0,counts at peak,0.0866462271822412
+counts,cnn_kernel45,tuned CNN,18574.0,counts at peak,0.0850724284070942
+counts,cnn_kernel45,tuned CNN,37147.0,counts at peak,0.0849543958371193
+counts,tf_patch60,tuned transformer,2322.0,counts at peak,0.161137463631475
+counts,tf_patch60,tuned transformer,4643.0,counts at peak,0.1595627753682144
+counts,tf_patch60,tuned transformer,9287.0,counts at peak,0.1603707926645661
+counts,tf_patch60,tuned transformer,18574.0,counts at peak,0.1598858044695655
+counts,tf_patch60,tuned transformer,37147.0,counts at peak,0.1597305454269729
+counts,fusion,fusion,2322.0,counts at peak,0.1162632551028787
+counts,fusion,fusion,4643.0,counts at peak,0.1157561708365626
+counts,fusion,fusion,9287.0,counts at peak,0.1152721709392363
+counts,fusion,fusion,18574.0,counts at peak,0.1145017229938645
+counts,fusion,fusion,37147.0,counts at peak,0.1143907911103274
+counts,cnn,1D CNN,2322.0,counts at peak,0.2539648860462028
+counts,cnn,1D CNN,4643.0,counts at peak,0.2524896698492701
+counts,cnn,1D CNN,9287.0,counts at peak,0.2632110530014202
+counts,cnn,1D CNN,18574.0,counts at peak,0.2669266104871023
+counts,cnn,1D CNN,37147.0,counts at peak,0.2652983974667249
+counts,5a,ST-5a,2322.0,counts at peak,0.1732752920248668
+counts,5a,ST-5a,4643.0,counts at peak,0.1731695519667311
+counts,5a,ST-5a,9287.0,counts at peak,0.1730061370019187
+counts,5a,ST-5a,18574.0,counts at peak,0.1720365588550405
+counts,5a,ST-5a,37147.0,counts at peak,0.171848842833439
+counts,5b,ST-5b,2322.0,counts at peak,0.2934790193444989
+counts,5b,ST-5b,4643.0,counts at peak,0.2755008060368585
+counts,5b,ST-5b,9287.0,counts at peak,0.2639144913418072
+counts,5b,ST-5b,18574.0,counts at peak,0.2646891640701573
+counts,5b,ST-5b,37147.0,counts at peak,0.2602701531884804
+background,cnn_kernel45,tuned CNN,0.037,background / peak,0.0843093747507609
+background,cnn_kernel45,tuned CNN,0.074,background / peak,0.0843093763940796
+background,cnn_kernel45,tuned CNN,0.147,background / peak,0.0843093772653318
+background,cnn_kernel45,tuned CNN,0.294,background / peak,0.0843093743754379
+background,cnn_kernel45,tuned CNN,0.589,background / peak,0.0843093818409196
+background,tf_patch60,tuned transformer,0.037,background / peak,0.1588187707672502
+background,tf_patch60,tuned transformer,0.074,background / peak,0.1588187727381616
+background,tf_patch60,tuned transformer,0.147,background / peak,0.1588187631385542
+background,tf_patch60,tuned transformer,0.294,background / peak,0.1588187781912881
+background,tf_patch60,tuned transformer,0.589,background / peak,0.1588187411511924
+background,fusion,fusion,0.037,background / peak,0.1145626464468737
+background,fusion,fusion,0.074,background / peak,0.114562645038714
+background,fusion,fusion,0.147,background / peak,0.1145626492594679
+background,fusion,fusion,0.294,background / peak,0.1145626518423359
+background,fusion,fusion,0.589,background / peak,0.1145626767092695
+background,cnn,1D CNN,0.037,background / peak,0.2734417587927344
+background,cnn,1D CNN,0.074,background / peak,0.2734417824820105
+background,cnn,1D CNN,0.147,background / peak,0.2734417685337476
+background,cnn,1D CNN,0.294,background / peak,0.2734417847285158
+background,cnn,1D CNN,0.589,background / peak,0.2734418027114235
+background,5a,ST-5a,0.037,background / peak,0.1725094457120162
+background,5a,ST-5a,0.074,background / peak,0.1725094560962629
+background,5a,ST-5a,0.147,background / peak,0.1725094506405753
+background,5a,ST-5a,0.294,background / peak,0.1725094627679474
+background,5a,ST-5a,0.589,background / peak,0.1725094868603311
+background,5b,ST-5b,0.037,background / peak,0.2592831304972792
+background,5b,ST-5b,0.074,background / peak,0.259283139621136
+background,5b,ST-5b,0.147,background / peak,0.2592831644340529
+background,5b,ST-5b,0.294,background / peak,0.259283098284694
+background,5b,ST-5b,0.589,background / peak,0.2592831110009724
+background_shaped,cnn_kernel45,tuned CNN,0.037,background / peak,0.0964926051790642
+background_shaped,cnn_kernel45,tuned CNN,0.074,background / peak,0.0852567925574744
+background_shaped,cnn_kernel45,tuned CNN,0.147,background / peak,0.100960988644242
+background_shaped,cnn_kernel45,tuned CNN,0.294,background / peak,0.1605083069557869
+background_shaped,cnn_kernel45,tuned CNN,0.589,background / peak,0.443025477228517
+background_shaped,tf_patch60,tuned transformer,0.037,background / peak,0.1830925849344636
+background_shaped,tf_patch60,tuned transformer,0.074,background / peak,0.1675034870177116
+background_shaped,tf_patch60,tuned transformer,0.147,background / peak,0.1656917875923367
+background_shaped,tf_patch60,tuned transformer,0.294,background / peak,0.2562923580091154
+background_shaped,tf_patch60,tuned transformer,0.589,background / peak,0.5998432186986564
+background_shaped,fusion,fusion,0.037,background / peak,0.1345427718852846
+background_shaped,fusion,fusion,0.074,background / peak,0.13334003019669
+background_shaped,fusion,fusion,0.147,background / peak,0.155764471249335
+background_shaped,fusion,fusion,0.294,background / peak,0.1958874907813263
+background_shaped,fusion,fusion,0.589,background / peak,0.5347504695562549
+background_shaped,cnn,1D CNN,0.037,background / peak,0.2743041748097873
+background_shaped,cnn,1D CNN,0.074,background / peak,0.2897880248610382
+background_shaped,cnn,1D CNN,0.147,background / peak,0.22495864724043
+background_shaped,cnn,1D CNN,0.294,background / peak,0.2773780787187858
+background_shaped,cnn,1D CNN,0.589,background / peak,0.6509363478959465
+background_shaped,5a,ST-5a,0.037,background / peak,0.1940637237235851
+background_shaped,5a,ST-5a,0.074,background / peak,0.1817485333123432
+background_shaped,5a,ST-5a,0.147,background / peak,0.2076135279009996
+background_shaped,5a,ST-5a,0.294,background / peak,0.213927985297343
+background_shaped,5a,ST-5a,0.589,background / peak,0.6096266537757838
+background_shaped,5b,ST-5b,0.037,background / peak,0.3361257032640924
+background_shaped,5b,ST-5b,0.074,background / peak,0.3087069670664346
+background_shaped,5b,ST-5b,0.147,background / peak,0.287730117613012
+background_shaped,5b,ST-5b,0.294,background / peak,0.3765105247300855
+background_shaped,5b,ST-5b,0.589,background / peak,1.1437973536114654

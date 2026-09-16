@@ -1,0 +1,10 @@
+{
+  "task": "A34_network_on_fitting_subset",
+  "dataset_version": "v10",
+  "script": "review_and_modify/scripts/a34_network_on_fitting_subset.py",
+  "eval_set": "manuscript_phase1/data/test_v10/dataset.npz",
+  "subset": "np.linspace(0, N-1, 600) of the test split; identical to A23",
+  "aggregation": "per-run MAE; mean and SD over the 9 runs. No ensemble.",
+  "training": "none",
+  "date_utc": "2026-09-16T01:05:13.113529+00:00"
+}

@@ -1,0 +1,37 @@
+# figure: fig2_recoverability_map
+# inputs: manuscript_phase1/results/revision/A23_v10/primary_per_spectrum.csv; manuscript_phase1/results/revision/A23_v10/network_by_severity_fitting_subset.csv; manuscript_phase1/results/revision/A23_v10/conditions_only_reference.json
+# population: test_v10, the 600-spectrum fitting subset -- EVERY series
+# n: 600
+# checkpoints: A21_v10/checkpoints (ablation_v10_both_seed{0,1,2})
+# aggregation: networks: per-run MAE, mean ± SD over 9 runs (no ensemble); fits: single pass; reference: MC conditional median, 20000 draws
+# failure_policy: all cases; failed fits replaced by the conditions-only conditional median
+# note: fits at s = 1 only (severity stop rule, verdict 'narrow'); authoritative conditions-only reference 0.633456
+family,method,label,severity,MAE_logM,sd_over_runs,n_runs,plotted_at_x
+learning,cnn_kernel45,tuned CNN,0.5,0.0777859183377937,0.0123756664663351,9,
+learning,cnn_kernel45,tuned CNN,1.0,0.1127320394465793,0.0141684884275701,9,
+learning,cnn_kernel45,tuned CNN,2.0,0.1951370989400685,0.0224208118941142,9,
+learning,cnn_kernel45,tuned CNN,4.0,0.4285031270145028,0.0274645429024488,9,
+learning,tf_patch60,tuned transformer,0.5,0.1106881004511008,0.0103970357080106,9,
+learning,tf_patch60,tuned transformer,1.0,0.1529082998902993,0.0143992344808639,9,
+learning,tf_patch60,tuned transformer,2.0,0.2607472420777073,0.0270869764769437,9,
+learning,tf_patch60,tuned transformer,4.0,0.5245764223082614,0.0313630242015692,9,
+learning,fusion,fusion,0.5,0.1110462673361781,0.0126508566426678,9,
+learning,fusion,fusion,1.0,0.1633080190393529,0.0158670501603911,9,
+learning,fusion,fusion,2.0,0.2679679769764262,0.0220501797831551,9,
+learning,fusion,fusion,4.0,0.4919636782097649,0.0234595903368959,9,
+learning,cnn,1D CNN,0.5,0.1314221338083548,0.0137986399131453,9,
+learning,cnn,1D CNN,1.0,0.1868999533715775,0.0193021477162944,9,
+learning,cnn,1D CNN,2.0,0.3260765103163646,0.0270025889906436,9,
+learning,cnn,1D CNN,4.0,0.5938831307824898,0.0171183577549398,9,
+learning,5a,ST-5a,0.5,0.1323467642650786,0.0115903428638443,9,
+learning,5a,ST-5a,1.0,0.1914137982811904,0.0202041937799085,9,
+learning,5a,ST-5a,2.0,0.3109581361335357,0.0267362663197355,9,
+learning,5a,ST-5a,4.0,0.5973675110568268,0.0358438008266709,9,
+learning,5b,ST-5b,0.5,0.235154671726224,0.0245605632809836,9,
+learning,5b,ST-5b,1.0,0.3281581251029177,0.0243270894205438,9,
+learning,5b,ST-5b,2.0,0.4974023841254985,0.0257918463961019,9,
+learning,5b,ST-5b,4.0,0.7890284331208338,0.0270184231735762,9,
+fitting,dho_matched_prior,prior-regularized fit,1.0,0.4608322478794929,,1,0.89
+fitting,dho_matched_w0,W = 0 control,1.0,0.502490906835145,,1,1.0
+fitting,dho_matched,matched-model fit (trust region),1.0,0.488239594649451,,1,1.12
+reference,conditions_only,conditions only,,0.6334563617410826,,1,

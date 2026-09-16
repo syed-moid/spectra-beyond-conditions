@@ -1,0 +1,7 @@
+model,dataset_version,value_crossover_severity,ranking_crossover_severity,ranking_practical_rho0.5
+cnn_kernel45,v8,6.0,,5.509972523704021
+tf_patch60,v8,4.0,,4.8759757294717625
+cnn,v8,4.0,,3.945591691918529
+fusion,v8,4.0,,3.822213328409882
+5a,v8,4.0,,3.8998095282205067
+5b,v8,2.0,,2.6030048497477387

@@ -1,0 +1,50 @@
+{
+  "overall_vs_trust_region": {
+    "baseline": "dho_matched",
+    "baseline_MAE": 1.2027633390740278,
+    "regularized_MAE": 0.807853594231237,
+    "cnn_MAE": 0.2214055004150227,
+    "gap_meV": 0.981357838659005,
+    "closed_meV": 0.39490974484279073,
+    "fraction": 0.40241156618509577
+  },
+  "overall_vs_W0_control": {
+    "baseline": "dho_matched_w0",
+    "baseline_MAE": 1.1992070442012748,
+    "regularized_MAE": 0.807853594231237,
+    "cnn_MAE": 0.2214055004150227,
+    "gap_meV": 0.9778015437862521,
+    "closed_meV": 0.39135344997003774,
+    "fraction": 0.4002381183145154
+  },
+  "overdamped_vs_trust_region": {
+    "baseline": "dho_matched",
+    "baseline_MAE": 2.1419857128788924,
+    "regularized_MAE": 1.194685514276315,
+    "cnn_MAE": 0.3775705225192583,
+    "gap_meV": 1.7644151903596341,
+    "closed_meV": 0.9473001986025773,
+    "fraction": 0.536891885639169
+  },
+  "overdamped_vs_W0_control": {
+    "baseline": "dho_matched_w0",
+    "baseline_MAE": 2.1057672365224525,
+    "regularized_MAE": 1.194685514276315,
+    "cnn_MAE": 0.3775705225192583,
+    "gap_meV": 1.7281967140031942,
+    "closed_meV": 0.9110817222461374,
+    "fraction": 0.527186352608962
+  },
+  "overall_optimizer_only": {
+    "trust_region_MAE": 1.2027633390740278,
+    "W0_control_MAE": 1.1992070442012748,
+    "difference_meV": 0.0035562948727529964,
+    "note": "same objective without the penalty, one solver each; this is the optimizer's own contribution"
+  },
+  "overdamped_optimizer_only": {
+    "trust_region_MAE": 2.1419857128788924,
+    "W0_control_MAE": 2.1057672365224525,
+    "difference_meV": 0.03621847635643993,
+    "note": "same objective without the penalty, one solver each; this is the optimizer's own contribution"
+  }
+}

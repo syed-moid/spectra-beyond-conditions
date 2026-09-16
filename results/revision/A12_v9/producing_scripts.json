@@ -1,0 +1,53 @@
+{
+  "directory": "manuscript_phase1/results/revision/A12_v9",
+  "dataset_version": "v10",
+  "generated_utc": "2026-09-16T01:09:18.216676+00:00",
+  "files": {
+    "assertions.json": {
+      "script": "review_and_modify/scripts/a12_digest.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "channel_ablation_improvement.csv": {
+      "script": "review_and_modify/scripts/a12_digest.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "channel_ablation_rho.csv": {
+      "script": "review_and_modify/scripts/a12_digest.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "comparison_robustness.csv": {
+      "script": "review_and_modify/scripts/a12_digest.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "consolidated_results.csv": {
+      "script": "review_and_modify/scripts/a12_digest.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "delta_v7_to_v9.csv": {
+      "script": "ad hoc (v8), superseded by v9"
+    },
+    "delta_v8_to_v9.csv": {
+      "script": "ad hoc (v8), superseded by v9"
+    },
+    "figure_inputs.csv": {
+      "script": "review_and_modify/scripts/a12_digest.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "mps_reproducibility.csv": {
+      "script": "review_and_modify/scripts/a12_digest.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "protocol_health.csv": {
+      "script": "review_and_modify/scripts/a12_digest.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "three_boundaries.csv": {
+      "script": "review_and_modify/scripts/a12_digest.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    },
+    "variance_decomposition.csv": {
+      "script": "review_and_modify/scripts/a7_postprocess.py",
+      "git_commit": "997f2a0e1fe6431497da000c017528cc6a83b21d"
+    }
+  }
+}
