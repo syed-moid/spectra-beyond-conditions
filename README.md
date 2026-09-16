@@ -6,7 +6,7 @@ Code, data, trained-model checkpoints and numerical results for:
 
 > **Spectra beyond conditions: benchmarking information recovery in inelastic neutron scattering.**
 > Syed A. Moid, Ronin Institute for Independent Scholarship. Manuscript in preparation.
-> Release tag `[[TAG]]`, data deposit `[[ZENODO-VERSION]]`.
+> Release tag `2.0.0`, data deposit [10.5281/zenodo.20332582](https://doi.org/10.5281/zenodo.20332582).
 
 ---
 
@@ -59,8 +59,8 @@ produced an MAE of 1.69 against a true 0.194. Every main-text number is on **v10
 
 The version is identified by the **SHA-256 of `sbc/data/spectrum_generator.py`**, which is pinned
 into every result table and every checkpoint's run metadata. Git commits do not separate these
-versions: the corrections were made in the working tree and are committed for the first time at
-`[[TAG]]`, so the v8, v9 and v10 datasets all record the same repository commit. The source hash does
+versions: the corrections were made in the working tree and are committed for the first time in the
+`2.0.0` release, so the v8, v9 and v10 datasets all record the same repository commit. The source hash does
 separate them, and so does the data — `scripts/revision/a14_data_check.py` recomputes the detailed-balance
 residual for any dataset file.
 
@@ -77,8 +77,9 @@ changed in the results.
 
 ## Getting the data
 
-Datasets and checkpoints are on Zenodo (`[[ZENODO-VERSION]]`), not in git: 1.0 GB of datasets and
-1.46 GB of checkpoints. Unpack the deposit so that `data/` and `results/` sit at the repository root, matching the layout
+Datasets and checkpoints are on Zenodo, not in git: 1.0 GB of datasets and 1.46 GB of checkpoints.
+The record is [10.5281/zenodo.20332582](https://doi.org/10.5281/zenodo.20332582), which always
+resolves to its most recent version. Unpack the deposit so that `data/` and `results/` sit at the repository root, matching the layout
 above. The v10 training dataset (`data/full_dataset_phase1_v10/`) is already in the repository; the
 deposit adds the evaluation and ablation sets and the checkpoints.
 
@@ -188,9 +189,10 @@ documentation: CC BY 4.0 (`DATA_LICENSE.md`).
   note    = {Manuscript in preparation},
   year    = {2026},
   howpublished = {Code and data: \url{https://doi.org/10.5281/zenodo.20332582},
-                  version [[ZENODO-VERSION]], release tag [[TAG]]}
+                  release tag 2.0.0}
 }
 ```
 
-`[[TAG]]` and `[[ZENODO-VERSION]]` are filled in when the release is tagged and the deposit
-published. They are the only placeholders in this file.
+The Zenodo DOI above is the record's concept DOI: it resolves to whichever version is most recent.
+To cite the exact state these results were produced from, use the version DOI that Zenodo minted for
+release `2.0.0`, which is shown under "Versions" on the record page.
