@@ -57,9 +57,9 @@ import torch  # noqa: E402
 from torch import nn  # noqa: E402
 from torch.utils.data import DataLoader  # noqa: E402
 
-from src.data.dataset import InsSpectraDataset  # noqa: E402
-from src.evaluation.harness import run_full_evaluation_suite  # noqa: E402
-from src.models.spectral_transformer import (  # noqa: E402
+from sbc.data.dataset import InsSpectraDataset  # noqa: E402
+from sbc.evaluation.harness import run_full_evaluation_suite  # noqa: E402
+from sbc.models.spectral_transformer import (  # noqa: E402
     SpectralTransformer,
     SpectralTransformerModel,
     TargetStats,

@@ -7,7 +7,7 @@
 4. Write artifacts/phase1_diagnostic_report.md with the full reporting spec,
    including a per-severity breakdown when the gate is a near-miss (10-20%).
 
-Usage (run from manuscript_phase1/):
+Usage (run from the repository root):
     python scripts/phase1_acceptance_report.py \
         --st-run-dir results/phase1_st_run \
         --data-path data/full_dataset_phase1/dataset.npz
@@ -30,8 +30,8 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from src.data.dataset import InsSpectraDataset  # noqa: E402
-from src.models.nonlinear_conditions_mlp import NonlinearConditionsMLPModel  # noqa: E402
+from sbc.data.dataset import InsSpectraDataset  # noqa: E402
+from sbc.models.nonlinear_conditions_mlp import NonlinearConditionsMLPModel  # noqa: E402
 
 PHASE0_FLOOR_REF = 0.0048           # historical reference (deterministic-M data)
 GATE_FRACTION = 0.30                # ST must be >= 30% below the live floor

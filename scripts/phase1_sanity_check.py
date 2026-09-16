@@ -27,10 +27,10 @@ sys.path.insert(0, str(ROOT))
 
 import matplotlib.pyplot as plt  # noqa: E402
 
-from src.data.merit import merit  # noqa: E402
-from src.data.latent_perturbations import LatentDraw, sample_latents  # noqa: E402
-from src.data.sampling import draw_samples  # noqa: E402
-from src.data.spectrum_generator import (  # noqa: E402
+from sbc.data.merit import merit  # noqa: E402
+from sbc.data.latent_perturbations import LatentDraw, sample_latents  # noqa: E402
+from sbc.data.sampling import draw_samples  # noqa: E402
+from sbc.data.spectrum_generator import (  # noqa: E402
     DEFAULT_OMEGA_GRID, Gamma_Q, generate_spectrum, omega_Q,
 )
 

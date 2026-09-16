@@ -48,12 +48,12 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from src.data.augmentations import (  # noqa: E402
+from sbc.data.augmentations import (  # noqa: E402
     apply_aug_params, sample_aug_params, state_from_clean, SpectrumState,
 )
-from src.data.latent_perturbations import sample_latents  # noqa: E402
-from src.data.sampling import draw_samples  # noqa: E402
-from src.data.spectrum_generator import DEFAULT_OMEGA_GRID, generate_spectrum  # noqa: E402
+from sbc.data.latent_perturbations import sample_latents  # noqa: E402
+from sbc.data.sampling import draw_samples  # noqa: E402
+from sbc.data.spectrum_generator import DEFAULT_OMEGA_GRID, generate_spectrum  # noqa: E402
 
 MASTER_SEED: int = 20260517
 PHASE1_MASTER_SEED: int = 20260520

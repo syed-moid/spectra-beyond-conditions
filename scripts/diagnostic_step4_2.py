@@ -38,9 +38,9 @@ sys.path.insert(0, str(ROOT))
 
 import torch  # noqa: E402
 
-from src.data.dataset import InsSpectraDataset  # noqa: E402
-from src.models.nonlinear_conditions_mlp import NonlinearConditionsMLPModel  # noqa: E402
-from src.models.spectral_transformer import SpectralTransformerModel  # noqa: E402
+from sbc.data.dataset import InsSpectraDataset  # noqa: E402
+from sbc.models.nonlinear_conditions_mlp import NonlinearConditionsMLPModel  # noqa: E402
+from sbc.models.spectral_transformer import SpectralTransformerModel  # noqa: E402
 
 
 # Defaults to the Phase 1 dataset bundled in this package. For the historical

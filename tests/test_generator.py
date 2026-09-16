@@ -15,12 +15,12 @@ from pathlib import Path
 
 import numpy as np
 
-# The src/ package lives under manuscript_phase1/ in this reproducibility layout.
-ROOT = Path(__file__).resolve().parents[1] / "manuscript_phase1"
+# sbc/ is the importable package at the repository root.
+ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from src.data.merit import merit  # noqa: E402
-from src.data.spectrum_generator import (  # noqa: E402
+from sbc.data.merit import merit  # noqa: E402
+from sbc.data.spectrum_generator import (  # noqa: E402
     K_B,
     Delta_omega,
     Gamma_Q,
@@ -30,7 +30,7 @@ from src.data.spectrum_generator import (  # noqa: E402
     omega_Q,
     soft_mode_F2,
 )
-from src.data.latent_perturbations import (  # noqa: E402
+from sbc.data.latent_perturbations import (  # noqa: E402
     GAMMA_FLOOR,
     MODES,
     LatentDraw,
@@ -259,7 +259,7 @@ def test_bose_has_no_spurious_hbar_factor():
 
 def _assembled(omega, T, om0=5.0, gm=1.5):
     """All three DHOs plus the central peak, as generate_spectrum assembles them."""
-    from manuscript_phase1.src.data.spectrum_generator import dho, central_peak, _MODES
+    from sbc.data.spectrum_generator import dho, central_peak, _MODES
     S = dho(omega, om0, gm, 0.0, T, _MODES["soft"]["F2"])
     S = S + dho(omega, _MODES["acoustic"]["omega"], _MODES["acoustic"]["Gamma"],
                 0.0, T, _MODES["acoustic"]["F2"])
@@ -275,7 +275,7 @@ def test_assembled_detailed_balance_with_central_peak():
     395 and 420 K and INACTIVE at 150 and 450 K.
     """
     import numpy as np
-    from manuscript_phase1.src.data.spectrum_generator import K_B, T_C, central_peak
+    from sbc.data.spectrum_generator import K_B, T_C, central_peak
     ws = np.array([0.25, 0.5, 1.0, 2.5, 4.0, 7.0, 9.0])
     for T in (150.0, 395.0, 420.0, 450.0):
         on = abs(T - T_C) < 50.0
@@ -294,7 +294,7 @@ def test_assembled_continuity_at_zero():
     finite step instead, which no choice of d removes.
     """
     import numpy as np
-    from manuscript_phase1.src.data.spectrum_generator import K_B
+    from sbc.data.spectrum_generator import K_B
     for T in (150.0, 395.0, 420.0):
         prev = None
         for d in (1e-3, 1e-4, 1e-5):
@@ -312,7 +312,7 @@ def test_assembled_continuity_at_zero():
 def test_central_peak_zero_limit_and_width():
     """S_cp(0) is finite and matches the previous even-Lorentzian peak value."""
     import numpy as np
-    from manuscript_phase1.src.data.spectrum_generator import central_peak, T_C, PI
+    from sbc.data.spectrum_generator import central_peak, T_C, PI
     for T in (380.0, 395.0, 420.0):
         I_c = 600.0 * np.exp(-abs(T - T_C) / 30.0)
         legacy_peak = I_c * 1.5 / (PI * 1.5 ** 2)
@@ -323,7 +323,7 @@ def test_central_peak_zero_limit_and_width():
 def test_central_peak_is_odd_over_bose():
     """chi'' implied by the central peak is odd: S(w)/[n(w)+1] must flip sign."""
     import numpy as np
-    from manuscript_phase1.src.data.spectrum_generator import central_peak, K_B
+    from sbc.data.spectrum_generator import central_peak, K_B
     T = 395.0
     w = np.array([0.3, 1.0, 3.0])
     nb1 = lambda x: 1.0 / (-np.expm1(-x / (K_B * T)))
