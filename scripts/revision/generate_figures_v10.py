@@ -570,7 +570,7 @@ def fig6():
 def figS2():
     """One-factor sweeps on their own physical axes, with both background experiments.
 
-    Round-50 review, item 3. The previous version labelled all three panels
+    An earlier version of this figure labelled all three panels
     "level (s)" with ticks at 0.25 / 1 / 4, which describe the *combined* severity
     scale and not these sweeps: the source table's `level` column holds resolution
     FWHM in meV, counts at the peak, and background as a fraction of the peak. It

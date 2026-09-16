@@ -6,7 +6,7 @@ one that had gone stale -- a variance printed in a standard-deviation column, a
 fitting row regenerated everywhere but one table, a gap fraction quoted from a
 retired evaluation policy. Spot-checking does not find those; this does.
 
-**What it does.** It reads DRAFT_v8_9_main.md and DRAFT_v8_9_supplement.md, pulls
+**What it does.** It reads DRAFT_v8_10_main.md and DRAFT_v8_10_supplement.md, pulls
 out every numeric token, and asks whether some file in the value universe below
 contains a number that rounds to it at the precision the prose used. A token that
 no source reproduces is reported; the covering report lists them.
@@ -247,7 +247,7 @@ def main():
     plain, pct, files = build_universe(verbose=True)
 
     rows, total_matched, exempt_total = [], 0, {}
-    for name in ("DRAFT_v8_9_main.md", "DRAFT_v8_9_supplement.md"):
+    for name in ("DRAFT_v8_10_main.md", "DRAFT_v8_10_supplement.md"):
         p = MS / name
         if not p.exists():
             raise SystemExit(f"missing manuscript: {p}")
@@ -263,7 +263,7 @@ def main():
     csv = Path(args.report).resolve().with_suffix(".csv")
     df.to_csv(csv, index=False)
 
-    lines = [f"# Number sweep — DRAFT_v8_9 ({DS.VERSION})", "",
+    lines = [f"# Number sweep — DRAFT_v8_10 ({DS.VERSION})", "",
              f"Every numeric token in the main text and supplement, matched against "
              f"{len(files)} source files.", "",
              f"- matched: **{total_matched}**",

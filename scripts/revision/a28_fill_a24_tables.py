@@ -43,7 +43,7 @@ def _manuscript_dir():
 
 
 MS = _manuscript_dir()
-MAIN, SUPP = MS / "DRAFT_v8_9_main.md", MS / "DRAFT_v8_9_supplement.md"
+MAIN, SUPP = MS / "DRAFT_v8_10_main.md", MS / "DRAFT_v8_10_supplement.md"
 LABEL = {"cnn_kernel45": "tuned CNN", "tf_patch60": "tuned transformer",
          "fusion": "fusion", "cnn": "1D CNN", "5a": "ST-5a", "5b": "ST-5b"}
 ORDER = ["cnn_kernel45", "tf_patch60", "fusion", "cnn", "5a", "5b"]

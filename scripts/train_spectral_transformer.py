@@ -91,7 +91,7 @@ LOSS_W_GAMMA = 0.1
 
 # Session 7: training severity matches the eval range. Log-uniform because
 # the eval grid {0.25, 0.5, 1, 2, 4} is geometric -- log-uniform gives equal
-# weight to each "doubling" of severity, matching how reviewers will read
+# weight to each "doubling" of severity, matching how the sweep is read
 # the degradation curve. Linear-uniform would over-weight sev=2-4 (broader
 # linear interval). See SESSION_LOG Session 7 for the planning-error context.
 TRAIN_SEVERITY_RANGE: tuple[float, float] = (0.25, 4.0)

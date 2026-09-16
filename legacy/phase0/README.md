@@ -2,7 +2,7 @@
 
 This directory preserves the **Phase 0 diagnostic** that motivated the entire
 reformulation behind the manuscript. It is *not* part of the Phase 1 results;
-it is here so a reviewer can reproduce the finding that triggered the pivot.
+it is here so a reader can reproduce the finding that triggered the pivot.
 
 ## What Phase 0 was
 

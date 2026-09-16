@@ -1,10 +1,10 @@
 # Zenodo deposit manifest — plotting inputs
 
-Every file below is an input that a submitted figure declares in its CSV header.
+Every file below is an input that a figure declares in its CSV header.
 A deposit containing these files, at these hashes, reproduces the figures in the
 package when passed through `scripts/revision/generate_figures_v10.py`.
 
-Generated 2026-09-16T21:20:07+00:00.
+Generated 2026-09-16T21:54:08+00:00.
 
 ## Figures and the inputs they declare
 

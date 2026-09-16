@@ -16,9 +16,9 @@ dist/
 # Weights & Biases (regenerable run dirs)
 wandb/
 
-# Revision working directory. Never committed: it holds drafts, reviews, round
-# instructions, logs and DFT working files. The parts of it that belong to the
-# package are copied into scripts/, results/, figures/ and the release documents.
+# Working directory. Never committed: it holds manuscript drafts, working notes,
+# logs and DFT working files. The parts of it that belong to the package are
+# copied into scripts/, results/, figures/ and the release documents.
 review_and_modify/
 
 # Datasets. 1.0 GB, distributed through Zenodo, regenerable from scripts/.

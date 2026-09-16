@@ -1,4 +1,4 @@
-"""Deposit manifest: the plotting inputs that reproduce the submitted figures.
+"""Deposit manifest: the plotting inputs that reproduce the released figures.
 
 Round 48 item 22 / round 49 item 11. For every figure, records the inputs its CSV
 header declares, with a SHA-256 of each, so a depositor can verify that the files
@@ -56,7 +56,7 @@ def main():
 
     L = ["# Zenodo deposit manifest — plotting inputs",
          "",
-         "Every file below is an input that a submitted figure declares in its CSV header.",
+         "Every file below is an input that a figure declares in its CSV header.",
          "A deposit containing these files, at these hashes, reproduces the figures in the",
          "package when passed through `scripts/revision/generate_figures_v10.py`.",
          "", f"Generated {datetime.now(timezone.utc).isoformat(timespec='seconds')}.", "",

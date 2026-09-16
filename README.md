@@ -5,9 +5,8 @@
 Code, data, trained-model checkpoints and numerical results for:
 
 > **Spectra beyond conditions: benchmarking information recovery in inelastic neutron scattering.**
-> Syed A. Moid, Ronin Institute for Independent Scholarship.
-> *Journal of Applied Crystallography*, submitted. Release tag `[[TAG]]`,
-> data deposit `[[ZENODO-VERSION]]`.
+> Syed A. Moid, Ronin Institute for Independent Scholarship. Manuscript in preparation.
+> Release tag `[[TAG]]`, data deposit `[[ZENODO-VERSION]]`.
 
 ---
 
@@ -53,24 +52,24 @@ convention and the file the numbers are read from. It is the first place to look
 
 ## Generator versions
 
-The generator was corrected three times during revision. **Results are determined by the generator
+The generator was corrected three times after the initial release. **Results are determined by the generator
 source, not by the dataset file**: a checkpoint trained on one version and evaluated on spectra from
-another is not a valid substitute for retraining, and doing exactly that once during this revision
+another is not a valid substitute for retraining, and doing exactly that once during this work
 produced an MAE of 1.69 against a true 0.194. Every main-text number is on **v10**.
 
 The version is identified by the **SHA-256 of `sbc/data/spectrum_generator.py`**, which is pinned
 into every result table and every checkpoint's run metadata. Git commits do not separate these
 versions: the corrections were made in the working tree and are committed for the first time at
-`[[TAG]]`, so v8, v9 and v10 datasets all record the same repository commit. The source hash does
+`[[TAG]]`, so the v8, v9 and v10 datasets all record the same repository commit. The source hash does
 separate them, and so does the data — `scripts/revision/a14_data_check.py` recomputes the detailed-balance
 residual for any dataset file.
 
 | version | what changed | effect | generator source SHA-256 |
 |---|---|---|---|
-| v7 | the submitted version | — | `306dc767…` |
-| v8 | per-spectrum thermal weight evaluated at ω₀ rather than at ω | occupation scale corrected | `9e68bfed…` |
-| v9 | the lineshape was even: S(ω)/S(−ω) did not follow exp(ω/k_BT) | corrected to the standard damped-harmonic-oscillator response | `4035f7a3…` |
-| v10 | the central peak was an even Lorentzian, so the *assembled* spectrum broke detailed balance even though the oscillator part did not | relaxational form; assembled-spectrum residual 2.5 × 10⁻⁵ → 9.0 × 10⁻⁸ | `8cb82ecf…` |
+| v7 | initial release (generator and dataset; Zenodo version 1) | — | `306dc767…` |
+| v8 | correction: occupation factor — the per-spectrum thermal weight was evaluated at ω₀ rather than at ω | occupation scale corrected | `9e68bfed…` |
+| v9 | correction: lineshape and detailed balance — S(ω)/S(−ω) did not follow exp(ω/k_BT) | corrected to the standard damped-harmonic-oscillator response | `4035f7a3…` |
+| v10 | correction: central-peak thermal factor; untouched test sets; corrected evaluation protocol | relaxational form; assembled-spectrum residual 2.5 × 10⁻⁵ → 9.0 × 10⁻⁸ | `8cb82ecf…` |
 
 `tests/test_generator.py` and `tests/test_fit_lineshape.py` fail on each pre-correction form; that
 is how the corrections are established rather than asserted. `CORRECTIONS.md` records what each one
@@ -182,14 +181,14 @@ documentation: CC BY 4.0 (`DATA_LICENSE.md`).
 ## Citation
 
 ```bibtex
-@article{moid_spectra_beyond_conditions,
+@misc{moid_spectra_beyond_conditions,
   author  = {Moid, Syed A.},
   title   = {Spectra beyond conditions: benchmarking information recovery
              in inelastic neutron scattering},
-  journal = {Journal of Applied Crystallography},
+  note    = {Manuscript in preparation},
   year    = {2026},
-  note    = {Code and data: \url{https://doi.org/10.5281/zenodo.20332582},
-             version [[ZENODO-VERSION]], release tag [[TAG]]}
+  howpublished = {Code and data: \url{https://doi.org/10.5281/zenodo.20332582},
+                  version [[ZENODO-VERSION]], release tag [[TAG]]}
 }
 ```
 

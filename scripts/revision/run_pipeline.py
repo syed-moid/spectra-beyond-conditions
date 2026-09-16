@@ -395,8 +395,8 @@ def build_stages():
                    "not exist; the numbers came from A3_v9"),
 
         Stage("a28_fill_tables", [PY, s("a28_fill_a24_tables")], est_min=1, mode=ATOMIC,
-              outputs=[MSDIR / "DRAFT_v8_9_main.md",
-                       MSDIR / "DRAFT_v8_9_supplement.md"],
+              outputs=[MSDIR / "DRAFT_v8_10_main.md",
+                       MSDIR / "DRAFT_v8_10_supplement.md"],
               inputs=[rev("A24", "parameter_recovery_v10.csv"),
                       rev("A24", "ranking_by_severity_v10.csv")],
               note="renders the five A24 tables into the manuscript placeholders; "
@@ -405,7 +405,7 @@ def build_stages():
         Stage("main_text_provenance", [PY, s("a12_main_text_provenance")],
               est_min=1, mode=ATOMIC,
               outputs=[],
-              inputs=[MSDIR / "DRAFT_v8_9_main.md"],
+              inputs=[MSDIR / "DRAFT_v8_10_main.md"],
               note="assertion: no main-text number may cite a pre-v10 run. "
                    "Exit status is the assertion; it fails the stage."),
 

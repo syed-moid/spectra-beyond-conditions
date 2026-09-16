@@ -22,10 +22,10 @@ Two consequences that a reader reproducing this work must know:
 | target | generator identity |
 |---|---|
 | v7 published results (Zenodo 10.5281/zenodo.20332582) | repo commit `7c44defb…` — pre-fix `bose()`, which multiplies the exponent by hbar = 0.6582 |
-| v8 revision results | post-fix `bose()`; sha256 `9e68bfede827fe51b43b2a5e5ed6786d125c549a01b8b1c0f0b48d9be808d502` (pre-fix: `306dc76710ab7f52cfaffb21936f304353da73a56f2ff209374eaf18e2217c2c`) |
-| v9 revision results (all reported numbers) | standard DHO lineshape, parent convention, Gamma = HWHM; sha256 `4035f7a39cc079c473d909bf15d50302164d6552ef0f0e9f59ba445176cae1bd` at generation time. A later comment-only edit that neutralises a divide-by-zero warning changed the file hash while leaving `dho()` output bitwise identical; both hashes and the verification are recorded in each v9 dataset's `PROVENANCE.md` |
+| v8 results | post-fix `bose()`; sha256 `9e68bfede827fe51b43b2a5e5ed6786d125c549a01b8b1c0f0b48d9be808d502` (pre-fix: `306dc76710ab7f52cfaffb21936f304353da73a56f2ff209374eaf18e2217c2c`) |
+| v9 results | standard DHO lineshape, parent convention, Gamma = HWHM; sha256 `4035f7a39cc079c473d909bf15d50302164d6552ef0f0e9f59ba445176cae1bd` at generation time. A later comment-only edit that neutralises a divide-by-zero warning changed the file hash while leaving `dho()` output bitwise identical; both hashes and the verification are recorded in each v9 dataset's `PROVENANCE.md` |
 
-## The `7c44defb` SHA and the `v7-submitted` tag
+## The `7c44defb` SHA and the `v7-initial` tag
 
 The SHA stored inside the v7 dataset, `7c44defbd3c2068efe17003c6293c4858d999ccf`, **refers to an
 earlier repository** and is not an object in this one — it is absent from the history, the reflog
@@ -33,9 +33,9 @@ and the dangling objects. The v7 generator source is nevertheless byte-identical
 six commits of this repository (sha256 `306dc767…` at `e97ec85` through `997f2a0`); the commits
 after `e97ec85` touched only README, LICENSE and the DOI.
 
-The tag **`v7-submitted`** in this repository therefore marks the equivalent state: the last
-pre-revision commit, whose generator source is the one used for the submitted manuscript. Anyone
-reproducing the v7 results should check out `v7-submitted` here rather than looking for
+The tag **`v7-initial`** in this repository therefore marks the equivalent state: the last commit
+before the corrections, whose generator source is the one the v7 results were produced with. Anyone
+reproducing the v7 results should check out `v7-initial` here rather than looking for
 `7c44defb`, which cannot be resolved.
 
 `np.savez` metadata inside each dataset records `generator_git_sha` at generation time, but note
@@ -46,7 +46,7 @@ later run imports.
 
 * Stored checkpoints evaluated on CPU reproduce their recorded validation scores to ~1e-8.
 * Training on Apple MPS reproduces to ~1e-4 nats in MAE across torch versions, not bitwise. The
-  v7 runs used torch 2.12.1; the revision uses torch 2.14.0.
+  v7 runs used torch 2.12.1; v8 onwards use torch 2.14.0.
 * The dataset arrays `T_K`, `c_pct`, `E_kVcm` are float32 while the sampler drew float64. Any
   regeneration that wants to match the stored augmented spectra must round the conditions to
   float32 first, because the integer Poisson draw amplifies last-digit differences. The main
