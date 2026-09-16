@@ -35,8 +35,14 @@ if _reg.exists():
     DIGEST_SOURCES |= set(pd.read_csv(_reg).source_file.unique())
 _REL_FULL = str(DS.FULL.relative_to(ROOT))
 _GEN = ROOT / "sbc" / "data" / "spectrum_generator.py"
+_GEN_SHA = hashlib.sha256(_GEN.read_bytes()).hexdigest()
+# Dataset files are legitimate figure inputs even though no digest row names them:
+# they carry spectra, not results. Each is admitted by name with the generator hash
+# that produced it, so check() cannot be bypassed by an arbitrary path.
 DATASET_PROVENANCE = {
-    _REL_FULL: f"generator sha256 {hashlib.sha256(_GEN.read_bytes()).hexdigest()}"}
+    _REL_FULL: f"generator sha256 {_GEN_SHA}",
+    str(DS.REPLICATE.relative_to(ROOT)): f"generator sha256 {_GEN_SHA}",
+    str(DS.TEST.relative_to(ROOT)): f"generator sha256 {_GEN_SHA}"}
 
 
 def check(inputs):
@@ -259,7 +265,10 @@ def fig5():
 
 # --- figure 6: example spectra --------------------------------------------
 def fig6():
-    inp = [_REL_FULL]
+    # Round 52: the replicate set was read but not declared, so the deposit
+    # manifest did not list it and a reader could unpack a deposit that could not
+    # redraw this figure. Both files it opens are declared now.
+    inp = [_REL_FULL, str(DS.REPLICATE.relative_to(ROOT))]
     check(inp)
     sys.path.insert(0, str(ROOT))
     from sbc.data.dataset import InsSpectraDataset

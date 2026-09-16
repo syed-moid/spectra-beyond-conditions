@@ -4,7 +4,7 @@ Every file below is an input that a submitted figure declares in its CSV header.
 A deposit containing these files, at these hashes, reproduces the figures in the
 package when passed through `scripts/revision/generate_figures_v10.py`.
 
-Generated 2026-09-16T20:22:35+00:00.
+Generated 2026-09-16T21:20:07+00:00.
 
 ## Figures and the inputs they declare
 
@@ -15,7 +15,7 @@ Generated 2026-09-16T20:22:35+00:00.
 | `fig3_two_boundaries` | yes | `results/revision/A24_v10/ranking_by_severity_v10.csv` |
 | `fig4_holdout_heatmap` | yes | `results/revision/A10_v10/holdout_table_v10.csv` |
 | `fig5_channel_ablation` | yes | `results/revision/A7_v10/oracle_per_setting.csv`<br>`results/revision/A7_v10/rho_per_setting.csv` |
-| `fig6_example_spectra` | yes | `data/full_dataset_phase1_v10/dataset.npz` |
+| `fig6_example_spectra` | yes | `data/full_dataset_phase1_v10/dataset.npz`<br>`data/replicate_eval_v10/dataset.npz` |
 | `fig7_fit_overlay` | yes | `results/revision/A23_v10/primary_per_spectrum.csv`<br>`data/test_v10/dataset.npz`<br>`results/revision/A23_v10/fit_parameters_dho_matched.csv`<br>`results/revision/A23_v10/fit_parameters_dho_matched_prior.csv` |
 | `fig8_model_family_bars` | yes | `results/revision/A23_v10/network_runs_on_fitting_subset.csv`<br>`results/revision/A23_v10/primary_per_spectrum.csv`<br>`results/revision/A23_v10/conditions_only_reference.json` |
 | `figS1_receptive_field` | yes | `results/revision/A17_v10/variant_summary.csv` |
@@ -28,11 +28,12 @@ Generated 2026-09-16T20:22:35+00:00.
 | `figS8_replicate_vs_mc` | yes | `results/revision/A14_v10/replicate_vs_mc_conditional.csv` |
 | `figS9_tilt_sensitivity` | yes | `results/revision/A18b_v10/energy_tilt_sensitivity.csv`<br>`results/revision/A18b_v10_tilt/tilt_trained_beta_grid.csv` |
 
-## Input files and SHA-256 (25 distinct)
+## Input files and SHA-256 (26 distinct)
 
 | file | sha256 |
 |---|---|
 | `data/full_dataset_phase1_v10/dataset.npz` | `20dba4b6c152e269d174f2e1eb2955afc01790eddc52264a8fe23f9809452829` |
+| `data/replicate_eval_v10/dataset.npz` | `50a07eda9776b09d3525e4616ab07e6354df5437a7efb7a66920f6ae08c758d2` |
 | `data/test_v10/dataset.npz` | `9f6b24b1565df803260965d81b2cdbb616aa65343c504dba94c8d025286869b8` |
 | `results/revision/A10_v10/holdout_table_v10.csv` | `b5ce46a774f3967f99cb42467e17c91a29270e92d304886df5b63bba6d941b92` |
 | `results/revision/A14_v10/replicate_vs_mc_conditional.csv` | `314ae33cfb9c4b47b090654d972ed5cf8c7b9e554575bc8cfac0a5c0ddacca0b` |
