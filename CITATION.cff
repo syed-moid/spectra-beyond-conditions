@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this software or the accompanying data, please cite it as below."
+title: "Spectra beyond conditions: benchmarking information recovery in inelastic neutron scattering"
+abstract: >-
+  Code, datasets, trained-model checkpoints and numerical results for a benchmark that
+  separates what a machine-learning model reads from a spectrum from what it reads from
+  the measurement conditions alone. The reference is the conditions-only Bayes risk under
+  absolute loss, estimated by Monte Carlo from the generative model; spectral models are
+  benchmarked against it on simulated inelastic neutron spectra of a perovskite soft-mode
+  system. The spectra are simulated; performance on measured spectra is unvalidated.
+type: software
+authors:
+  - family-names: Moid
+    given-names: Syed
+    affiliation: Ronin Institute for Independent Scholarship
+    email: syedmoid@gmail.com
+version: 2.0.0
+date-released: "2026-09-17"
+repository-code: "https://github.com/syed-moid/spectra-beyond-conditions"
+url: "https://github.com/syed-moid/spectra-beyond-conditions/releases/tag/2.0.0"
+license: MIT
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22815915
+    description: "Version 2.0.0 of the data and results record"
+  - type: doi
+    value: 10.5281/zenodo.20332582
+    description: "Concept DOI; resolves to the most recent version"
+keywords:
+  - inelastic neutron scattering
+  - machine learning
+  - benchmarking
+  - soft modes
+  - damped harmonic oscillator
+  - parameter recovery
+  - simulated data
