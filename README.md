@@ -5,7 +5,7 @@
 Code, data, trained-model checkpoints and numerical results for:
 
 > **Spectra beyond conditions: benchmarking information recovery in inelastic neutron scattering.**
-> Syed A. Moid, Ronin Institute for Independent Scholarship. Manuscript in preparation.
+> Syed A. Moid, Ronin Institute for Independent Scholarship.
 > Release tag `2.0.0`, data deposit [10.5281/zenodo.20332582](https://doi.org/10.5281/zenodo.20332582).
 
 ---
@@ -183,16 +183,17 @@ documentation: CC BY 4.0 (`DATA_LICENSE.md`).
 
 ```bibtex
 @misc{moid_spectra_beyond_conditions,
-  author  = {Moid, Syed A.},
-  title   = {Spectra beyond conditions: benchmarking information recovery
-             in inelastic neutron scattering},
-  note    = {Manuscript in preparation},
-  year    = {2026},
-  howpublished = {Code and data: \url{https://doi.org/10.5281/zenodo.20332582},
-                  release tag 2.0.0}
+  author       = {Moid, Syed A.},
+  title        = {Spectra beyond conditions: benchmarking information recovery
+                  in inelastic neutron scattering},
+  year         = {2026},
+  organization = {Ronin Institute for Independent Scholarship},
+  howpublished = {Code: release tag 2.0.0,
+                  \url{https://github.com/syed-moid/spectra-beyond-conditions/releases/tag/2.0.0}.
+                  Data and results: Zenodo, \url{https://doi.org/10.5281/zenodo.22815915}}
 }
 ```
 
-The Zenodo DOI above is the record's concept DOI: it resolves to whichever version is most recent.
-To cite the exact state these results were produced from, use the version DOI that Zenodo minted for
-release `2.0.0`, which is shown under "Versions" on the record page.
+`10.5281/zenodo.22815915` is the DOI of **version 2.0.0** of the record and is the one to cite for
+an exact reproduction. The concept DOI `10.5281/zenodo.20332582` always resolves to the most recent
+version; version 1 is the initial release (v7).
